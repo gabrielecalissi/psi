@@ -1,7 +1,8 @@
 # psi
 Riassunto Probabilità e Statistica per l'Informatica - Università di Milano Bicocca
 
-Il riassunto è stato realizzato con Emacs e l'ausilio di org mode: https://en.wikipedia.org/wiki/Org-mode
+Il riassunto è stato realizzato con Emacs: https://www.gnu.org/software/emacs/
+e l'ausilio di org mode: https://en.wikipedia.org/wiki/Org-mode
 
 La prima parte del riassunto contiene le stesse informazioni contenute nelle slide delle Lezioni frontali del Professor Stella,
 proposte in formato html e corredate da formule in LaTex.
