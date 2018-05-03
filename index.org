@@ -9,10 +9,14 @@
 #+STARTUP: latexpreview
 #+STARTUP: entitiespretty
 
-#+TITLE: Riassunto Probabilità e Statistica
+#+TITLE: Riassunto Probabilità e Statistica per l'Informatica
 #+AUTHOR:    Gabriele Calissi
 #+EMAIL:     gabrielecalissi@gmail.com
 
+* GitHub
+- [[https://github.com/gabrielecalissi/psi][Guardalo in GitHub]];
+- [[https://github.com/gabrielecalissi/psi/archive/master.zip][Scarica .zip]];
+- [[https://github.com/gabrielecalissi/psi/archive/master.tar.gz][Scarica .tar.gz]].
 * Lezioni
 ** Statistica Descrittiva
 Raccolta di metodi e strumenti matematici atti ad organizzare una o più serie di dati in modo tale
