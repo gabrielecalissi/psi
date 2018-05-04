@@ -3800,7 +3800,7 @@ Esempio 1.1
 # Caricare il file "esempio1.1.csv"
 #f <- file.choose()
 #ese11 <- scan(f, sep=";")
-ese11 <- scan("~/Nextcloud/Università/2° anno/Probabilità e Statistica per l'Informatica/Laboratorio/Lab 1/esempio1.1.csv",
+ese11 <- scan("./Files/esempio1.1.csv",
 sep=";")
 
 # Frequenze assolute
@@ -3827,7 +3827,7 @@ barplot(table(ese11), xlab="numero stanze", ylab="frequenza",
 # Caricare il file "esempio1.1.csv"
 #f <- file.choose()
 #ese11 <- scan(f, sep=";")
-ese11 <- scan("~/Nextcloud/Università/2° anno/Probabilità e Statistica per l'Informatica/Laboratorio/Lab 1/esempio1.1.csv",
+ese11 <- scan("./Files/esempio1.1.csv",
 sep=";")
 
 # Frequenze assolute
@@ -3852,7 +3852,7 @@ stripchart(ese11, method="stack", xlab="stanze") # stack
 Esempio 1.2
 #+BEGIN_SRC R :file hist1.png :results graphics :exports both
 # Caricare il file "esempio1.2.csv"
-ese12 <- scan("~/Nextcloud/Università/2° anno/Probabilità e Statistica per l'Informatica/Laboratorio/Lab 1/esempio1.2.csv",
+ese12 <- scan("./Files/esempio1.2.csv",
 sep=";", dec=",")
 
 # minimo e massimo
@@ -3870,7 +3870,7 @@ hist(ese12, breaks=interval)
 #+BEGIN_SRC R :file hist2.png :results graphics :exports both
 
 # Caricare il file "esempio1.2.csv"
-ese12 <- scan("~/Nextcloud/Università/2° anno/Probabilità e Statistica per l'Informatica/Laboratorio/Lab 1/esempio1.2.csv",
+ese12 <- scan("./Files/esempio1.2.csv",
 sep=";", dec=",")
 
 # minimo e massimo
@@ -3888,7 +3888,7 @@ hist(ese12)
 #+BEGIN_SRC R :file plot.png :results graphics :exports both
 
 # Caricare il file "esempio1.2.csv"
-ese12 <- scan("~/Nextcloud/Università/2° anno/Probabilità e Statistica per l'Informatica/Laboratorio/Lab 1/esempio1.2.csv",
+ese12 <- scan("./Files/esempio1.2.csv",
 sep=";", dec=",")
 
 # minimo e massimo
@@ -3905,7 +3905,7 @@ plot(ese12, xlab="appartamenti", ylab="costo")
 Esercizio 1:
 - Si è interessati a studiare la variabile ~years~ relativa all'età di un certo numero di giocatori di calcio.
 #+BEGIN_SRC R :results output :exports both :session giocatori
-giocatori <- read.table("~/Nextcloud/Università/2° anno/Probabilità e Statistica per l'Informatica/Laboratorio/Lab 1/giocatori.txt",
+giocatori <- read.table("./Files/giocatori.txt",
             sep=";", header=TRUE)
 
 attach(giocatori)
@@ -3986,7 +3986,7 @@ hist(years, main="Istogramma età")
 
 Esempio 1.8:
 #+BEGIN_SRC R :results org :exports both
-ese11 <- scan("~/Nextcloud/Università/2° anno/Probabilità e Statistica per l'Informatica/Laboratorio/Lab 1/esempio1.1.csv",
+ese11 <- scan("./Files/esempio1.1.csv",
 sep=";")
 
 # Ordinamento crescente
@@ -4033,7 +4033,7 @@ list(cresc, decr, media, mediana, moda)
 
 #+BEGIN_SRC R :results output :exports both :session es12
 # Caricare il file "esempio1.2.csv"
-ese12 <- scan("~/Nextcloud/Università/2° anno/Probabilità e Statistica per l'Informatica/Laboratorio/Lab 1/esempio1.2.csv",
+ese12 <- scan("./Files/esempio1.2.csv",
 sep=";", dec=",")
 
 # Varianza campionaria
@@ -4111,7 +4111,7 @@ Esercizio 2:
 #+BEGIN_SRC R :results output :exports both
 require("e1071")
 
-giocatori <- read.table("~/Nextcloud/Università/2° anno/Probabilità e Statistica per l'Informatica/Laboratorio/Lab 1/giocatori.txt",
+giocatori <- read.table("./Files/giocatori.txt",
             sep=";", header=TRUE)
 
 attach(giocatori)
@@ -4174,7 +4174,7 @@ years
 Esempio 1.12
 #+BEGIN_SRC R :results output :exports both :session es112
 # Caricare il file "esempio 1.12.csv"
-ese112 <- read.csv("~/Nextcloud/Università/2° anno/Probabilità e Statistica per l'Informatica/Laboratorio/Lab 1/esempio1.12.csv",
+ese112 <- read.csv("./Files/esempio1.12.csv",
                    sep=";", header=TRUE)
 
 # Frequenze assolute
@@ -4287,7 +4287,7 @@ cor(ese112$Stanze, ese112$Occupanti)
 
 Esercizio 3:
 #+BEGIN_SRC R barplot.png :results output :exports both :session giocatori
-giocatori <- read.table("~/Nextcloud/Università/2° anno/Probabilità e Statistica per l'Informatica/Laboratorio/Lab 1/giocatori.txt",
+giocatori <- read.table("./Files/giocatori.txt",
             sep=";", header=TRUE)
 
 attach(giocatori)
@@ -4367,7 +4367,7 @@ barplot(tc, legend=T, col=c("lightblue", "mistyrose", "lightcyan",
 
 Esempio 1.16
 #+BEGIN_SRC R :results output :exports both :session es116
-ese116 <- read.csv("~/Nextcloud/Università/2° anno/Probabilità e Statistica per l'Informatica/Laboratorio/Lab 1/esempio1.16.csv",
+ese116 <- read.csv("./Files/esempio1.16.csv",
                    sep=";", header=TRUE)
 ese116
 #+END_SRC
