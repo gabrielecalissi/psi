@@ -2410,7 +2410,18 @@ superiore a 0.3 mantenendo sempre un livello di confidenza $\alpha = 0.05$.
 In base alla formula
 $$P\left(\bar{X}_n-t_{1-\frac{\alpha}{2}} \frac{\hat{S}_n}{\sqrt{n}} \leq \mu \leq \bar{X}_n + t_{1-\frac{\alpha}{2}} \frac{\hat{S}_n}{\sqrt{n}}\right) = 1 - \alpha$$
 è immediato osservare che l'ampiezza di un intervallo di confidenza simmetrico per $\alpha=0.05$ risulta essere uguale a
-$ 2 \cdot z_{1 - \frac{\alpha}{2}}$.
+$$ 2 \cdot z_{1 - \frac{\alpha}{2}} \cdot \frac{\hat{S}_n}{\sqrt{n}} = 2 \cdot 1.96 \cdot \frac{\hat{S}_n}{\sqrt{n}} = 3.92 \cdot \frac{\hat{S}_n}{\sqrt{n}}$$.
+Poiché la deviazione standard non è nota, possiamo sostituirla con una stima e la più indicata è ovviamente:
+$\hat{s}_n = \hat{s}_{80} = 1.22$.
+
+Pertanto l'ampiezza risulta essere uguale a
+$$\frac{3.92 \cdot 1.22}{\sqrt{n}} = \frac{4.783}{\sqrt{n}}$$
+Notiamo che questa diminuisce con l'aumentare della numerosità del campione, pertanto, per avere l'ampiezza minore di 0.3,
+occorrerà avere $n$ sufficientemente grande.
+$$ \frac{4.783}{\sqrt{n}} \leq 0.3 \iff \frac{4.783}{0.3} \leq \sqrt{n} \iff 15.94 \leq \sqrt{n} \iff 254.13 \leq n$$
+In particolare risulta un'ampiezza poco minore a 0.3 quando $n=255$.
+*** Stime di parametri
+
 * Laboratorio
 ** Libri
 Help:
