@@ -2421,7 +2421,110 @@ occorrerà avere $n$ sufficientemente grande.
 $$ \frac{4.783}{\sqrt{n}} \leq 0.3 \iff \frac{4.783}{0.3} \leq \sqrt{n} \iff 15.94 \leq \sqrt{n} \iff 254.13 \leq n$$
 In particolare risulta un'ampiezza poco minore a 0.3 quando $n=255$.
 *** Stime di parametri
+Per effettuare stime puntuali di parametri esistono altri metodi oltre a quelli appena presentati. I due più noti
+vengono di seguito descritti.
 
+Il primo prende il nome di /metodo dei momenti/ e si applica nel caso in cui sia nota l'espressione funzionale della densità
+di probabilità della popolazione a meno di uno o più parametri incogniti. Supponiamo quindi che la popolazione considerata
+$X$ abbia una densità di probabilità $f_X(t)$ dipendente da $m$ parametri incogniti $\theta_1, \dots, \theta_m$.
+
+Consideriamo ora i primi $m$ momenti centrali della variabile $X$: $\mu_k = E[X^k] \ k = 1, \dots, m$. I valori da essi assunti sono
+delle funzioni dei parametri, ovvero: $\mu_k = \mu_k (\theta_1, \dots, \theta_m)$ per ogni $k = 1, \dots, m$. Consideriamo poi i corrispondenti primi
+$m$ momenti campionari definiti come $\bar{X}_n^k = \frac{1}{n} \sum_{i=1}^n X_i^k$ con $k = 1, \dots, m$ e dove $(X_1, \dots, X_n)$ è il
+campione estratto dalla popolazione.
+
+Denotiamo infine con $\bar{x}_n^k$ le realizzazioni (note) dei momenti campionari $\bar{X}_n^k$. Le stime dei parametri
+$\theta_1, \dots, \theta_m$ si ottengono risolvendo rispetto ad esse il sistema in $m$ equazioni ed $m$ incognite:
+\begin{equation*}
+\begin{cases}
+\mu_1 (\theta_1, &\dots, \theta_m) = x_n^{-1}\\
+&\vdots\\
+\mu_m (\theta_1, &\dots, \theta_m) = x_n^{-m}
+\end{cases}
+\end{equation*}
+
+Per esempio, sia $X$ una variabile che descrive il tempo necessario ad ottenere la concessione per la ristrutturazione di
+un immobile in una determinata provincia italiana, in mesi, e si voglia stimare la sua distribuzione in base ad un
+campione di numerosità 10 la cui realizzazione è $(x_1, \dots, x_{10}) = (3, 4.1, 2.8, 5.5, 1.5, 2.2, 6, 1.2, 3.2, 0.9)$.
+
+Supponiamo poi sia ragionevole pensare che la distribuzione di $X$ sia una Gamma e di volerne stimare i parametri
+$\alpha$ e $\lambda$ con il metodo dei momenti.
+
+Una variabile aleatoria $X$ è distribuita secondo una Gamma di parametri $\alpha$ e $\lambda$, con $\alpha$ e $\lambda \in \mathbb{R}_+$:
+\begin{equation*}
+f_X(t) =
+\begin{cases}
+0 &\text{se $t < 0$}\\
+\lambda e^{-\lambda t} \frac{(\lambda t)^{\alpha - 1}}{\Gamma (\alpha)} &\text{se $t \geq 0$}
+\end{cases}
+\end{equation*}
+Media e varianza sono date da $E[X] = \frac{\alpha}{\lambda}$ e $V[X] = \frac{\alpha}{\lambda^2}$.
+
+Essendo 2 i parametri da stimare, occorre allora calcolare i primi 2 momenti campionari:
+$$x_{10}^{-1} = \frac{1}{10} \cdot \sum_{i=1}^{10} x_i = 3.04$$
+$$x_{10}^{-2} = \frac{1}{10} \cdot \sum_{i=1}^{10} x_i^2 = 11.95$$
+ed i corrispondenti momenti teorici della distribuzione:
+$$E[X] = \frac{\alpha}{\lambda}$$
+$$E[X^2] = V[X] + (E[X])^2 = \frac{\alpha}{\lambda^2} + \frac{\alpha^2}{\lambda^2} = \frac{\alpha (\alpha +1 )}{\lambda^2}$$
+
+Le stime dei parametri si ottengono risolvendo il sistema:
+\begin{equation*}
+\begin{cases}
+E[X] = \frac{\alpha}{\lambda} &= 3.04 \quad x_{10}^{-1} = 3.04\\
+E[X^2] = \frac{\alpha (\alpha + 1)}{\lambda^2} &= 11.95 \quad x_{10}^{-2} = 11.95
+\end{cases}
+\end{equation*}
+che fornisce la soluzione $\lambda = 1.123$ e $\alpha = 3.415$.
+
+Le stime ottenute con questo metodo che è storicamente il più antico non sono in genere particolarmente efficienti,
+ma grazie alla semplicità con cui possono essere ottenute sono utili soprattutto nel fornire delle prime approssimazioni.
+
+Un secondo metodo, decisamente più valido dal punto di vista matematico, è quello che porta il nome di
+/metodo della massima verosimiglianza/. Anche questo metodo è applicabile quando sia nota l'espressione funzionale
+della densità di probabilità della popolazione a meno di uno o più parametri incogniti che si vogliono stimare.
+
+Per semplicità, supponiamo questa volta che la popolazione considerata $X$ abbia una densità di probabilità $f_X(t)$
+dipendente da un singolo parametro $\theta$ incognito.
+
+Consideriamo la funzione di densità congiunta di un campione $(X_1, \dots, X_n)$ di numerosità $n$. Per via dell'indipendenza
+tra le variabili $X_i$ abbiamo $f_{X_1, \dots, X_n} (t_1, \dots, t_n) = f_X(t_1) \cdot \dots \cdot f_X(t_n)$.
+
+Ricordando che l'espressione di $f_X$ è nota a meno del parametro $\theta$, osserviamo che tale densità congiunta può essere
+riscritta come $f_{X_1, \dots, X_n} (t_1, \dots, t_n) = L(t_1, \dots, t_n, \hat{\theta})$.
+
+La funzione $L$ prende il nome di /funzione di verosimiglianza/ di dimensione $n$. Sia ora $(x_1, \dots, x_n)$ la realizzazione
+del campione $(X_1, \dots, X_n)$. Notiamo che al variare del valore $\hat{\theta}$ assegnato al parametro $\theta$, varia anche la
+quantità $L(x_1, \dots, x_n, \hat{\theta})$ che possiamo pensare come la probabilità che il campione assuma valore $(x_1, \dots, x_n)$
+quando il parametro assume valore $\hat{\theta}$.
+
+Ovviamente il valore $\hat{\theta}$ è tanto più indicato ad essere l'effettivo valore del parametro $\theta$ quanto più è alta
+tale probabilità, cioè quanto più esso è verosimile.
+
+È detta quindi /stima di massima verosimiglianza/ per il parametro $\theta$ quel valore $\hat{\theta}$ che massimizza la funzione
+di verosimiglianza $L(x_1, \dots, x_n, \hat{\theta})$.
+
+Si può dimostrare che le stime così ottenute sono sempre consistenti e nella maggior parte dei casi sono anche corrette
+e con la massima efficienza.
+
+Per esempio, si consideri lo stesso problema dell'esempio precedente supponendo però questa volta di ritenere ragionevole
+pensare che la variabile $X$ sia distribuita secondo un'esponenziale il cui parametro $\lambda$ è da stimare.
+
+Data quindi una realizzazione $(x_1, \dots, x_{10}) = (3, 4.1, 2.8, 5.5, 1.5, 2.2, 6, 1.2, 3.2, 0.9)$ del campione,
+la funzione di verosimiglianza risulta:
+$$L(x_1, \dots, x_n, \lambda) = \prod_{i=1}^{10} \lambda \cdot e^{-\lambda x_i} = \lambda^{10} \cdot e^{-\lambda \cdot \sum_{i=1}^{10} x_i} = \lambda^{10} \cdot e^{-30.4 \lambda}$$
+La stima di massima verosimiglianza del parametro si ricava andando a determinare il valore di $\lambda$ per cui risulta
+massima la funzione $L(x_1, \dots, x_n, \lambda)$. Calcolandone la derivata
+$$L'(x_1, \dots, x_n, \lambda) = 10 \cdot \lambda^9 e^{-30.4 \cdot \lambda} - 30.4 \cdot \lambda^{10} e^{-30.4 \cdot \lambda} = \lambda^9 e^{-30.4 \cdot \lambda} \cdot (10 - 30.4 \lambda)$$
+È facile ora osservare che il massimo si ottiene per quel valore di $\lambda$ per cui $(10 - 30.4 \lambda) = 0$.
+
+Pertanto per $\lambda = \frac{10}{30.4} = 0.329$.
+
+Si osservi che in realtà, in questo particolare caso, la stima appena ricavata corrisponde a quella che avremmo ottenuto
+stimando il valore atteso $\mu$ con la media campionaria $\bar{x}_{10} = 3.04$, e quindi ricordando che per una variabile
+esponenziale vale:
+$$\lambda = \frac{1}{E[X]} = \frac{1}{\lambda} \implies \lambda = \frac{1}{3.04} = 0.329$$
+Tale osservazione non può comunque essere generalizzata a tutte le stime ottenute con il metodo della massima
+verosimiglianza.
 * Laboratorio
 ** Libri
 Help:
