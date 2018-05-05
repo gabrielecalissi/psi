@@ -1,10 +1,11 @@
 # psi
 Riassunto Probabilità e Statistica per l'Informatica - Università di Milano Bicocca
 
-Il riassunto è stato realizzato con [https://www.gnu.org/software/emacs/](Emacs) 
-e l'ausilio [https://orgmode.org/](org mode).
+Il riassunto è stato realizzato con [Emacs](https://www.gnu.org/software/emacs/)
+e l'ausilio di [org-mode](https://orgmode.org/).
 
-Per poter compilare il codice presente è necessario installare [https://orgmode.org/worg/org-contrib/babel/intro.html](org-babel).
+Per poter compilare il codice presente è necessario installare
+[org-babel](https://orgmode.org/worg/org-contrib/babel/intro.html).
 
 # Contenuto
 La prima parte del riassunto contiene le stesse informazioni contenute nelle slide delle Lezioni frontali del Professor Stella,
