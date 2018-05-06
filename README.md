@@ -41,3 +41,7 @@ Questo studio ha trovato che 47 su 53 pubblicazioni di ricerca medica, focalizza
 Due link sull'uso di Emacs e org-mode per la ricerca riproducibile:
 - https://www.youtube.com/watch?v=1-dUkyn_fZA
 - https://www.youtube.com/watch?v=CGnt_PWoM5Y
+
+
+## Licenza
+https://creativecommons.org/licenses/by-nc/3.0/
