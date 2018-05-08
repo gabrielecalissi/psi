@@ -43,5 +43,10 @@ Due link sull'uso di Emacs e org-mode per la ricerca riproducibile:
 - https://www.youtube.com/watch?v=CGnt_PWoM5Y
 
 
+## Contatti
+E-mail: gabrielecalissi@gmail.com
+
+Telegram: https://telegram.me/gabrielecalissi
+
 ## Licenza
 https://creativecommons.org/licenses/by-nc/3.0/
