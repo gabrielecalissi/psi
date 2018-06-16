@@ -2437,7 +2437,7 @@ Denotiamo infine con $\bar{x}_n^k$ le realizzazioni (note) dei momenti campionar
 $\theta_1, \dots, \theta_m$ si ottengono risolvendo rispetto ad esse il sistema in $m$ equazioni ed $m$ incognite:
 \begin{equation*}
 \begin{cases}
-\mu_1 (\theta_1, &\dots, \theta_m) = \bar{x}_n^1^{}\\
+\mu_1 (\theta_1, &\dots, \theta_m) = \bar{x}_n^1\\
 &\vdots\\
 \mu_m (\theta_1, &\dots, \theta_m) = \bar{x}_n^{m}
 \end{cases}
@@ -2646,7 +2646,7 @@ $\sigma^2 = 144K$ e la probabilità $\beta(32)$ di compiere un errore di II spec
 \begin{align*}
 \beta(32) &= P(\text{accettare } H_0 \text{ quando } \mu = 32)\\
 &= P(\bar{X}_{10} \in [25, 35] \mid \bar{X}_{10} \approx N(32, 3.79))\\
-&=P\left(\frac{\bar{X}_{10}_{} - 32}{3.79} \in \left[\frac{25 - 32}{3.79}, \frac{35 - 32}{3.79}\right]\right)\\
+&=P\left(\frac{\bar{X}_{10} - 32}{3.79} \in \left[\frac{25 - 32}{3.79}, \frac{35 - 32}{3.79}\right]\right)\\
 &=P\left(\frac{\bar{X}_{10} - 32}{3.79} \in [-1.85, +0.79]\right)\\
 &= 0.75
 \end{align*}
@@ -2774,7 +2774,7 @@ e che la sua varianza sia o non sia sconosciuta:
 1. /Popolazione normalmente distribuita e varianza $\sigma^2$ nota/:
 
    Sia $\mu$ il valore reale del parametro. Ricordiamo che sotto le ipotesi di normalità di $X$ la media campionaria
-   $\bar{X}_n = \frac{X_1 + \dots + X_n}{n}$ ha distribuzione normale di media $\mu$ e deviazione standard $\frac{\sigma}\sqrt{n}$, ovvero
+   $\bar{X}_n = \frac{X_1 + \dots + X_n}{n}$ ha distribuzione normale di media $\mu$ e deviazione standard $\frac{\sigma}{\sqrt{n}}$, ovvero
    vale $\tilde{Z} = \frac{\bar{X}_n - \mu}{\frac{\sigma}{\sqrt{n}}} \sim N(0, 1)$. Notiamo che $\tilde{Z}$ non è una statistica, infatti il valore
    del parametro $\mu$ non è noto. Sia ora $Z_n = \frac{\bar{X}_n - \mu_0}{\frac{\sigma}{\sqrt{n}}}$ che è una statistica essendo $\mu_0$
    una costante fissata. Ovviamente vale $Z_n \sim N(0, 1)$ se e solo se vale $H_0$. Il test si basa allora sull'osservazione
@@ -2782,7 +2782,7 @@ e che la sua varianza sia o non sia sconosciuta:
    - Rifiuteremo $H_0$ se $Z_n$ assumerà valori "poco probabili" per una $N(0, 1)$.
    La definizione della regione critica per $Z_n$ dipende dal livello di significatività adottato e dalla forma dell'ipotesi
    alternativa. Possiamo infatti considerare le seguenti 3 ipotesi alternative:
-   1. Test bidirezionale: $H_1' : \mu2 \neq \mu_0^2$;
+   1. Test bidirezionale: $H_1' : \mu^2 \neq \mu_0^2$;
    2. Test unidirezionale con coda a sinistra: $H_1'' : \mu^2 < \mu_0^2$;
    3. Test unidirezionale con coda a destra: $H_1''' : \mu^2 > \mu_0^2$.
    Più in dettaglio:
