@@ -2462,11 +2462,7 @@ Media e varianza sono date da $E[X] = \frac{\alpha}{\lambda}$ e $V[X] = \frac{\a
 
 Essendo 2 i parametri da stimare, occorre allora calcolare i primi 2 momenti campionari:
 $$\bar{x}_{10}^{1} = \frac{1}{10} \cdot \sum_{i=1}^{10} x_i = 3.04$$
-<<<<<<< HEAD
 $$\bar{x}_{10}^{2} = \frac{1}{10} \cdot \sum_{i=1}^{10} x_i^2 = 11.95$$
-=======
-$$\bar{x}_{10}^{-2} = \frac{1}{10} \cdot \sum_{i=1}^{10} x_i^2 = 11.95$$
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 ed i corrispondenti momenti teorici della distribuzione:
 $$E[X] = \frac{\alpha}{\lambda}$$
 $$E[X^2] = V[X] + (E[X])^2 = \frac{\alpha}{\lambda^2} + \frac{\alpha^2}{\lambda^2} = \frac{\alpha (\alpha +1 )}{\lambda^2}$$
@@ -2562,13 +2558,8 @@ Più specificamente ogni test di ipotesi è caratterizzato da:
   allora la statistica $T$ assume valori nella regione critica con probabilità $\alpha$.
 
 Per esempio, si supponga di sapere che il reddito medio annuo per famiglia di un determinato quartiere di una città italiana sia distribuito
-<<<<<<< HEAD
 secondo una normale il cui parametro $\sigma^2$ è noto ed è di 144K euro mentre il parametro $\mu$ è incognito. In base alla sua esperienza
 personale, un nostro collaboratore sostiene che la media è uguale a 30K euro. Si supponga di voler controllare tale affermazione con
-=======
-secondo una normale il cui parametro $\sigma^2$ è noto ed è di 144K di euro mentre il parametro $\mu$ è incognito. In base alla sua esperienza
-personale, un nostro collaboratore sostiene che la media è uguale a 30K di euro. Si supponga di voler controllare tale affermazione con
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 un'indagine campionaria e per tale ragione intervistare 10 famiglie del quartiere scelte a caso. Si supponga infine di accettare
 l'affermazione del collaboratore se la media aritmetica dei redditi annui delle famiglie è compresa tra 25K e 35K euro e di rifiutarla in
 caso contrario, decidendo in tal caso di effettuare un'indagine campionaria più approfondita.
@@ -2673,23 +2664,14 @@ numerico.
 
 In particolare, è uso comune considerare a tal fine una funzione detta /curva di potenza del test/ che viene di seguito introdotta.
 Sia a tal fine $\theta$ il parametro a cui si riferisce il test e sia $\theta^*$ il valore specificato dall'ipotesi nulla
-<<<<<<< HEAD
 $H_0 : \theta = \theta^*$, denotiamo poi $\beta(\hat{\theta}) = P(\text{accettare } H_0 \mid H_0 \text{ è falsa e } \theta = \hat{\theta})$, allora viene detta
 /curva di potenza del test/ la funzione $\pi(\hat{\theta}) = 1 - \beta(\hat{\theta})$. Un test risulta tanto migliore quanto più la funzione
-=======
-$H_0 : \theta = \theta^*$, denotiamo poi $\beta(\hat{\theta}) = P(\text{accettare } H_0 \mid H_0 \text{ + falsa e } \theta = \hat{\theta})$, allora viene detta
-/curva di potenza del test/ la funzione $\pi(\hat{\theta}) = \ - \beta(\hat{\theta})$. Un test risulta tanto migliore quanto più la funzione
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 $\pi(\hat{\theta})$ si avvicina, al variare di $\hat{\theta}$ al valore 1.
 
 Per esempio, supponiamo di voler effettuare un test di ipotesi relativo ad una popolazione $X$ che sappiamo essere distribuita
 secondo un'esponenziale di parametro $\lambda$, e di voler controllare con significatività $\alpha = 0.1$ l'ipotesi nulla $H_0 : \lambda = 2$
 contro l'ipotesi alternativa $H_1 : \lambda \neq 2$. Per rendere più comprensibile l'esempio supponiamo di effettuare il test estraendo
-<<<<<<< HEAD
 un campione di numerosità 1, ovvero $X_1$, e di rifiutare $H_0$ se $X_1$ assume valori "troppo piccoli" o "troppo grandi" per
-=======
-un campione di numerosità 1 ovvero ($X_1$) e di rifiutare $H_0$ se $X_1$ assume valori "troppo piccoli" o "troppo grandi" per
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 poter pensare che sia distribuita secondo un'esponenziale di parametro $\lambda = 2$. Prendiamo allora come regione di accettazione
 del test l'intervallo $[t_1, t_2] \subseteq \mathbb{R}^+$, dove $t_1$ e $t_2$ sono tali che
 $$P(X_1 \leq t_1 \mid X_1 \approx \text{Exp}(2)) = P(X_1 \geq t_2 \mid X_1 \approx \text{Exp}(2)) = \frac{\alpha}{2} = 0.05$$
@@ -2832,11 +2814,7 @@ e che la sua varianza sia o non sia sconosciuta:
 
       #+DOWNLOADED: /tmp/screenshot.png @ 2018-06-07 18:44:25
       [[file:Lezioni/screenshot_2018-06-07_18-44-25.png]]
-<<<<<<< HEAD
    3. /Test unidirezionale con coda a destra/: $H_1''' : \mu > \mu_0$.
-=======
-   3. /Test unidirezionale con coda a destra/: $H_1''' : \mu < \mu_0$.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 
       Rifiuteremo l'ipotesi $H_0$ in favore di $H_1'''$ quando $Z_n$ assumerà valori fortemente positivi, in tal caso $\mu_0$ è una
       sottostima della reale media, per cui $Z_n$ tende ad assumere valori "positivi" essendo sicuramente
@@ -2857,13 +2835,8 @@ e che la sua varianza sia o non sia sconosciuta:
    forma dell'ipotesi alternativa. Infatti, possiamo considerare le 3 ipotesi alternative:
    - Test bidirezionale: $H_1' : \mu \neq \mu_0$;
    - Test unidirezionale con coda a sinistra: $H_1'' : \mu < \mu_0$;
-<<<<<<< HEAD
    - Test unidirezionale con coda a destra: $H_1''' : \mu > \mu_0$.
    Definite precedentemente rifiutando $H_0$ in favore di $H_1'$ quando $T_n$ assume valori troppo distanti dall'origine, in favore
-=======
-   - Test unidirezionale con coda a destra: $H_1''' : \mu > \mu_0$
-   definite precedentemente rifiutando $H_0$ in favore di $H_1'$ quando $T_n$ assume valori troppo distanti dall'origine, in favore
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
    di $H_1''$ quando $T_n$ assume valori fortemente negativi e in favore di $H_1'''$ quando $T_n$ assume valori fortemente positivi.
 
    Specificamente, fissato il livello di significatività \alpha del test, la regione critica per la statistica $T_n$ risulta essere:
@@ -2876,11 +2849,7 @@ e che la sua varianza sia o non sia sconosciuta:
 
    Anche in questo caso notiamo che in base all'esplicita relazione che lega la statistica $T_n$ alla media campionaria $\bar{X}_n$
    avremmo potuto usare $\bar{X}_n$ come statistica test, a cui corrispondono le regioni critiche.
-<<<<<<< HEAD
    1. $C' = \left(-\infty, \mu_0 -t_{1-\frac{\alpha}{2}}\frac{\hat{s}_n}{\sqrt{n}}\right) \cup \left(\mu_0 +t_{1-\frac{\alpha}{2}}\frac{\hat{s}_n}{\sqrt{n}}, +\infty\right)$
-=======
-   1. $C' = \left(-\infty, \mu_0 -t_{1-\frac{\alpha}[2]}\frac{\hat{s}_n}{\sqrt{n}}\right) \cup \left(\mu_0 +t_{1-\frac{\alpha}{2}}\frac{\hat{s}_n}{\sqrt{n}}, +\infty\right)$
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
       se $H_1'$ è l'ipotesi alternativa;
    2. $C'' = \left(-\infty, \mu_0 -t_{1-\alpha} \frac{\hat{s}_n}{\sqrt{n}}\right)$ se $H_1''$ è l'ipotesi alternativa;
    3. $C''' = \left(\mu_0 +t_{1-\alpha} \frac{\hat{s}_n}{\sqrt{n}}, +\infty\right)$ se $H_1'''$ è l'ipotesi alternativa.
@@ -2936,11 +2905,7 @@ Notiamo che in base all'esplicità relazione che lega la statistica $Q_n$ alla v
 $S_n^2$ come statistica test a cui corrispondono le regioni critiche.
 1. $C' = \left(0, q_{\frac{\alpha}{2}}\frac{\sigma_0^2}{n}\right) \cup \left(q_{1-\frac{\alpha}{2}}\frac{\sigma_0^2}{n}, +\infty\right)$ se $H_1'$ è l'ipotesi alternativa;
 2. $C'' = \left(0, q_{\alpha}\frac{\sigma_0^2}{n}\right)$ se $H_1''$ è l'ipotesi alternativa;
-<<<<<<< HEAD
 3. $C''' = \left(q_{1-\alpha}\frac{\sigma_0^2}{n}, +\infty\right)$ se $H_1'''$ è l'ipotesi alternativa.
-=======
-3. $C''' = \left(-q_{1-\alpha}\frac{\sigma_0^2}{n}, +\infty\right)$ se $H_1'''$ è l'ipotesi alternativa.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 Si osservi infine che per effettuare un test sulla varianza di una popolazione normalmente distribuita non occorre
 conoscere il valor medio della popolazione stessa. Ciò si deduce dal fatto che il parametro $\mu$ e le sue stime non compaiono
 nella definizione delle regioni critiche del test.
@@ -2983,11 +2948,7 @@ risultano essere:
 1. $C' = (-\infty, -t_{1-\frac{\alpha}{2}}) \cup (+t_{1-\frac{\alpha}{2}}, +\infty)$ se $H_1'$ è l'ipotesi alternativa;
 2. $C'' = (-\infty, -t_{1-\alpha})$ se $H_1''$ è l'ipotesi alternativa;
 3. $C''' = (+t_{1-\alpha}, +\infty)$ se $H_1'''$ è l'ipotesi alternativa.
-<<<<<<< HEAD
 Dove $t_{1-\frac{\alpha}{2}}$ e $t_{1-\alpha}$ sono rispettivamente i quantili di ordine $1-\frac{\alpha}{2}$ e $1-\alpha$ della t di Student con $(n+m-2)$ gradi di
-=======
-dove $t_{1-\frac{\alpha}{2}}$ e $t_{1-\alpha}$ sono rispettivamente i quantili di ordine $1-\frac{\alpha}{2}$ e $1-\alpha$ della t di Student con $(n+m-2)$ gradi di
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 libertà, ovvero i valori per cui risulta $P(T \leq t_{1-\frac{\alpha}{2}}) = 1 - \frac{\alpha}{2}$ e $P(T \leq t_{1-\alpha}) = 1 - \alpha$ con $T_n \sim t_{n+m-2}$ e
 sono ricavabili dalle tavole della t di Student.
 
@@ -3035,13 +2996,8 @@ $\alpha$ del test, la regione critica per la statistica $V_{n, m}$ risulta esser
 1. $C' = [0, f_{\frac{\alpha}{2}}) \cup (f_{1-\frac{\alpha}{2}}, +\infty)$ se $H_1'$ è l'ipotesi alternativa;
 2. $C'' = [0, f_{\alpha})$ se $H_1''$ è l'ipotesi alternativa;
 3. $C''' = (f_{1-\alpha}, +\infty)$ se $H_1'''$ è l'ipotesi alternativa.
-<<<<<<< HEAD
 Dove con il generico $f_{\gamma}$ si intende il quantile di ordine $\gamma$ della $F(n-1, m-1)$, ovvero quel
 valore per cui risulta $P(V \leq f_{\gamma}) = \gamma$ con $V \sim F(n-1, m-1)$ ed è ricavabile dalle tavole della F.
-=======
-   Dove con il generico $f_{\gamma}$ si intende il quantile di ordine $\gamma$ della $F(n-1, m-1)$, ovvero quel
-   valore per cui risulta $P(V \leq f_{\gamma}) = \gamma$ con $V \sim F(n-1, m-1)$ ed è ricavabile dalle tavole della F.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 
 Per esempio, consideriamo due diversi quartieri della stessa città e supponiamo di essere interessati a confrontare il valor medio
 dei redditi annui familiari in migliaia di euro. Si supponga che sia lecito assumere che tali redditi siano normalmente distribuiti.
@@ -3064,21 +3020,13 @@ $H_0' : \sigma_X^2 = \sigma_Y^2$.
 Utilizziamo per questo il test appena descritto e basato sulla statistica $V_{n, m} = \frac{\hat{S}_{X, n}^2}{\hat{S}_{Y, m}^2}$
 la cui realizzazione nel nostro caso è $V_{10, 15} = \frac{\hat{S}_{X, 10}^2}{\hat{S}_{Y, 15}^2} = 1.54$.
 
-<<<<<<< HEAD
 Vediamo se questo nuovo dato ci porta a non rifiutare $H_0'$ contro $H_1' : \sigma_X^2 \neq \sigma_Y^2$ con un livello di significatività $\alpha = 0.1$.
-=======
-Vediamo se questo nuovo dato ci porta a non rifiutare $H_0'$ contro $H_1 : \sigma_X^2 \neq \sigma_Y^2$ con un livello di significatività $\alpha = 0.1$.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 In questo caso, dalle tavole della F si ricava che per 9 e 14 gradi di libertà i quantili sono $f_{\frac{\alpha}{2}} = f_{0.05} = 0.38$ e
 $f_{1 - \frac{\alpha}{2}} = f_{0.95} = 2.65$.
 
 Pertanto la regione di accettazione di $H_0'$ è $(0.38, 2.65)$.
 
-<<<<<<< HEAD
 Il valore della statistica $V_{n, m} = \frac{\hat{S}_{X, n}^2}{\hat{S}_{Y, m}}$ è $v_{10, 15} = 1.54$.
-=======
-Il valore della statistica $V_{n, m} = \frac{\hat{S}_{X, n}^2}{\hat{S}_{Y, m}}$ è $\nu_{10, 15} = 1.54$.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 
 Possiamo allora affermare, con un livello di significatività pari a 0.1, che le ipotesi per la validità del test per la differenza
 delle medie non possono essere rifiutate e di conseguenza che non si può rifiutare l'ipotesi $H_0$ che siano uguali anche le due medie.
@@ -3126,11 +3074,7 @@ supponga di aver effettuato delle prove su 15 travi ottenendo i risultati riport
 In base ai consueti calcoli si verifica che una stima del coefficiente di correlazione lineare è
 $$R_n = \frac{\sum_{i=1}^{15} (X_i - \bar{X}) \cdot (Y_i - \bar{Y})}{15 \cdot S_{X, 15} \cdot S_{Y, 15}} = 0.9195$$
 che risulta uguale al coefficiente di correlazione lineare trovato nell'esempio del primo capitolo, nel quale si supponeva che l'intera popolazione
-<<<<<<< HEAD
 fosse costituita solo dalle 15 travi esaminate. La statistica $\hat{T}_n$ assume invece valore $\hat{t}_{15} = 0.9195 \cdot \sqrt{\frac{15 - 2}{1 - 0.9195^2}} = 8.43$.
-=======
-fosse costituita solo dalle 15 travi esaminate. La statistica $\hat{T}_n$ assume invece valore $\hat{t}_{15} = 0.9195 \cdot \sqrt{15 - 2}{1 - 0.9195^2} = 8.43$.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 
 Vediamo ora se il valore ottenuto consente di non rifiutare l'ipotesi $H_0$ che non esiste correlazione tra i due caratteri. Per questo è
 sufficiente notare che la regione critica del test, relativamente alla statistica $\hat{T}_{15}$ è 
@@ -3296,11 +3240,7 @@ Pertanto è necessario o diminuire il numero delle classi o aumentare il campion
 campione, arrivando ad $n=20$ e supponiamo che con l'aggiunta dei nuovi 10 casi, il campione assuma valori
 $(3.0, 4.1, 2.8, 5.5, 1.5, 2.2, 6.0, 1.2, 3.2, 0.9)$ e $(2.9, 1.7, 4.8, 4.3, 2.0, 7.1, 5.4, 0.9, 1.3, 3.4)$.
 
-<<<<<<< HEAD
 Allora avremo $n_1 = 6 \quad p_1 = F(2) - F(0) = 0.50$, $n_2 = 7 \quad p_2 = F(4) - F(2) = 0.25$ ed $n_3 = 7 \quad p_3 = F(+\infty) - F(4) = 0.25$,
-=======
-Allora avremo $n_1 = 6 \quad p_1 = F(2) - F(0) = 0.50$, $n_2 = 7 \quad p_2 = F(4) - F(2) = 0.25$ e $n_3 = p_3 = F(+\infty) - F(4) = 0.25$,
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 utilizzando $F(t) = 1 - e^{-0.35 t}$.
 
 Di conseguenza, la statistica $W$ assume valore
@@ -3310,11 +3250,7 @@ W &= \frac{(n_1 - 20p_1)^2}{20p_1} + \frac{(n_2 - 20p_2)^2}{20p_2} + \frac{(n_3 
 &= 3.2
 \end{align*}
 Poiché il valore del parametro $\lambda$ della distribuzione esponenziale che stiamo controllando quale possibile distribuzione di $X$
-<<<<<<< HEAD
 non è stato ricavato con stime campionarie, ma arbitrariamente, nel nostro caso la statistica $W$ è distribuita coma una Chi-Quadro
-=======
-non è stato ricavato con stime campionarie, ma arbitrariamente nel nostro caso la statistica $W$ è distribuita coma una Chi-Quadro
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 con $K - 1 = 2$ gradi di libertà.
 
 La regione critica si ricava cercando nelle tavole della Chi-Quadro, nella riga relativa ai 2 gradi di libertà, che per $\alpha = 0.05$
@@ -3328,7 +3264,6 @@ e quindi ricavarlo stimando $E[X]$ con la media campionaria $\bar{X}_{20} = 3.07
 Suddividiamo ora il supporto di $F$ negli stessi 3 intervalli in cui era suddiviso in precedenza, ovvero gli intervalli
 $I_1 = [0, 2)$, $I_2 = [2, 4)$ e $I_3 = [4, +\infty)$.
 
-<<<<<<< HEAD
 In questo caso avremo $n_1 = 6 \quad p_1 = F(2) - F(0) = 0.48$, $n_2 = 7 \quad p_2 = F(4) - F(2) = 0.25$ ed $n_3 = 7 \quad p_3 = F(+\infty) - F(4) = 0.27$.
 
 Di conseguenza la statistica $W$ assume valore
@@ -3337,13 +3272,6 @@ W &= \sum_{i=1}^3 \frac{(n_i - 20 \cdot p_i)^2}{20 \cdot p_i}\\
 &= \frac{(6 - 20 \cdot 0.48)^2}{20 \cdot 0.48} + \frac{(4 - 20 \cdot 0.25)^2}{20 \cdot 0.25} + \frac{(7 - 20 \cdot 0.27)^2}{20 \cdot 0.27}\\
 &= 2.62
 \end{align*}
-=======
-In questo caso avremo $n_1 = 6 \quad p_1 = F(2) - F(0) = 0.48$, $n_2 = 7 \quad p_2 = F(4) - F(2) = 0.25$ e $n_3 = p_3 = F(+\infty) - F(4) = 0.27$.
-
-Di conseguenza la statistica $W$ assume valore
-$$W = \sum_{i=1}^3 \frac{(n_i - 20 \cdot p_i)^2}{20 \cdot p_i} = \frac{(6 - 20 \cdot 0.48)^2}{20 \cdot 0.48} + \frac{(4 - 20 \cdot 0.25)^2}{20 \cdot 0.25} +
-\frac{(7 - 20 \cdot 0.27)^2}{20 \cdot 0.27} = 2.62$$
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 Poiché il valore del parametro $\lambda$ è stato ricavato da stime campionarie, allora questa volta la statistica $W$ è distribuita
 come una Chi-Quadro con $K-r-1 = 3-1-1 = 1$ gradi di libertà.
 
@@ -3385,12 +3313,8 @@ per ogni $k \in \mathbb{N}$.
 
 Pertanto avremo
 \begin{gather*}
-<<<<<<< HEAD
 p_1 = P(X=0 \text{ oppure } X=1) = P(X=0) + P(X=1) =\\
 =\frac{(3.17)^0}{0!}e^{-3.17} + \frac{(3.17)^1}{1!}e^{-3.17} = 0.175\\
-=======
-p_1 = P(X=0 \text{ oppure } X=1) = P(X=0) + P(X=1) = \frac{(3.17)^0}{0!}e^{-3.17} + \frac{(3.17)^1}{1!}e^{-3.17} = 0.175\\
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 p_2 = P(X=2) = \frac{(3.17)^2}{2!}e^{-3.17} = 0.211\\
 p_3 = P(X=3) = \frac{(3.17)^3}{3!}e^{-3.17} = 0.223\\
 p_4 = 1 - P(X=0 \text{ oppure } X=1 \text{ oppure } X=3) = 0.391
@@ -3430,11 +3354,7 @@ normalmente distribuita con $\mu = 0$ e $\sigma^2 = \frac{n - S^=}{2}$.
 
 Si può quindi costruire una regione critica per $S_n$ ragionando nel solito modo, rifiutando $H_0$ quando $S_n$ si discosta troppo
 dallo 0 per essere una normale $N\left(0, \sqrt{\frac{n-S^=}{2}}\right)$.
-<<<<<<< HEAD
 Specificamente, per un fissato livello di significatività $\alpha$, la regione critica per $S_n$ risulta essere
-=======
-Specificamente per un fissato livello di significatività $\alpha$, la regione critica per $S_n$ risulta essere
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 $C = \left(-\infty, -z_{1 - \frac{\alpha}{2}}\right) \cup \left(+z_{1 - \frac{\alpha}{2}}, +\infty\right)$, dove $z_{1-\frac{\alpha}{2}}$ è il quantile di ordine $1 - \frac{\alpha}{2}$
 della normale standardizzata.
 
@@ -3463,11 +3383,7 @@ Per le 10 coppie considerate i segni delle differenze $x_i - y_i$ che sono ripor
 
 Necessario sottolineare che i campioni devono essere appaiati, in altre parole la coppia $(X_i, Y_i)$ deve essere relativa alla
 stessa unità, entità o individuo. Nel nostro caso potremmo ipotizzare che l'indice $i$ sia relativo allo stesso nucleo
-<<<<<<< HEAD
 famigliare che viveva in precedenza nel quartiere della città, associato alla popolazione $X$ e poi andato a vivere in un
-=======
-famigliare che viveva in precedenza nel quartiere della città, associato alla popolazione $X$ e poi è andato a vivere in un
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 quartiere della città associato alla popolazione $Y$.
 
 La quantità $X_i - Y_i$ misura la differenza di reddito tra la famiglia $i$, quando abitava nel quartiere $X$, e adesso che si
@@ -3552,11 +3468,7 @@ ma in compenso può essere utilizzato solo quando ci siano validi motivi per pen
 da confrontare sia continua.
 
 Siano quindi $(X_1, \dots, X_n)$ e $(Y_1, \dots, Y_m)$ due campioni di numerosità $n$ ed $m$ estratti da $X$ ed $Y$ rispettivamente. Siano
-<<<<<<< HEAD
 poi $F_{X, n}$ ed $F_{Y, m}$ le funzioni di ripartizione empiriche di $X$ ed $Y$ ottenute con i campioni e sia
-=======
-poi $F_{X, m}$ ed $F_{Y, m}$ le funzioni di ripartizione empiriche di $X$ ed $Y$ ottenute con i campioni e sia
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 $$D_{n, m} = \text{sup}_{t \in \mathbb{R}}|F_{X, n}(t) - F_{Y, m}(t)|$$
 la statistica che specifica l'estremo superiore delle distanze, in valore assoluto, tra le due funzioni di ripartizione
 empiriche. Anche in questo caso si può dimostrare che quando $H_0$ è vera e quando $F_X$ è una funziona continua, allora $D_{n, m}$
@@ -3577,36 +3489,21 @@ ricorda molto, nella sua formulazione, il test del Chi-Quadro per la bontà dell
 
 Si consideri una popolazione bidimensionale $(X, Y)$ e si supponga di poter estrarre da essa un campione casuale
 $((X_1, Y_1), \dots, (X_n, Y_n))$. Si vuole controllare, con livello di significatività $\alpha$, l'ipotesi :
-<<<<<<< HEAD
 - $H_0 : \text{ i caratteri \(X\) ed \(Y\) sono indipendenti}$,
 considerando quale ipotesi alternativa quella ovvia, ovvero,
 - $H_1 : \text{ i caratteri \(X\) ed \(Y\) non sono indipendenti}$.
-=======
-- $H_0$ : i caratteri $X$ ed $Y$ sono indipendenti,
-considerando quale ipotesi alternativa quella ovvia, ovvero,
-- $H_1$ : i caratteri $X$ ed $Y$ non sono indipendenti.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 
 Per effettuare il test del Chi-Quadro, occorre inizialmente fare una partizione dei due supporti dei caratteri $X$ ed $Y$ in
 un numero finito di intervalli ciascuno. Denotiamo con $I_k^X$, per $k = 1, \dots, M_X$ ed $I_j^Y$, per $j = 1, \dots, M_Y$, gli
 intervalli che formano una partizione del supporto di $X$ ed $Y$.
 
 Per ogni coppia $(k, j)$ consideriamo le seguenti quantità:
-<<<<<<< HEAD
 - $n_k^X = \text{ numero di elementi \(X_i\) del campione che cadono in } I_k^X$;
 - $n_j^Y = \text{ numero di elementi \(Y_i\) del campione che cadono in }I_j^Y$;
 - $n_{k, j} = \text{ numero di elementi \((X_i, Y_i)\) del campione che cadono in } I_k^X \times I_j^Y$;
 - $f_k^X = \frac{n_k^X}{n} = \text{ frequenza relativa di }I_k^X$;
 - $f_j^Y = \frac{n_j^Y}{n} = \text{ frequenza relativa di } I_j^Y$;
 - $f_{k, j} = \frac{n_{k, j}}{n} = \text{ frequenza relativa di } I_k^X \times I_j^Y$.
-=======
-- $n_k^X =$ numero di elementi $X_i$ del campione che cadono in $I_k^X$;
-- $n_j^Y =$ numero di elementi $Y_i$ del campione che cadono in $I_j^Y$;
-- $n_{k, j} =$ numero di elementi $(X_i, Y_i)$ del campione che cadono in $I_k^X \times I_j^Y$;
-- $f_k^X = \frac{n_k^X}{n} =$ frequenza relativa di $I_k^X$;
-- $f_j^Y = \frac{n_j^Y}{n} =$ frequenza relativa di $I_j^Y$;
-- $f_{k, j} = \frac{n_{k, j}}{n} =$ frequenza relativa di $I_k^X \times I_j^Y$.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
   
 Le quantità $f_{k, j}$ sono dette /frequenze relative osservate/ delle regioni $I_k^X \times I_j^Y$.
 
@@ -3623,7 +3520,6 @@ allora $W$ è approssimativamente distribuita come una Chi-Quadro con $(M_X - 1)
 
 La regola di decisione del test segue in base alle considerazioni fatte sopra, saremo portati a rifiutare l'ipotesi nulla
 quando la $W$ assume valori troppo lontani dallo 0 per essere una Chi-Quadro con opportuni gradi di libertà. Specificamente
-<<<<<<< HEAD
 per ogni livello di significatività $\alpha$ la regione critica per $W$ risulta essere $C = (\chi_{1 - \alpha}^2, +\infty)$, dove $\chi_{1-\alpha}^2$ rappresenta
 il quantile di ordine $(1 - \alpha)$ della Chi-Quadro con $(M_X - 1)(M_Y - 1)$ gradi di libertà.
 
@@ -3632,16 +3528,6 @@ supponga di voler stabilire se esiste una dipendenza tra i due caratteri:
 - $X = \text{ reddito medio annuo della famiglia (in migliaia)}$;
 - $Y = \text{ età media del nucleo famigliare}$.
 A tale scopo si effettua un'indagine su un totale di 200 nuclei familiari scelti in modo casuale tra quelli del quartiere
-=======
-per ogni livello di significatività $\alpha$ la regione critica per $W$ risulta essere $C = (\chi_{1 - \alpha}, +\infty)$, dove $\chi_{1-\alpha}^2$ rappresenta
-il quantile di ordine $(1 - \alpha)$ della Chi-Quadro con $(M_X - 1)(M_Y - 1)$ gradi di libertà.
-
-Per esempio, considerata la popolazione costituita dai nuclei famigliari residenti in un quartiere di una data città, si
-supponga di voler stabilire se esiste una dipendenza tra i due caratteri:
-- $X =$ reddito medio annuo della famiglia (in migliaia)
-- $Y =$ età media del nucleo famigliare.
-A tale scopo si effettua un'indagine su un totale di 200 nuclei famigliari scelti in modo casuale tra quelli del quartiere
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 andando ad osservare, per ogni nucleo, i valori di questi due caratteri.
 
 Come risultato dell'indagine si ottiene la tabella sotto riportata:
@@ -3651,21 +3537,12 @@ Come risultato dell'indagine si ottiene la tabella sotto riportata:
 
 Viene spontaneo, in questo caso, considerare le cinque classi in cui è stato suddiviso il supporto del carattere $X$ e le quattro
 classi in cui è stato suddiviso il supporto del carattere $Y$, come agli intervalli su cui costruire il test. Avremo
-<<<<<<< HEAD
 $M_X = 5$ ed $M_Y = 4$. Inoltre avremo $I_1^X = [0, 20] \quad I_2^X = (20, 30] \quad I_3^X = (30, 40] \quad I_4^X = (40, 50] \quad I_5^X = (50, \infty]$
 ed $I_1^Y = [0, 20] \quad I_2^Y = (20, 30] \quad I_3^Y = (30, 50] \quad I_4^Y = (50, \infty]$.
 
 Le frequenze assolute $n_{k, j}$ sono quindi quelle che compaiono nella tabella introdotta in precedenza. Notiamo che in tale tabella
 sono riportate anche le frequenze assolute marginali dei due caratteri. Poiché le frequenze assolute
 osservate assumono sempre valore non inferiore
-=======
-$M_X = 5$ e $M_Y = 4$. Inoltre avremo $I_1^X = [0, 20] \quad I_2^X = (20, 30] \quad I_3^X = (30, 40] \quad I_4^X = (40, 50] \quad I_5^X = (50, \infty]$
-e $I_1^Y = [0, 20] \quad I_2^/ = (20, 30] \quad I_3^Y = (30, 50] \quad I_4^Y = (50, \infty]$.
-
-Le frequenze assolute $n_{k, j}$ sono quindi quelle che compaiono nella tabella introdotta in precedenza. Notiamo che in tale tabella
-sono riportate anche le frequenze assolute marginali dei due caratteri. Poiché le frequenze assolute osservate sono riportare
-anche le frequenze assolute marginali dei due caratteri. Poiché le frequenze assolute osservate assumono sempre valore non inferiore
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 a 5, non abbiamo problemi ad applicare il metodo del Chi-Quadro per effettuare il test.
 
 Calcoliamo quindi le frequenze relativa, ottenendo quanto riportato nella tabella seguente:
@@ -3688,19 +3565,11 @@ essere utilizzabile quando si considerano caratteri con distribuzione non contin
 
 Addirittura esso può essere utilizzato considerando caratteri con modalità non numeriche.
 
-<<<<<<< HEAD
 Ora riconsideriamo come popolazione quella costituita dai nuclei familiari residenti nel solito quartiere della solita città.
 Si supponga di voler stabilire se esiste una dipendenza tra i due caratteri:
 - $X = \text{ reddito medio annuo della famiglia (in migliaia)}$;
 - $Y = \text{ titolo di studio del capofamiglia}$.
 A tale scopo si effettua una nuova indagine su un totale di 100 nuclei familiari scelti in modo casuale tra quelli del
-=======
-Ora riconsideriamo come popolazione quella costituita dai nuclei famigliari residenti nel solito quartiere della solita città.
-Si supponga di voler stabilire se esiste una dipendenza tra i due caratteri:
-- $X =$ reddito medio annuo della famiglia (in migliaia);
-- $Y =$ titolo di studio del capofamiglia.
-A tale scopo si effettua una nuova indagine su un totale di 100 nuclei famigliari scelti in modo casuale tra quelli del
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 quartiere andando ad osservare per ogni nucleo i valori di questi due caratteri.
 
 Come risultato dell'indagine si ottiene la tabella sotto riportata:
@@ -3712,22 +3581,14 @@ Viene spontaneo in questo caso considerare le 5 classi in cui è stato suddiviso
 è stato suddiviso il supporto del carattere $Y$, come agli intervalli su cui costruire il test. Avremo $M_X = 5$ e $M_Y = 4$.
 
 In questo caso però vi sono diverse frequenze assolute osservate che hanno valore minore di 5. Occorre pertanto raggruppare
-<<<<<<< HEAD
 ulteriormente le osservazioni in modo da avere tutte frequenze osservare maggiori o uguali a 5.
-=======
-ulteriormente le osservazioni in modo da avere tutte frequenze osservare maggiori 0 uguali a 5.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 
 Nella tabella seguente è proposto un nuovo raggruppamento che soddisfa la condizione richiesta:
 
 #+DOWNLOADED: /tmp/screenshot.png @ 2018-06-08 17:58:00
 [[file:Lezioni/screenshot_2018-06-08_17-58-00.png]]
 
-<<<<<<< HEAD
 Utilizzando questo raggruppamento per effettuare il test, avremo allora $M_X = 3$ ed $M_Y = 4$.
-=======
-Utilizzando questo raggruppamento per effettuare il test, avremo allora $M_X = 3$ e $M_Y = 4$.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 
 Inoltre, avremo $I_1^X = [0, 30] \quad I_2^X = (30, 50] \quad I_3^X = (50, \infty)$ e
 $I_1^Y = \text{media inferiore} \quad I_2^Y = \text{media superiore} \quad I_3^Y = \text{maturità} \quad I_4^Y = \text{laurea}$.
@@ -3746,11 +3607,7 @@ Si ottiene allora il seguente valore: $W = 100 \cdot \sum_{k=1}^3 \sum_{j=1}^4 \
 
 Supponiamo di aver fissato un livello di significatività $\alpha = 0.05$ per il test, allora per determinare l'estremo $\chi_{1-\alpha}^2$ della
 regione critica, occorre cercare il quantile di ordine 0.95 relativo alla Chi-Quadro con $(3-1)(4-1) = 6$ gradi di libertà.
-<<<<<<< HEAD
 Essendo in questo caso $\chi_{0.95}^2 = 12.6$, la regione critica per $W$ risulta essere $C = (12.6, +\infty)$ ($w = 3.15$) che non consente
-=======
-Essendo in questo caso $\chi_{0.95} = 12.6$, la regione critica per $W$ risulta essere $C = (12.6, +\infty)$ ($w = 3.15$) che non consente
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 di rifiutare l'ipotesi nulla che sussista indipendenza tra i redditi medi annui familiari ed i titoli di studio.
 *** Test di incorrelazione
 Il test di incorrelazione che presentiamo ora non è basato sul coefficiente di correlazione lineare di Pearson, ma su una
@@ -3772,26 +3629,16 @@ Il coefficiente $R_S$ soddisfa proprietà simili a quelle di cui gode il coeffic
 consente di definire un nuovo tipo di incorrelazione (che chiameremo incorrelazione nel senso di Spearman) che si ha quando
 $R_S$ assume valore zero.
 
-<<<<<<< HEAD
 La possibilità di utilizzare $R_S$ in un test di ipotesi deriva dal fatto che indipendentemente dalla forma delle distribuzione
-=======
-La possibilità di utilizzare $R_S$ in un test di ipotesi deriva dal fatto che indipendentemente dalla forma della distribuzione
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 congiunte $(X, Y)$, quando i caratteri $X$ ed $Y$ sono incorrelati, nel senso di Spearman, e la numerosità del campione è maggiore
 di 10, allora la statistica
 $$\tilde{T}_n = R_S \cdot \sqrt{\frac{n-2}{1 - R_S^2}}$$
 risulta essere approssimativamente distribuita come una t di Student con $(n-2)$ gradi di libertà.
 
 Dovendo controllare l'ipotesi
-<<<<<<< HEAD
 - $H_0 : \text{ i caratteri \(X\) ed \(Y\) sono incorrelati secondo Spearman}$;
 contro
 - $H_1 : \text{ i caratteri \(X\) ed \(Y\) sono correlati secondo Spearman}$.
-=======
-- $H_0$ : i caratteri $X$ ed $Y$ sono incorrelati secondo Spearman;
-contro
-- $H_1$ : i caratteri $X$ ed $Y$ sono correlati secondo Spearman.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 Possiamo pensare di non rifiutare $H_0$ quando $\tilde{T}_n$ assume valori non troppo distanti dallo 0 e di rifiutarla in favore di
 $H_1$ in caso contrario.
 
@@ -3905,13 +3752,8 @@ distribuzione per ogni singolo valore.
 L'equazione $Y = \alpha_0 + \alpha_1 \cdot X_1 + \dots + \alpha_m \cdot X_m + E$ descrive infatti la distribuzione del carattere $Y$ come distribuzione della somma
 di $m+1$ variabili, tra cui una che esprime gli scostamenti aleatori.
 
-<<<<<<< HEAD
 Per ovviare al rischio di incomprensioni preferiamo quindi riscrivere la precedente relazione esplicitando il fatto che tanto
 il residuo quanto i valori assunti dalle variabili esplicative variano per ogni individuo della popolazione, considerando
-=======
-Per ovviare al rischio di incomprensioni, preferiamo quindi riscrivere la precedente relazione esplicitando il fatto che, tanto
-il residuo quanto i valori assunti dalle variabili esplicative, variano per ogni individuo della popolazione, considerando
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 d'ora in poi l'equazione:
 $$Y_i = \alpha_0 + \alpha_1 \cdot X_{1, i} + \dots + \alpha_m \cdot X_{m, i} + E_i$$
 dove l'indice $i$ varia da 1 ad $N$, totale degli individui della popolazione.
@@ -3972,11 +3814,7 @@ Dove $\bar{x} = \frac{\sum_{i=1}^n x_i}{n}$ e $\bar{y} = \frac{\sum_{i=1}^n y_i}
 
 I due /stimatori $A_0$ e $A_1$/ proposti, sono tali che, /sotto le tre ipotesi specificate/ precedentemente, essi /soddisfano le
 seguenti proprietà/:
-<<<<<<< HEAD
 - $E[A_0] = \alpha_0 \quad V[A_0] = \sigma^2 \cdot \left[\frac{1}{n} + \frac{\bar{x}^2}{\sum_{i=1}^n (x_i - \bar{x})^2}\right]$;
-=======
-- $E[A_0] = \alpha_0 \quad V[A_0] = \sigma^2 \cdot \left[\frac{1}{n} + \frac{x^{-2}}{\sum_{i=1}^n (x_i - \bar{x})^2}\right]$;
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 - $E[A_1] = \alpha_1 \quad V[A_1] = \sigma^2 \cdot \left[\frac{1}{\sum_{i=1}^n (x_i - \bar{x})^2}\right]$;
 Da cui si deduce che $A_0$ e $A_1$ sono due /stimatori corretti/ e pertanto adatti a fare inferenze sui coefficienti $\alpha_0$ e $\alpha_1$.
 
@@ -3984,11 +3822,7 @@ In particolare, se valgono le ipotesi
 - $E[E_i] = 0 \quad \forall i = 1, \dots, N$;
 - $V[E_i] = \sigma^2 \quad \forall i = 1, \dots, N$;
 - Le variabili $E_i$ sono incorrelate tra loro.
-<<<<<<< HEAD
 Si può dire qualcosa di ancora più forte, infatti in questo caso, /$A_0$ ed \(A_1\)/ sono, tra gli /stimatori/ corretti per
-=======
-si può dire qualcosa di ancora più forte, infatti in questo caso, /$A_0$ ed \(A_1\)/ sono, tra gli /stimatori/ corretti per
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 $\alpha_0$ e $\alpha_1$, i /più efficienti/, ovvero quelli cui corrisponde varianza minima.
 
 Questa proprietà è solitamente riferita in letterature con il termine di /Teorema di Gauss-Markov/.
@@ -4019,11 +3853,7 @@ Si può mostrare che condizionalmente alle 4 ipotesi:
 - Le variabili $E_i$ sono incorrelate tra loro;
 - Le variabili $E_i$ sono normalmente distribuite.
 Anche gli /stimatori $A_0$ ed $A_1$ sono normalmente distribuiti/, con:
-<<<<<<< HEAD
 - $A_0 \cong N\left(\alpha_0, \sigma^2 \cdot \left[\frac{1}{n} + \frac{\bar{x}^2}{\sum_{i=1}^n (x_i - \bar{x})^2}\right]\right)$;
-=======
-- $A_0 \cong N\left(\alpha_0, \sigma^2 \cdot \left[\frac{1}{n} + \frac{x^{-2}}{\sum_{i=1}^n (x_i - \bar{x})^2}\right]\right)$;
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 - $A_1 \cong N\left(\alpha_1, \sigma^2 \cdot \left[\frac{1}{\sum_{i=1}^n (x_i - \bar{x})^2}\right]\right)$;
 La conoscenza della distribuzione dei due stimatori potrebbe essere utilizzata per determinare degli intervalli, come visto nel
 Capitolo 5.
@@ -4042,15 +3872,9 @@ La presenza del termine $\frac{1}{n-2}$ è giustificata dal fatto che così defi
 corretto, ovvero vale $E[S_{\text{RES}}] = \sigma^2$.
 
 Andiamo quindi a sostituire nelle
-<<<<<<< HEAD
 - $A_0 \cong N\left(\alpha_0, \sigma^2 \cdot \left[\frac{1}{n} + \frac{\bar{x}^2}{\sum_{i=1}^n (x_i - \bar{x})^2}\right]\right)$;
 - $A_1 \cong N\left(\alpha_1, \sigma^2 \cdot \left[\frac{1}{\sum_{i=1}^n (x_i - \bar{x})^2}\right]\right)$;
 la quantità $\sigma^2$ con il suo stimatore $S_{\text{RES}}^2$ e consideriamo le variabili:
-=======
-- $A_0 \cong N\left(\alpha_0, \sigma^2 \cdot \left[\frac{1}{n} + \frac{x^{-2}}{\sum_{i=1}^n (x_i - \bar{x})^2}\right]\right)$;
-- $A_1 \cong N\left(\alpha_1, \sigma^2 \cdot \left[\frac{1}{\sum_{i=1}^n (x_i - \bar{x})^2}\right]\right)$;
-a quantità $\sigma^2$ con il suo stimatore $S_{\text{RES}}^2$ e consideriamo le variabili:
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 - $T_0 = \frac{A_0 - \alpha_0}{\sqrt{S_{\text{RES}}^2 \cdot \left[\frac{1}{n} + \frac{\bar{X}^2}{\sum_{i=1}^n (X_i - \bar{X})^2}\right]}}$;
 - $T_1 = \frac{A_1 - \alpha_1}{\sqrt{S_{\text{RES}}^2 \cdot \left[\frac{1}{\sum_{i=1}^n (X_i - \bar{X})^2}\right]}}$.
 Condizionatamente alle consuete ipotesi:
@@ -4058,29 +3882,17 @@ Condizionatamente alle consuete ipotesi:
 - $V[E_i] = \sigma^2 \quad \forall i = 1, \dots, N$;
 - Le variabili $E_i$ sono incorrelate tra loro;
 - Le variabili $E_i$ sono normalmente distribuite.
-<<<<<<< HEAD
 Le variabili $T_0$ e $T_1$ risultano essere distribuite come delle t di Student con $n-2$ gradi di libertà.
-=======
-le variabili $T_0$ e $T_1$ risultano essere distribuite come delle t di Student con $n-2$ gradi di libertà.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 
 Considerate allora le realizzazioni:
 - $s_{\text{RES}}^2$;
 - $a_0$;
 - $a_1$;
-<<<<<<< HEAD
 - $x_i \quad \forall i = 1, \dots, n$;
 - $\bar{x}$.
 Si ottengono gli intervalli di confidenza per $\alpha_0$ e $\alpha_1$ che per un fissato livello di confidenza $\alpha$ risultano essere:
 - $\left[a_0 - t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \left[\frac{1}{n} + \frac{\bar{x}^2}{s_x^2}\right]},
   a_0 + t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \left[\frac{1}{n} + \frac{\bar{x}^2}{s_x^2}\right]}\right]$;
-=======
-- $x_i \quad i = 1, \dots, n$;
-- $\bar{x}$.
-Si ottengono gli intervalli di confidenza per $\alpha_0$ e $\alpha_1$ che per un fissato livello di confidenza $\alpha$ risultano essere:
-- $\left[a_0 - t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \left[\frac{1}{n} + \frac{x^{-2}}{s_x^2}\right]},
-  a_0 + t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \left[\frac{1}{n} + \frac{x^{-2}}{s_x^2}\right]}\right]$;
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 - $\left[a_1 - t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \frac{1}{s_x^2}},
   a_0 + t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \frac{1}{s_x^2}}\right]$.
 Dove $s_x^2 = \sum_{i=1}^n (x_i - \bar{x})^2$, mentre $t_{1 - \frac{\alpha}{2}}$ è il quantile di ordine $1 - \frac{\alpha}{2}$ della t di Student con
@@ -4110,11 +3922,7 @@ Capitoli 6 e 7, relativi alla /incorrelazione lineare tra due caratteri di una p
 Se con l'uso di questi test si /dovesse rifiutare l'ipotesi di incorrelazione/, allora ha senso provare ad /effettuare test
 più approfonditi sulla validità del modello lineare/, /altrimenti/ si dovrebbe passare a /considerare qualche altro modello/.
 
-<<<<<<< HEAD
 È preferibile utilizzare il test basato sulla statistica $\hat{T}_n = R_n \cdot \sqrt{\frac{n-2}{1 - R_n^2}}$ descritto nel paragrafo 6.7 se si
-=======
-È preferibile utilizzate il test basato sulla statistica $\hat{T}_n = R_n \cdot \sqrt{\frac{n-2}{1 - R_n^2}}$ descritto nel paragrafo 6.7 se si
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 posseggono dei dati accurati.
 
 Useremo invece il test basato sulla statistica $\tilde{T}_n = R_S \cdot \sqrt{\frac{n-2}{1 - R_S^2}}$ descritto nel paragrafo 7.4 se non si posseggono
@@ -4163,11 +3971,7 @@ Similmente a quanto sopra, possiamo pensare che il modello lineare è adatto a d
 quantità $D_{\text{RES}}$ risulta essere molto inferiore alla $D_{\text{SP}}$, ovvero se il rapporto $\frac{D_{\text{SP}}}{D_{\text{RES}}}$ è molto
 grande.
 
-<<<<<<< HEAD
 Un test sull'attendibilità del modello lineare molto itilizzato si basa proprio su questo rapporto, e specificamente sul fatto
-=======
-Un test sull'attendibilità del modello lineare molto utilizzato si basa proprio su questo rapporto, e specificamente sul fatto
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 che la /statistica/ $\tilde{F} = (n-2) \cdot \frac{D_{\text{SP}}}{D_{\text{RES}}} = \frac{D_{\text{SP}}}{S_{\text{RES}}^2}$, con
 $S_{\text{RES}}^2 = \frac{1}{n-2} \cdot \sum_{i=1}^n (Y_i - \hat{Y}_i)^2$ è distribuita come una F con $(1, n-2)$ gradi di libertà, quando siano
 soddisfatte le ipotesi:
@@ -4206,19 +4010,11 @@ In tal caso si utilizza il fatto che quando siano soddisfatte le seguenti ipotes
 La variabile $T_1$, definita come $T_1 = \frac{A_1 - \alpha_1}{\sqrt{S_{\text{RES}}^2 \cdot \left[\frac{1}{\sum_{i=1}^n (X_i - \bar{X})^2}\right]}}$
 è distribuita come una t di Student con $n-2$ gradi di libertà.
 
-<<<<<<< HEAD
 /Rifiuteremo l'ipotesi nulla/ quando la sua realizzazione $\tilde{t}$ /assume valori troppo distanti dallo zero/ per poter pensare
 che essa sia distribuita secondo una t di Student con $n-2$ gradi di libertà.
 
 Ad esempio, per un /test di ampiezza $\alpha$, rifiutiamo $H_0$ quando/ $|\tilde{t}| > t_{1-\frac{\alpha}{2}}$, dove $t_{1-\frac{\alpha}{2}}$ è il quantile di
 ordine $1 - \frac{\alpha}{2}$ di una t di Student con $n-2$ gradi di libertà.
-=======
-/Rifiuteremo l'ipotesi nulla/ quando la sua realizzazione $\tilde{t}$ assume valori troppo distanti dallo zero/ per poter pensare
-che essa sia distribuita secondo una t di Student con $n-2$ gradi di libertà.
-
-Ad esempio, per un /test di ampiezza $\alpha$, rifiutiamo $H_0$ quando/ $|\tilde{t}| > t_{1-\frac{\alpha}{2}}$, dove $t_{1-\frac{\alpha}{2}}$ è il quantile di
-ordine $1 - \frac{\alpha}{2}$ di una t di Student con $n-2$ gradi di libertà/.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 
 Ricordiamo che anche con questo test la nostra speranza è di rifiutare l'ipotesi nulla, ovvero la non dipendenza di $Y$ da $X$.
 
@@ -4281,7 +4077,6 @@ l'ipotesi nulla.
 Come esempio, consideriamo un /test t sulla media nell'ipotesi di popolazione normale/:
 - $H_0 : \mu = 0$;
 - $H_1' : \mu \neq 0$;
-<<<<<<< HEAD
 - $\alpha = 0.05$;
 - Un risultato del test t* che porta a $p-\text{value} = 0.4 \implies P(t > |t^*|) = 0.4$ dice che c'è una buona probabilità che sotto l'ipotesi nulla
   possa verificarsi una realizzazione della statistica di test con un valore assoluto maggiore di quello che si è realizzato nel nostro
@@ -4296,19 +4091,6 @@ Se invece $H_1'' : \mu < \mu_0$, con ragionamenti analoghi si ha che ($\alpha = 
 Analogamente, se invece $H_1'' : \mu > \mu_0$, con ragionamenti analoghi si ha che ($\alpha = 0.05$):
 - $p-\text{value} = 0.4 \implies P(t > t^*) = 0.4 \implies \text{non rifiuto } H_0$;
 - $p-\text{value} = 0.0001 \implies P(t > t^*) = 0.0001 \implies \text{rifiuto } H_0$;
-=======
-- $\alpha = 0.05$.
-Un risultato del test t* che porta a $p-\text{value} = 0.0001 \implies P(t < |t^*|) = 0.0001$ dice che c'è una probabilità molto piccola che sotto l'ipotesi nulla
-possa verificarsi una realizzazione della statistica di test con un valore assoluto maggiore di quello che si è realizzato nel nostro
-campione, per cui vi è evidenza che l'ipotesi nulla è falsa, e pertanto si accetta l'ipotesi alternativa.
-
-Se invece $H_1'' : \mu < \mu_0$, con ragionamenti analoghi si ha che ($\alpha = 0.05$):
-- $p-\text{value} = 0.4 \implies P(t < |t^*|) = 0.4 \implies \text{non rifiuto } H_0$;
-- $p-\text{value} = 0.0001 \implies P(t < |t^*|) = 0.0001 \implies \text{rifiuto } H_0$;
-Analogamente, se invece $H_1'' : \mu > \mu_0$, con ragionamenti analoghi si ha che ($\alpha = 0.05$):
-- $p-\text{value} = 0.4 \implies P(t < |t^*|) = 0.4 \implies \text{non rifiuto } H_0$;
-- $p-\text{value} = 0.0001 \implies P(t < |t^*|) = 0.0001 \implies \text{rifiuto } H_0$;
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 Relativamente all'/ipotesi di incorrelazione/ tra i residui, il metodo più utilizzato è il /Test di Durbin-Watson/. In esso viene
 considerata la statistica
 $$D = \frac{\sum_{i=2}^n (E_i - E_{i-1})^2}{\sum_{i=1}^n E_i^2}$$
@@ -4388,11 +4170,7 @@ dei /parametri stimati vengono distorti per tenere conto anche di questi valori 
 Per riconoscere i possibili outliers ed eliminarli dal calcolo, un modo è quello di calcolare i /Residui Studentizzati/:
 $$r_i = \frac{e_i}{\sqrt{\text{MSE} \left(1 - \frac{1}{n} + \frac{(x_i - \bar{x})^2}{\sum (x_i - \bar{x})^2}\right)}}$$
 con $e_i$ l'\(i\)-esimo residuo, $\text{SSE}$ somma quadratica dei residui e $\text{MSE}$ scarto quadratico medio dei residui
-<<<<<<< HEAD
 $\text{MSE} =\frac{\sum e_i^2}{n-2}$.
-=======
-$text{MSE} =\frac{\sum e_i^2}{n-2}$.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 
 Si dimostra che essi sono distribuiti secondo una t di Student. Se il residuo studentizzato di un'osservazione supera un valore di
 4-5, allora l'osservazione è un candidato outlier.
@@ -9781,11 +9559,7 @@ Libreria utilizzata:
   : Carico il pacchetto richiesto: TeachingDemos
 
 Intervalli di confidenza per la media:
-<<<<<<< HEAD
 - Popolazione non normalmente distribuita e varianza sconosciuta:
-=======
-- Popolazione non normalmente distribuita e varianza sconosiuta:
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
   #+BEGIN_SRC R
   z.test(x, mu=0, stdev, alternative=c("two.sided", "less", "greater"), sd=stdev, n=length(x), conf.level=0.95, ...)
   #+END_SRC
@@ -9794,21 +9568,12 @@ Intervalli di confidenza per la media:
   z.test()
   #+END_SRC
 - Popolazione normalmente distribuita e varianza nota:
-<<<<<<< HEAD
   #+BEGIN_SRC R
   z.test()  
   #+END_SRC
 - Popolazione normalmente distribuita e varianza sconosciuta:
   #+BEGIN_SRC R
   t.test(x, y=NULL, alternative=c("two.sided", "less", "greater"), mu=0, paired=FALSE, var.equal=FALSE, conf.level=0.95, ...)
-=======
-  #+BEGIN_SRC 
-  z.test()  
-  #+END_SRC
-- Popolazione normalmente distribuita e varianza sconosiuta:
-  #+BEGIN_SRC R
-  z.test(x, y=NULL, alternative=c("two.sided", "less", "greater"), mu=0, paired=FALSE, var.equal=FALSE, conf.level=0.95, ...)
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
   #+END_SRC
 
 Esercizio 08:
@@ -9897,11 +9662,7 @@ interval
 : [1] 2.413901 2.945599
 
 Esercizio 06:
-<<<<<<< HEAD
 - Popolazione normalmente distribuita e varianza nota;
-=======
-- Popolazione normalmente distribuita e varianza nota:
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 - Un segnale radio viene emesso con frequenza distribuita normalmente e con valore atteso $\mu$ e deviazione standard 30 kHz.
   Supponendo di osservare la seguente serie di frequenze in kHz:
   $(610, 601, 578, 615, 640, 630, 618, 602, 613, 610, 625, 585, 622, 608, 597)$.
@@ -9964,11 +9725,7 @@ Stime intervallari:
 - Intervalli di confidenza per la varianza:
   - Popolazione normalmente distribuita:
     #+BEGIN_SRC R
-<<<<<<< HEAD
     sigma.test(x, sigma=1, sigmasq=sigma^2, alternative=c("two.sided", "less", "greater"), conf.level=0.95, ...)
-=======
-    sigma.test(x, sigma=1, sigmasq=sigma^2, alternative=c("two.sisded", "less", "greater"), conf.level=0.95, ...)
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
     #+END_SRC
     
 Esempio 11:
@@ -9993,11 +9750,7 @@ out$conf.int
 
 Esercizio 1:
 - Popolazione normalmente distribuita e varianza nota;
-<<<<<<< HEAD
 - Si desidera stimare il tempo medio di CPU utilizzato dagli utenti di un server, in modo da affermare con il 95% di confidenza
-=======
-- Si desidera stimare il tempo medio di CUP utilizzato dagli utenti di un server, in modo da affermare con il 95% di confidenza
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
   che il valore stimato non disti più di mezzo secondo dal valore vero. Dall'esperienza passata, possiamo ipotizzare che il tempo
   di CPU utilizzato sia distribuito secondo una normale, con $\sigma^2 = 2.25$. Quale deve essere la dimensione $n$ del campione?
 $$2 \cdot z_{1-\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}} = \frac{1}{2} \implies n = 2 \cdot z_{1-\frac{\alpha}{2}} \frac{\sigma}{\frac{1}{2}}$$
@@ -10018,13 +9771,8 @@ Esempio 5.5:
   per la media del costo al metro quadro degli appartamenti di un dato quartiere di una città italiana. Si voglia determinare
   quanto deve essere grande il campione affinché l'intervallo di confidenza simmetrico abbia ampiezza non superiore a 0.3,
   mantenendo sempre un livello di confidenza $\alpha = 0.05$.
-<<<<<<< HEAD
-#+BEGIN_SRC R :results output :exports both :session stime_intervallari # Caricare il file "esempio1.2.csv"
-=======
-
 #+BEGIN_SRC R :results output :exports both :session stime_intervallari
 # Caricare il file "esempio1.2.csv"
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 ese12 <- scan("./Files/esempio1.2.csv", sep=";", dec=",")
 
 alpha = 0.05
@@ -10072,11 +9820,7 @@ Esercizio 03:
 #+BEGIN_SRC R :results output :exports both
 z <- qnorm(1-0.01)
 lower <- ceiling(z*(24/sqrt(64))+300) # limite inferiore della regione critica
-<<<<<<< HEAD
 cat("Si rifiuta l'ipotesi H_0 se X_n cade in: [", lower,", inf]")                 
-=======
-cat("Si rifiuta l'ipotesi H_0 se Xn cade in: [", lower,", inf]")                 
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 #+END_SRC
 
 #+RESULTS:
@@ -10221,10 +9965,7 @@ mean of x
 0.3714286
 #+end_example
 Non si rifiuta $H_0 : p-\text{value} > \alpha$
-<<<<<<< HEAD
 
-=======
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 Esercizio 15:
 - Popolazione normalmente distribuita e varianza sconosciuta:
 - Dato il campione $(0.5, 1.2, -0.5, 0.9, 2.0, -1.2, -0.3)$ estratto da una popolazione con distribuzione normale, testare
@@ -10488,15 +10229,10 @@ out
 : [1] "Non rigettiamo H_0 in favore di H_1"
 
 Soluzione alternativa:
-<<<<<<< HEAD
 #+BEGIN_SRC R
 var.test(x, y, ratio=1, alternative=c("two.sided", "less", "greater"), conf.level=0.95)
 #+END_SRC
 #+BEGIN_SRC R :results output :exports both :session test_parametrici
-=======
-#+BEGIN_SRC R :results output :exports both :session test_parametrici
-var.test(x, y, ratio=1, alternativa=c("two.sided", "less", "greater"), conf.level=0.95)
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 var.test(x, y)
 #+END_SRC
 
@@ -10513,20 +10249,6 @@ alternative hypothesis: true ratio of variances is not equal to 1
 sample estimates:
 ratio of variances 
            1.53924
-<<<<<<< HEAD
-=======
-
-	F test to compare two variances
-
-data:  x and y
-F = 1.5392, num df = 9, denom df = 14, p-value = 0.4528
-alternative hypothesis: true ratio of variances is not equal to 1
-95 percent confidence interval:
- 0.4796185 5.8459594
-sample estimates:
-ratio of variances 
-           1.53924
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 #+end_example
 
 Test di incorrelazione:
@@ -10587,11 +10309,7 @@ Esercizio 02:
   Considerazioni:
   1. Ipotesi:
      - Nulla: $H_0 : X \sim U[0, 20]$
-<<<<<<< HEAD
      - Alternativa: $H_1 : X \text{ non } U[0, 20]$.
-=======
-     - Alternativa: $H_1 : X text{ non } U[0, 20]$.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
   2. Ipotesi:
      - Nulla: $H_0 : X \sim \text{Exp}[0.1]$;
      - Alternativa: $H_1 : X \text{ non } \sim \text{Exp}[0.1]$.
@@ -10627,13 +10345,8 @@ alternative hypothesis: two-sided
 Test per la bontà dell'adattamento:
 - Ipotesi:
   - Nulla $H_0 : F_X (t) = F(t) \text{ per ogni } t \in \mathbb{R}$;
-<<<<<<< HEAD
   - Alternativa: $H_1 : F_X(t) \neq F(t) \text{ per almeno un} t \in \mathbb{R}$
 - Test del Chi-quadro: $W = \sum_{k=1}^K \frac{(n_k - np_k)^2}{np_k}$, con $K$ numero di intervalli.
-=======
-  - Alternativa: $H_1 : F_X(t) \neq F(t) text{ per almeno un} t \in \mathbb{R}$
-- Test del Chi-quadro: $$W = \sum_{k=1}^K \frac{(n_k - np_k)^2}{np_k}$$, con $K$ numero di intervalli.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
   - Quando $H_0$ è vera e quando $n_k$ sono sufficientemente grandi ($\geq 5$), la $W$ è distribuita come una Chi-Quadro con:
     - $K-1$ gradi di libertà se la funzione di ripartizione $F$ è stata decisa arbitrariamente senza fare uso preventivo
       dei dati campionari;
@@ -10770,11 +10483,7 @@ wilcox.test(X, Y, exact=FALSE)
 Non si rifiuta l'ipotesi $H_0$ che le due distribuzioni siano uguali. $p-\text{value} > \alpha = 0.05$. Quindi l'affermazione
 dell'azienda circa l'efficacia dell'integratore viene rigettata.
 
-<<<<<<< HEAD
 Test di Kolmogorov-Smirnov nel caso di due campioni:
-=======
-TEst di Kolmogorov-Smirnov nel caso di due campioni:
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 #+BEGIN_SRC R
 ks.test(x, y, ..., alternative=c("two.sided", "less", "greater"), exact=NULL)
 #+END_SRC
@@ -10814,7 +10523,6 @@ Test di indipendenza:
 - Test del Chi-quadro per l'indipendenza:
   - Consideriamo una popolazione bidimensionale $(X, Y)$ ed estraiamo un campione casuale $((X_1, Y_1), \dots, (X_n, Y_n))$;
   - Ipotesi:
-<<<<<<< HEAD
     - Nulla: $H_0 : \text{ i caratteri \(X\) ed \(Y\) sono indipendenti}$;
     - Alternativa: $H_1 : \text{ i caratteri \(X\) ed \(Y\) non sono indipendenti}$;
     - Per ogni coppia $(k, j)$ consideriamo le seguenti quantità:
@@ -10824,17 +10532,6 @@ Test di indipendenza:
       - $f_k^X = \frac{n_k^X}{n} = \text{ frequenza relativa di }I_k^X$;
       - $f_j^Y = \frac{n_j^Y}{n} = \text{ frequenza relativa di } I_j^Y$;
       - $f_{k, j} = \frac{n_{k, j}}{n} = \text{ frequenza relativa di } I_k^X \times I_j^Y$.
-=======
-    - Nulla: $H_0 : \text{i caratteri \(X\) ed \(Y\) sono indipendenti}$;
-    - Alternativa: $H_1 : \text{i caratteri \(X\) ed \(Y\) non sono indipendenti}$;
-    - Per ogni coppia $(k, j)$ consideriamo le seguenti quantità:
-      - $n_k^X =$ numero di elementi $X_i$ del campione che cadono in $I_k^X$;
-      - $n_j^Y =$ numero di elementi $Y_i$ del campione che cadono in $I_j^Y$;
-      - $n_{k, j} =$ numero di elementi $(X_i, Y_i)$ del campione che cadono in $I_k^X \times I_j^Y$;
-      - $f_k^X = \frac{n_k^X}{n} =$ frequenza relativa di $I_k^X$;
-      - $f_j^Y = \frac{n_j^Y}{n} =$ frequenza relativa di $I_j^Y$;
-      - $f_{k, j} = \frac{n_{k, j}}{n} =$ frequenza relativa di $I_k^X \times I_j^Y$.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
     - $W = n \cdot \sum_{k=1}^{M_X}\sum_{j=1}^{M_Y} \frac{(f_{k, j} - f_k^X \cdot f_j^Y)^2}{f_k^X \cdot f_j^Y}$;
     - Si può dimostrare che quando l'ipotesi nulla è vera e quando le $n_{k, j}$ sono sufficientemente grandi $(\geq 5)$, allora $W$
       è approssimativamente distribuita come una Chi-Quadro con $(M_X - 1) \cdot (M_Y - 1)$ gradi di libertà.
@@ -11036,13 +10733,8 @@ predict(object, newdata, ..., interval="prediction", level=0.95)
 #+END_SRC
 
 Esempi:
-<<<<<<< HEAD
 - $\left[a_0 - t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \left[\frac{1}{n} + \frac{\bar{x}^2}{s_x^2}\right]},
   a_0 + t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \left[\frac{1}{n} + \frac{\bar{x}^2}{s_x^2}\right]}\right]$;
-=======
-- $\left[a_0 - t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \left[\frac{1}{n} + \frac{x^{-2}}{s_x^2}\right]},
-  a_0 + t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \left[\frac{1}{n} + \frac{x^{-2}}{s_x^2}\right]}\right]$;
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 - $\left[a_1 - t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \frac{1}{s_x^2}},
   a_0 + t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \frac{1}{s_x^2}}\right]$.
 #+BEGIN_SRC R :results output :exports both :session regressione
