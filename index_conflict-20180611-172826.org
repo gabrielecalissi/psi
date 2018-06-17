@@ -2051,7 +2051,7 @@ $$V[a \cdot X + b] = a^2 \cdot V[X] \quad \text{per ogni variabile $X$ e per ogn
 otterremo
 $$V[\bar{X}_n] = V\left[\frac{S_n}{n}\right] = \frac{1}{n^2} V[S_n] = \frac{1}{n^2} V[X_1 + \dots + X_n] = \frac{1}{n^2}(n \sigma^2) = \frac{\sigma^2}{n}$$
 Osserviamo che mentre il valore atteso di $\bar{X}_n$ non dipende dalla numerosità del campione $n$, la sua varianza dipende
-anche da $n$ ed è tanto minore quanto $n$ è più grande. Questo vuol dire che le realizzazioni $\bar{x}_n$ di $\bar{X}_n$
+anche da $n$ ed è tanto minore quanto $n$ è più grande. Questo vuol dire che le realizzazioni di $\bar{x}_n$ di $\bar{X}_n$
 saranno tanto più vicine al valore incognito $\mu$ quanto più è grande la numerosità del campione.
 
 Inoltre abbiamo visto in precedenza che per $n$ sufficientemente grande la variabile $\bar{X}_n$ può essere approssimata
@@ -2231,7 +2231,7 @@ Pensiamo allora a $\bar{X}_n \sim N \left(\mu, \frac{\sigma}{\sqrt{n}}\right)$, 
 Normalizzando abbiamo quanto segue: $Z = \frac{\bar{X}_n - \mu}{\frac{\sigma}{\sqrt{n}}} \sim N(0, 1)$.
 
 I valori assunti dalla variabile $Z$ così definita dipenderanno ovviamente dalle realizzazioni di $\bar{X}_n$ e
-quindi dalle realizzazioni del campione $(X_1, \dots, X_n)$.
+quindi dalle realizzazioni del campione $(X_1, \dots, X_n)$
 
 Nonostante ciò, in base alla relazione $Z = \frac{\bar{X}_n - \mu}{\frac{\sigma}{\sqrt{n}}} \sim N(0, 1)$, siamo in grado di
 determinare un valore $z_{1 - \frac{\alpha}{2}}$ per cui valga la seguente relazione
@@ -2240,7 +2240,7 @@ e quindi anche
 $P \left(\mu - z_{1-\frac{\alpha}{2}} \frac{\sigma}{\sqrt{n}} \leq \bar{X}_n \leq \mu + z_{1-\frac{\alpha}{2}} \frac{\sigma}{\sqrt{n}}\right) = 1 - \alpha$.
 
 Pertanto, in base all'ultima relazione sappiamo che con probabilità $1 - \alpha$ lo stimatore $\bar{X}_n$ assume valori in
-un ben definito intervallo, ma ancora dipendente da $\mu$. A questo punto è possibile scrivere:
+un ben definito intervallo, ma ancora dipendente da $\mu$. A questo punto è possibile scrivere
 $$P \left(\bar{X}_n - z_{1-\frac{\alpha}{2}} \frac{\sigma}{\sqrt{n}} \leq \mu \leq \bar{X}_n + z_{1-\frac{\alpha}{2}} \frac{\sigma}{\sqrt{n}}\right) = 1 - \alpha$$
 
 Pertanto, in base all'ultima relazione, possiamo dire che data una realizzazione $\bar{x}_n$ di $\bar{X}_n$, il
@@ -2437,7 +2437,7 @@ Denotiamo infine con $\bar{x}_n^k$ le realizzazioni (note) dei momenti campionar
 $\theta_1, \dots, \theta_m$ si ottengono risolvendo rispetto ad esse il sistema in $m$ equazioni ed $m$ incognite:
 \begin{equation*}
 \begin{cases}
-\mu_1 (\theta_1, &\dots, \theta_m) = \bar{x}_n^1\\
+\mu_1 (\theta_1, &\dots, \theta_m) = \bar{x}_n^1^{}\\
 &\vdots\\
 \mu_m (\theta_1, &\dots, \theta_m) = \bar{x}_n^{m}
 \end{cases}
@@ -2462,11 +2462,7 @@ Media e varianza sono date da $E[X] = \frac{\alpha}{\lambda}$ e $V[X] = \frac{\a
 
 Essendo 2 i parametri da stimare, occorre allora calcolare i primi 2 momenti campionari:
 $$\bar{x}_{10}^{1} = \frac{1}{10} \cdot \sum_{i=1}^{10} x_i = 3.04$$
-<<<<<<< HEAD
-$$\bar{x}_{10}^{2} = \frac{1}{10} \cdot \sum_{i=1}^{10} x_i^2 = 11.95$$
-=======
 $$\bar{x}_{10}^{-2} = \frac{1}{10} \cdot \sum_{i=1}^{10} x_i^2 = 11.95$$
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 ed i corrispondenti momenti teorici della distribuzione:
 $$E[X] = \frac{\alpha}{\lambda}$$
 $$E[X^2] = V[X] + (E[X])^2 = \frac{\alpha}{\lambda^2} + \frac{\alpha^2}{\lambda^2} = \frac{\alpha (\alpha +1 )}{\lambda^2}$$
@@ -2562,13 +2558,8 @@ Più specificamente ogni test di ipotesi è caratterizzato da:
   allora la statistica $T$ assume valori nella regione critica con probabilità $\alpha$.
 
 Per esempio, si supponga di sapere che il reddito medio annuo per famiglia di un determinato quartiere di una città italiana sia distribuito
-<<<<<<< HEAD
-secondo una normale il cui parametro $\sigma^2$ è noto ed è di 144K euro mentre il parametro $\mu$ è incognito. In base alla sua esperienza
-personale, un nostro collaboratore sostiene che la media è uguale a 30K euro. Si supponga di voler controllare tale affermazione con
-=======
 secondo una normale il cui parametro $\sigma^2$ è noto ed è di 144K di euro mentre il parametro $\mu$ è incognito. In base alla sua esperienza
 personale, un nostro collaboratore sostiene che la media è uguale a 30K di euro. Si supponga di voler controllare tale affermazione con
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 un'indagine campionaria e per tale ragione intervistare 10 famiglie del quartiere scelte a caso. Si supponga infine di accettare
 l'affermazione del collaboratore se la media aritmetica dei redditi annui delle famiglie è compresa tra 25K e 35K euro e di rifiutarla in
 caso contrario, decidendo in tal caso di effettuare un'indagine campionaria più approfondita.
@@ -2655,7 +2646,7 @@ $\sigma^2 = 144K$ e la probabilità $\beta(32)$ di compiere un errore di II spec
 \begin{align*}
 \beta(32) &= P(\text{accettare } H_0 \text{ quando } \mu = 32)\\
 &= P(\bar{X}_{10} \in [25, 35] \mid \bar{X}_{10} \approx N(32, 3.79))\\
-&=P\left(\frac{\bar{X}_{10} - 32}{3.79} \in \left[\frac{25 - 32}{3.79}, \frac{35 - 32}{3.79}\right]\right)\\
+&=P\left(\frac{\bar{X}_{10}_{} - 32}{3.79} \in \left[\frac{25 - 32}{3.79}, \frac{35 - 32}{3.79}\right]\right)\\
 &=P\left(\frac{\bar{X}_{10} - 32}{3.79} \in [-1.85, +0.79]\right)\\
 &= 0.75
 \end{align*}
@@ -2673,23 +2664,14 @@ numerico.
 
 In particolare, è uso comune considerare a tal fine una funzione detta /curva di potenza del test/ che viene di seguito introdotta.
 Sia a tal fine $\theta$ il parametro a cui si riferisce il test e sia $\theta^*$ il valore specificato dall'ipotesi nulla
-<<<<<<< HEAD
 $H_0 : \theta = \theta^*$, denotiamo poi $\beta(\hat{\theta}) = P(\text{accettare } H_0 \mid H_0 \text{ è falsa e } \theta = \hat{\theta})$, allora viene detta
 /curva di potenza del test/ la funzione $\pi(\hat{\theta}) = 1 - \beta(\hat{\theta})$. Un test risulta tanto migliore quanto più la funzione
-=======
-$H_0 : \theta = \theta^*$, denotiamo poi $\beta(\hat{\theta}) = P(\text{accettare } H_0 \mid H_0 \text{ + falsa e } \theta = \hat{\theta})$, allora viene detta
-/curva di potenza del test/ la funzione $\pi(\hat{\theta}) = \ - \beta(\hat{\theta})$. Un test risulta tanto migliore quanto più la funzione
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 $\pi(\hat{\theta})$ si avvicina, al variare di $\hat{\theta}$ al valore 1.
 
 Per esempio, supponiamo di voler effettuare un test di ipotesi relativo ad una popolazione $X$ che sappiamo essere distribuita
 secondo un'esponenziale di parametro $\lambda$, e di voler controllare con significatività $\alpha = 0.1$ l'ipotesi nulla $H_0 : \lambda = 2$
-contro l'ipotesi alternativa $H_1 : \lambda \neq 2$. Per rendere più comprensibile l'esempio supponiamo di effettuare il test estraendo
-<<<<<<< HEAD
-un campione di numerosità 1, ovvero $X_1$, e di rifiutare $H_0$ se $X_1$ assume valori "troppo piccoli" o "troppo grandi" per
-=======
-un campione di numerosità 1 ovvero ($X_1$) e di rifiutare $H_0$ se $X_1$ assume valori "troppo piccoli" o "troppo grandi" per
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
+contro l'ipotesi alternativa $H_1 : \lambda \neq 2$. Per rendere più comprensibile l'esempio, supponiamo di effettuare il test estraendo
+un campione di numerosità 1, ovvero ($X_1$), e di rifiutare $H_0$ se $X_1$ assume valori "troppo piccoli" o "troppo grandi" per
 poter pensare che sia distribuita secondo un'esponenziale di parametro $\lambda = 2$. Prendiamo allora come regione di accettazione
 del test l'intervallo $[t_1, t_2] \subseteq \mathbb{R}^+$, dove $t_1$ e $t_2$ sono tali che
 $$P(X_1 \leq t_1 \mid X_1 \approx \text{Exp}(2)) = P(X_1 \geq t_2 \mid X_1 \approx \text{Exp}(2)) = \frac{\alpha}{2} = 0.05$$
@@ -2750,8 +2732,7 @@ alle due ipotesi.
 
 Per esempio, si consideri una popolazione $X$ con distribuzione Bernoulliana di parametro incognito $p$ e si supponga che $p$
 possa assumere solo i due valori $0.40$ e $0.25$. Si supponga di voler controllare l'ipotesi $H_0 : p = 0.25$ e di
-estrarre per questo un campione di numerosità 30, considerarne la media campionaria $\bar{X}_{30}$ e rifiutare l'ipotesi
-nulla se essa assume un valore maggiore di 0.30. Vediamo quanto valgono in
+estrarre per questo un campione di numerosità 30, considerarne la media campionaria $\bar{X}_{30}$. Vediamo quanto valgono in
 questo caso il livello di significatività $\alpha$ del test e al probabilità $\beta(0.40)$ di compiere un errore di II specie.
 
 Essendo la numerosità del campione sufficientemente grande si può utilizzare un'approssimazione normale per $\bar{X}_{30}$.
@@ -2767,7 +2748,8 @@ Se è vera l'ipotesi nulla, allora:
 \end{align*}
 Per determinare $\beta(0.40)$ è sufficiente osservare che
 \begin{align*}
-\beta &= P(\text{accettare $H_0 \mid H_1$ è vera})\\
+\beta &=\\
+&= P(\text{accettare $H_0 \mid H_1$ è vera})\\
 &= P(\bar{X}_{30} \leq 0.3 \mid \bar{X}_{30} \approx N(0.40, 0.09))\\
 &= P\left(\frac{\bar{X}_{30} - 0.4}{0.09} \leq \frac{0.3 - 0.4}{0.09}\right)\\
 &= 0.13
@@ -2787,12 +2769,12 @@ a 0.25 dal parametro incognito.
 Vediamo ora come si costruisce un test sulla media $\mu$ di una popolazione $X$ quando si formula l'ipotesi nulla che tale media
 sia un valore fissato $\mu_0$, ovvero quando si consideri $H_0 : \mu = \mu_0$ e quando si dispone di un campione casuale
 $(X_1, \dots, X_n)$ di numerosità $n$ estratto da $X$. Similmente a quanto fatto nel capitolo precedente per gli intervalli di confidenza,
-la statistica utilizzata per effettuare il test varia a seconda che la popolazione considerata sia o meno normalmente distribuita
+la statistica utilizzata per effettuare il test viaria a seconda che la popolazione considerata sia o meno normalmente distribuita
 e che la sua varianza sia o non sia sconosciuta:
 1. /Popolazione normalmente distribuita e varianza $\sigma^2$ nota/:
 
    Sia $\mu$ il valore reale del parametro. Ricordiamo che sotto le ipotesi di normalità di $X$ la media campionaria
-   $\bar{X}_n = \frac{X_1 + \dots + X_n}{n}$ ha distribuzione normale di media $\mu$ e deviazione standard $\frac{\sigma}{\sqrt{n}}$, ovvero
+   $\bar{X}_n = \frac{X_1 + \dots + X_n}{n}$ ha distribuzione normale di media $\mu$ e deviazione standard $\frac{\sigma}[\sqrt{n}]$, ovvero
    vale $\tilde{Z} = \frac{\bar{X}_n - \mu}{\frac{\sigma}{\sqrt{n}}} \sim N(0, 1)$. Notiamo che $\tilde{Z}$ non è una statistica, infatti il valore
    del parametro $\mu$ non è noto. Sia ora $Z_n = \frac{\bar{X}_n - \mu_0}{\frac{\sigma}{\sqrt{n}}}$ che è una statistica essendo $\mu_0$
    una costante fissata. Ovviamente vale $Z_n \sim N(0, 1)$ se e solo se vale $H_0$. Il test si basa allora sull'osservazione
@@ -2800,10 +2782,6 @@ e che la sua varianza sia o non sia sconosciuta:
    - Rifiuteremo $H_0$ se $Z_n$ assumerà valori "poco probabili" per una $N(0, 1)$.
    La definizione della regione critica per $Z_n$ dipende dal livello di significatività adottato e dalla forma dell'ipotesi
    alternativa. Possiamo infatti considerare le seguenti 3 ipotesi alternative:
-   1. Test bidirezionale: $H_1' : \mu^2 \neq \mu_0^2$;
-   2. Test unidirezionale con coda a sinistra: $H_1'' : \mu^2 < \mu_0^2$;
-   3. Test unidirezionale con coda a destra: $H_1''' : \mu^2 > \mu_0^2$.
-   Più in dettaglio:
    1. /Test bidirezionale/: $H_1' : \mu \neq \mu_0$;
 
       Ovviamente rifiuteremo l'ipotesi $H_0$ in favore di $H_1'$ quando $Z_n$ assumerà valori eccessivamente grandi o eccessivamente
@@ -2818,25 +2796,21 @@ e che la sua varianza sia o non sia sconosciuta:
       sono ricavabili dalle tavole della normale standard.
 
       Si perviene a tali regioni critiche osservando infatti che deve essere
-      $\alpha = P(\text{rifiutare \(H_0 \mid H_0\) è vera}) = P(Z_n \in C \mid Z_n \sim N(0, 1))$. Notiamo che in base all'esplicita
+      $\alpha = P(\text{rifiutare $H_0 \mid H_0$ è vera}) = P(Z_n \in C \mid Z_n \sim N(0, 1))$. Notiamo che in base all'esplicita
       relazione che lega la statistica $Z_n$ alla media campionaria $\bar{X}_n$ avremmo potuto usare $\bar{X}_n$ come
-      statistica test a cui corrispondono le regioni critiche:
-      - $C' = \left(-\infty, \mu_0 -z_{1-\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}\right) \cup \left(\mu_0 +z_{1-\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}, +\infty\right)$ se $H_1'$ è l'ipotesi alternativa;
+      statistica test a cui corrispondono le regioni critiche.
+      - $C' = \left(-\infty, \mu_0 -z_{1-\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}) \cup \left(\mu_0 +z_{1-\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}, +\infty\right)$ se $H_1'$ è l'ipotesi alternativa;
       - $C'' = \left(-\infty, \mu_0 -z_{1-\alpha} \frac{\sigma}{\sqrt{n}}\right)$ se $H_1''$ è l'ipotesi alternativa;
       - $C''' = \left(\mu_0 +z_{1-\alpha} \frac{\sigma}{\sqrt{n}}, +\infty\right)$ se $H_1'''$ è l'ipotesi alternativa.
    2. /Test unidirezionale con coda a sinistra/: $H_1'' : \mu < \mu_0$.
 
       Rifiuteremo l'ipotesi $H_0$ in favore di $H_1''$ quando $Z_n$ assumerà valori fortemente negativi, in tal caso $\mu_0$ è una
       sovrastima della reale media, per cui $Z_n$ tende ad assumere valori "negativi" essendo sicuramente
-      $Z_n > \tilde{Z} \sim N(0, 1)$.
+      $Z_n < \tilde{Z} \sim N(0, 1)$.
 
       #+DOWNLOADED: /tmp/screenshot.png @ 2018-06-07 18:44:25
       [[file:Lezioni/screenshot_2018-06-07_18-44-25.png]]
-<<<<<<< HEAD
-   3. /Test unidirezionale con coda a destra/: $H_1''' : \mu > \mu_0$.
-=======
    3. /Test unidirezionale con coda a destra/: $H_1''' : \mu < \mu_0$.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 
       Rifiuteremo l'ipotesi $H_0$ in favore di $H_1'''$ quando $Z_n$ assumerà valori fortemente positivi, in tal caso $\mu_0$ è una
       sottostima della reale media, per cui $Z_n$ tende ad assumere valori "positivi" essendo sicuramente
@@ -2845,10 +2819,10 @@ e che la sua varianza sia o non sia sconosciuta:
       [[file:Lezioni/screenshot_2018-06-07_18-48-11.png]]
 2. /Popolazione normalmente distribuita e varianza $\sigma^2$ non nota/:
 
-   Ricordiamo che sotto le ipotesi di normalità di $X$, la variabile $\tilde{T} = \frac{\bar{X}_n - \mu}{\frac{\hat{S}_n}{\sqrt{n}}}$ è
+   Ricordiamo che sotto le ipotesi di normalità di $X$, la variabile $\sim{T} = \frac{\bar{X}_n - \mu}{\frac{\hat{S}_n}{\sqrt{n}}}$ è
    distribuita come una t di Student con $(n-1)$ gradi di libertà. In questo caso $\hat{S}_n$ è la radice della varianza
    campionaria corretta. Notiamo però che $\tilde{T}$ non è una statistica poiché dipende dal parametro $\mu$ che non è noto.
-   Sia ora $T_n = \frac{\bar{X}_n - \mu_0}{\frac{\hat{S}_n}{\sqrt{n}}}$, la quale è una statistica, poiché il valore $\mu_0$ è una
+   Sia ora $T_n = \frac{\bar{X}_n - \mu}{\frac{\hat{S}_n}{\sqrt{n}}}$, la quale è una statistica, poiché il valore $\mu_0$ è una
    costante fissata. Ovviamente vale $T_n \sim t_{n-1}$ se vale l'ipotesi nulla.
 
    Il test si basa allora sull'osservazione del valore assunto dalla realizzazione della statistica $T_n$, in particolare:
@@ -2857,33 +2831,24 @@ e che la sua varianza sia o non sia sconosciuta:
    forma dell'ipotesi alternativa. Infatti, possiamo considerare le 3 ipotesi alternative:
    - Test bidirezionale: $H_1' : \mu \neq \mu_0$;
    - Test unidirezionale con coda a sinistra: $H_1'' : \mu < \mu_0$;
-<<<<<<< HEAD
-   - Test unidirezionale con coda a destra: $H_1''' : \mu > \mu_0$.
-   Definite precedentemente rifiutando $H_0$ in favore di $H_1'$ quando $T_n$ assume valori troppo distanti dall'origine, in favore
-=======
    - Test unidirezionale con coda a destra: $H_1''' : \mu > \mu_0$
    definite precedentemente rifiutando $H_0$ in favore di $H_1'$ quando $T_n$ assume valori troppo distanti dall'origine, in favore
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
    di $H_1''$ quando $T_n$ assume valori fortemente negativi e in favore di $H_1'''$ quando $T_n$ assume valori fortemente positivi.
 
    Specificamente, fissato il livello di significatività \alpha del test, la regione critica per la statistica $T_n$ risulta essere:
-   1. $C' = (-\infty, -t_{1-\frac{\alpha}{2}}) \cup (+t_{1-\frac{\alpha}{2}}, +\infty)$ se $H_1'$ è l'ipotesi alternativa;
-   2. $C'' = (-\infty, -t_{1-\alpha})$ se $H_1''$ è l'ipotesi alternativa;
-   3. $C''' = (+t_{1-\alpha}, +\infty)$ se $H_1'''$ è l'ipotesi alternativa.
+   - $C' = (-\infty, -t_{1-\frac{\alpha}{2}}) \cup (+t_{1-\frac{\alpha}{2}}, +\infty)$ se $H_1'$ è l'ipotesi alternativa;
+   - $C'' = (-\infty, -t_{1-\alpha})$ se $H_1''$ è l'ipotesi alternativa;
+   - $C''' = (+t_{1-\alpha}, +\infty)$ se $H_1'''$ è l'ipotesi alternativa.
    dove $t_{1-\frac{\alpha}{2}}$ e $t_{1-\alpha}$ sono rispettivamente i quantili di ordine $1-\frac{\alpha}{2}$ e $1-\alpha$ della t di Student con $(n-1)$ gradi di
    libertà, ovvero i valori per cui risulta $P(T \leq t_{1-\frac{\alpha}{2}}) = 1 - \frac{\alpha}{2}$ e $P(T \leq t_{1-\alpha}) = 1 - \alpha$ con $T_n \sim t_{n-1}$ e
    sono ricavabili dalle tavole della t di Student.
 
-   Anche in questo caso notiamo che in base all'esplicita relazione che lega la statistica $T_n$ alla media campionaria $\bar{X}_n$
+   Anche in questo caso notiamo che in base all'esplicità relazione che lega la statistica $T_n$ alla media campionaria $\bar{X}_n$
    avremmo potuto usare $\bar{X}_n$ come statistica test, a cui corrispondono le regioni critiche.
-<<<<<<< HEAD
-   1. $C' = \left(-\infty, \mu_0 -t_{1-\frac{\alpha}{2}}\frac{\hat{s}_n}{\sqrt{n}}\right) \cup \left(\mu_0 +t_{1-\frac{\alpha}{2}}\frac{\hat{s}_n}{\sqrt{n}}, +\infty\right)$
-=======
-   1. $C' = \left(-\infty, \mu_0 -t_{1-\frac{\alpha}[2]}\frac{\hat{s}_n}{\sqrt{n}}\right) \cup \left(\mu_0 +t_{1-\frac{\alpha}{2}}\frac{\hat{s}_n}{\sqrt{n}}, +\infty\right)$
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
-      se $H_1'$ è l'ipotesi alternativa;
-   2. $C'' = \left(-\infty, \mu_0 -t_{1-\alpha} \frac{\hat{s}_n}{\sqrt{n}}\right)$ se $H_1''$ è l'ipotesi alternativa;
-   3. $C''' = \left(\mu_0 +t_{1-\alpha} \frac{\hat{s}_n}{\sqrt{n}}, +\infty\right)$ se $H_1'''$ è l'ipotesi alternativa.
+   - $C' = \left(-\infty, \mu_0 -t_{1-\frac{\alpha}[2]}\frac{\hat{s}_n}{\sqrt{n}}) \cup \left(\mu_0 +t_{1-\frac{\alpha}{2}}\frac{\hat{s}_n}{\sqrt{n}}, +\infty\right)$
+     se $H_1'$ è l'ipotesi alternativa;
+   - $C'' = \left(-\infty, \mu_0 -t_{1-\alpha} \frac{\hat{s}_n}{\sqrt{n}}\right)$ se $H_1''$ è l'ipotesi alternativa;
+   - $C''' = \left(\mu_0 +t_{1-\alpha} \frac{\hat{s}_n}{\sqrt{n}}, +\infty\right)$ se $H_1'''$ è l'ipotesi alternativa.
    dove $\hat{s}_n$ è la realizzazione di $\hat{S}_n$.
 3. /Popolazione non normalmente distribuita/:
 
@@ -2915,35 +2880,31 @@ Rifiuteremo $H_0$ se $Q_n$ assumerà valori poco probabili per una Chi-quadro co
 
 Come nei test per il valor medio $\mu$, la definizione della regione critica per $Q_n$ dipende dal livello di significatività
 adottato e dalla forma dell'ipotesi alternativa. Possiamo infatti considerare le seguenti 3 ipotesi alternative:
-1. Test bidirezionale: $H_1' : \sigma^2 \neq \sigma_0^2$;
-2. Test unidirezionale con coda a sinistra: $H_1'' : \sigma^2 < \sigma_0^2$;
-3. Test unidirezionale con coda a destra: $H_1''' : \sigma^2 > \sigma_0^2$.
+- Test bidirezionale: $H_1' : \sigma^2 \neq \sigma_0^2$;
+- Test unidirezionale con coda a sinistra: $H_1'' : \sigma^2 < \sigma_0^2$;
+- Test unidirezionale con coda a destra: $H_1''' : \sigma^2 > \sigma_0^2$.
 Rifiuteremo $H_0$ in favore di:
-1. $H_1'$ quando $Q_n$ assume valori troppo grandi o piccoli per una Chi-quadro con $(n-1)$ gradi di libertà;
-2. $H_1''$ quando $Q_n$ assume valori troppo vicini a 0, infatti quando vale $H_1''$, $\sigma_0^2$ è una sovrastima di $\sigma^2$;
-3. $H_1'''$ quando $Q_n$ assume valori fortemente positivi (per ragioni opposte a quanto sopra).
+- $H_1'$ quando $Q_n$ assume valori troppo grandi o piccoli per una Chi-quadro con $(n-1)$ gradi di libertà;
+- $H_1''$ quando $Q_n$ assume valori troppo vicini a 0, infatti quando vale $H_1''$, $\sigma_0^2$ è una sovrastima di $\sigma^2$;
+- $H_1'''$ quando $Q_n$ assume valori fortemente positivi (per ragioni opposte a quanto sopra).
 Specificamente, ragionando come nella definizione degli intervalli di confidenza per $\sigma^2$ fissato il livello di significatività
 $\alpha$ del test, la regione critica per la statistica $Q_n$ risulta essere:
-1. $C' = (0, q_{\frac{\alpha}{2}}) \cup (q_{1-\frac{\alpha}{2}}, +\infty)$ se $H_1'$ è l'ipotesi alternativa;
-2. $C'' = (0, q_{\alpha})$ se $H_1''$ è l'ipotesi alternativa;
-3. $C''' = (q_{1-\alpha}, +\infty)$ se $H_1'''$ è l'ipotesi alternativa.
-   Dove con il generico $q_{\gamma}$ si intende il quantile di ordine $\gamma$ della Chi-quadro con $(n-1)$ gradi di libertà, ovvero quel
-   valore per cui risulta $P(Q \leq q_{\gamma}) = \gamma$ con $Q \sim \chi_{n-1}^2$ ed è ricavabile dalle tavole della Chi-quadro.
+- $C' = (0, q_{\frac{\alpha}{2}}) \cup (q_{1-\frac{\alpha}{2}}, +\infty)$ se $H_1'$ è l'ipotesi alternativa;
+- $C'' = (0, q_{\alpha})$ se $H_1''$ è l'ipotesi alternativa;
+- $C''' = (q_{1-\alpha}, +\infty)$ se $H_1'''$ è l'ipotesi alternativa.
+  Dove con il generico $q_{\gamma}$ si intende il quantile di ordine $\gamma$ della Chi-quadro con $(n-1)$ gradi di libertà, ovvero quel
+  valore per cui risulta $P(Q \leq q_{\gamma}) = \gamma$ con $Q \sim \chi_{n-1}^2$ ed è ricavabile dalle tavole della Chi-quadro.
 
 Si perviene a tali regioni critiche osservando che deve essere:
 $$\alpha = P(\text{rifiutare $H_0 \mid H_0$ è vera}) = P(Q_n \in C \mid Q_n \approx \chi_{n-1}^2)$$
 Notiamo che in base all'esplicità relazione che lega la statistica $Q_n$ alla varianza campionaria $S_n^2$ avremmo potuto usare
 $S_n^2$ come statistica test a cui corrispondono le regioni critiche.
-1. $C' = \left(0, q_{\frac{\alpha}{2}}\frac{\sigma_0^2}{n}\right) \cup \left(q_{1-\frac{\alpha}{2}}\frac{\sigma_0^2}{n}, +\infty\right)$ se $H_1'$ è l'ipotesi alternativa;
-2. $C'' = \left(0, q_{\alpha}\frac{\sigma_0^2}{n}\right)$ se $H_1''$ è l'ipotesi alternativa;
-<<<<<<< HEAD
-3. $C''' = \left(q_{1-\alpha}\frac{\sigma_0^2}{n}, +\infty\right)$ se $H_1'''$ è l'ipotesi alternativa.
-=======
-3. $C''' = \left(-q_{1-\alpha}\frac{\sigma_0^2}{n}, +\infty\right)$ se $H_1'''$ è l'ipotesi alternativa.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
-Si osservi infine che per effettuare un test sulla varianza di una popolazione normalmente distribuita non occorre
-conoscere il valor medio della popolazione stessa. Ciò si deduce dal fatto che il parametro $\mu$ e le sue stime non compaiono
-nella definizione delle regioni critiche del test.
+- $C' = \left(0, q_{\frac{\alpha}[2]}\frac{\sigma_0^2}{n}\right) \cup \left(q_{1-\frac{\alpha}{2}}\frac{\sigma_0^2}{n}, +\infty\right)$ se $H_1'$ è l'ipotesi alternativa;
+- $C'' = \left(0, q_{\alpha}\frac{\sigma_0^2}{n}\right)$ se $H_1''$ è l'ipotesi alternativa;
+- $C''' = \left(-q_{1-\alpha}\frac{\sigma_0^2}{n}, +\infty\right)$ se $H_1'''$ è l'ipotesi alternativa.
+  Si osservi infine che per effettuare un test sulla varianza di una popolazione normalmente distribuita non occorre
+  conoscere il valor medio della popolazione stessa. Ciò si deduce dal fatto che il parametro $\mu$ e le sue stime non compaiono
+  nella definizione delle regioni critiche del test.
 
 Per esempio, si riconsideri il problema del reddito medio annuo per famiglia (in migliaia di euro) di un determinato quartiere
 di una città. Si supponga, come nel primo esempio del capitolo, che tale reddito sia normalmente distribuito ma che non sia nota
@@ -2952,7 +2913,7 @@ varianza sia uguale a $\sigma_0^2 = 25$ e di poter disporre di un campione di nu
 critica del test quando l'ipotesi alternativa è $H_1 : \sigma^2 \neq 25$.
 
 In base a quanto affermato sopra, la statistica da utilizzare è la $Q_n = \frac{(n-1) \cdot \hat{S}_n^2}{\sigma_0^2}$. Pertanto la regione
-critica deve essere $C = (0, q_{\frac{\alpha}{2}}) \cup (q_{1-\frac{\alpha}{2}}, +\infty)$ dove $q_{\frac{\alpha}{2}} = q_{0.025} = 2.70$ e $q_{1-\frac{\alpha}{2}} = q_{0.975} = 19$.
+critica deve essere $C = (0, q_{\frac{\alpha}[2]}) \cup (q_{1-\frac{\alpha}{2}}, +\infty)$ dove $q_{\frac{\alpha}{2}} = q_{0.025} = 2.70$ e $q_{1-\frac{\alpha}{2}} = q_0.975 = 19$.
 In definitiva, la regione critica sarà $C = (0, 2.7) \cup (19, +\infty)$.
 
 Supponiamo ora di effettuare l'indagine e di osservare che la realizzazione del campione fornisca una varianza campionaria corretta.
@@ -2974,20 +2935,16 @@ $$\tilde{T} = \frac{\bar{X}_n - \bar{Y}_m - \mu}{\sqrt{\frac{(n+m)(n \cdot S_{X,
 Si possono pertanto definire le regioni critiche del test considerando tale proprietà e ragionando come nel caso del test per
 la media di una popolazione normalmente distribuita con varianza incognita. Considerando cioè le ipotesi alternative.
 Sia $\mu = \mu_X - \mu_Y$:
-1. Test bidirezionale: $H_1' : \mu \neq \mu_0$;
-2. Test unidirezionale con coda a sinistra: $H_1'' : \mu < \mu_0$;
-3. Test unidirezionale con coda a destra: $H_1''' : \mu > \mu_0$
+- Test bidirezionale: $H_1' : \mu \neq \mu_0$;
+- Test unidirezionale con coda a sinistra: $H_1'' : \mu < \mu_0$;
+- Test unidirezionale con coda a destra: $H_1''' : \mu > \mu_0$
 Le corrispondenti regioni critiche per la statistica
 $$T_{n, m} = \frac{\bar{X}_n - \bar{Y}_m}{\sqrt{\frac{(n+m)(n \cdot S_{X, n}^2 + m \cdot S_{Y, m}^2)}{n \cdot m \cdot (n + m - 2)}}}$$
 risultano essere:
-1. $C' = (-\infty, -t_{1-\frac{\alpha}{2}}) \cup (+t_{1-\frac{\alpha}{2}}, +\infty)$ se $H_1'$ è l'ipotesi alternativa;
-2. $C'' = (-\infty, -t_{1-\alpha})$ se $H_1''$ è l'ipotesi alternativa;
-3. $C''' = (+t_{1-\alpha}, +\infty)$ se $H_1'''$ è l'ipotesi alternativa.
-<<<<<<< HEAD
-Dove $t_{1-\frac{\alpha}{2}}$ e $t_{1-\alpha}$ sono rispettivamente i quantili di ordine $1-\frac{\alpha}{2}$ e $1-\alpha$ della t di Student con $(n+m-2)$ gradi di
-=======
+- $C' = (-\infty, -t_{1-\frac{\alpha}{2}}) \cup (+t_{1-\frac{\alpha}{2}}, +\infty)$ se $H_1'$ è l'ipotesi alternativa;
+- $C'' = (-\infty, -t_{1-\alpha})$ se $H_1''$ è l'ipotesi alternativa;
+- $C''' = (+t_{1-\alpha}, +\infty)$ se $H_1'''$ è l'ipotesi alternativa.
 dove $t_{1-\frac{\alpha}{2}}$ e $t_{1-\alpha}$ sono rispettivamente i quantili di ordine $1-\frac{\alpha}{2}$ e $1-\alpha$ della t di Student con $(n+m-2)$ gradi di
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 libertà, ovvero i valori per cui risulta $P(T \leq t_{1-\frac{\alpha}{2}}) = 1 - \frac{\alpha}{2}$ e $P(T \leq t_{1-\alpha}) = 1 - \alpha$ con $T_n \sim t_{n+m-2}$ e
 sono ricavabili dalle tavole della t di Student.
 
@@ -2997,7 +2954,7 @@ per ottenere un intervallo di confidenza sulla differenza delle medie:
 $$P\left[(\bar{X}_n - \bar{Y}_m) - t_{1 - \frac{\alpha}{2}}\sqrt{\frac{(n+m)(n \cdot S_{X, n}^2 + m \cdot S_{Y, m}^2)}{n \cdot m \cdot (n + m - 2)}} \leq \mu \leq
 (\bar{X}_n - \bar{Y}_m) + t_{1 - \frac{\alpha}{2}}\sqrt{\frac{(n+m)(n \cdot S_{X, n}^2 + m \cdot S_{Y, m}^2)}{n \cdot m \cdot (n + m - 2)}}\right] = 1 - \alpha$$
 Si osservi che tra le ipotesi necessarie per effettuare questo test compare la richiesta che le due popolazioni abbiano identica
-varianza anche se sconosciuta. Questo potrebbe sembrare un grosso problema che può essere risolto tramite il test nel prossimo
+varianza anche se sconosciuta. Questo potrebbe sembrare un groppo problema che può essere risolto tramite il test nel prossimo
 paragrafo.
 
 Un test per la differenza delle medie di due popolazioni può essere definito anche quando le varianze delle due popolazioni sono
@@ -3014,34 +2971,29 @@ In realtà comunque non capita spesso di conoscere esattamente il valore delle d
 Abbiamo appena visto che per poter effettuare un test sulla differenza delle medie di due popolazioni normalmente distribuite
 di cui non sono note le varianze occorre assumere che tali varianze siano identiche. Vediamo quindi come sia possibile
 controllare tale ipotesi. Il test in questione si basa sul fatto che se $X \sim N(\mu_X, \sigma_X)$ e $Y \sim N(\mu_Y, \sigma_Y)$ allora la variabile
-$\tilde{V} = \frac{\sigma_Y^2 \cdot \hat{S}_{X, n}^2}{\sigma_X^2 \cdot \hat{S}_{Y, m}^2}$ risulta essere distribuita come una F con $(n-1)$ e $(m-1)$ gradi di libertà.
+$\tilde{V} = \frac{\sigma_Y^2 \cdot \hat{S}_{X, n}}{\sigma_X^2 \cdot \hat{S}_{Y, m}^2}$ risulta essere distribuita come una F con $(n-1)$ e $(m-1)$ gradi di libertà.
 $\hat{S}_{X, n}$ e $\hat{S}_{Y, m}^2$ sono le varianze campionarie corrette.
 
 La $\tilde{V}$ non è propriamente una statistica poiché essa dipende dai due parametri $\sigma_Y^2$ e $\sigma_X^2$ che sono incogniti, però quando
-risulti soddisfatta l'ipotesi $H_0 : \sigma_X^2 = \sigma_Y^2$ allora $V_{n, m} = \frac{\hat{S}_{X, n}^2}{\hat{S}_{Y, m}^2}$ risulta essere distribuita come
+risulti soddisfatta l'ipotesi $H_0 : \sigma_X^2 = \sigma_Y^2$ allora $V_{n, m} = \frac{\hat{S}_{X, n}^2}{\hat{S}_{Y, m}}$ risulta essere distribuita come
 una F con $(n-1)$ e $(m-1)$ gradi di libertà. Si osservi che $V_{n, m}$ invece è proprio una statistica essendo definita solo
 in funzione dei due campioni $(X_1, \dots, X_n)$ e $(Y_1, \dots, Y_m)$.
 
 Consideriamo ora le 3 ipotesi alternative:
-1. Test bidirezionale: $H_1' : \frac{\sigma_Y^2}{\sigma_X^2}\neq 1$;
-2. Test unidirezionale con coda a sinistra: $H_1'' : \frac{\sigma_Y^2}{\sigma_X^2} < 1$;
-3. Test unidirezionale con coda a destra: $H_1''' : \frac{\sigma_Y^2}{\sigma_X^2} > 1$.
+- Test bidirezionale: $H_1' : \frac{\sigma_Y^2}{\sigma_X^2}\neq 1$;
+- Test unidirezionale con coda a sinistra: $H_1'' : \frac{\sigma_Y^2}{\sigma_X^2} < 1$;
+- Test unidirezionale con coda a destra: $H_1''' : \frac{\sigma_Y^2}{\sigma_X^2} > 1$.
 Rifiuteremo $H_0$ in favore di:
-1. $H_1'$ quando $V_{n, m}$ assume valori troppo grandi o piccoli per una $F(n-1, m-1)$;
-2. $H_1''$ quando $V_{n, m}$ assume valori troppo vicini a 0;
-3. $H_1'''$ quando $V_{n, m}$ assume valori fortemente positivi.
+- $H_1'$ quando $V_{n, m}$ assume valori troppo grandi o piccoli per una $F(n-1, m-1)$;
+- $H_1''$ quando $V_{n, m}$ assume valori troppo vicini a 0;
+- $H_1'''$ quando $V_{n, m}$ assume valori fortemente positivi.
 Specificamente, ragionando come nella definizione degli intervalli di confidenza per $\sigma^2$ fissato il livello di significatività
 $\alpha$ del test, la regione critica per la statistica $V_{n, m}$ risulta essere:
-1. $C' = [0, f_{\frac{\alpha}{2}}) \cup (f_{1-\frac{\alpha}{2}}, +\infty)$ se $H_1'$ è l'ipotesi alternativa;
-2. $C'' = [0, f_{\alpha})$ se $H_1''$ è l'ipotesi alternativa;
-3. $C''' = (f_{1-\alpha}, +\infty)$ se $H_1'''$ è l'ipotesi alternativa.
-<<<<<<< HEAD
-Dove con il generico $f_{\gamma}$ si intende il quantile di ordine $\gamma$ della $F(n-1, m-1)$, ovvero quel
-valore per cui risulta $P(V \leq f_{\gamma}) = \gamma$ con $V \sim F(n-1, m-1)$ ed è ricavabile dalle tavole della F.
-=======
-   Dove con il generico $f_{\gamma}$ si intende il quantile di ordine $\gamma$ della $F(n-1, m-1)$, ovvero quel
-   valore per cui risulta $P(V \leq f_{\gamma}) = \gamma$ con $V \sim F(n-1, m-1)$ ed è ricavabile dalle tavole della F.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
+- $C' = (0, f_{\frac{\alpha}{2}}) \cup (f_{1-\frac{\alpha}{2}}, +\infty)$ se $H_1'$ è l'ipotesi alternativa;
+- $C'' = (0, f_{\alpha})$ se $H_1''$ è l'ipotesi alternativa;
+- $C''' = (f_{1-\alpha}, +\infty)$ se $H_1'''$ è l'ipotesi alternativa.
+  Dove con il generico $f_{\gamma}$ si intende il quantile di ordine $\gamma$ della $F(n-1, m-1)$, ovvero quel
+  valore per cui risulta $P(V \leq f_{\gamma}) = \gamma$ con $V \sim F(n-1, m-1)$ ed è ricavabile dalle tavole della F.
 
 Per esempio, consideriamo due diversi quartieri della stessa città e supponiamo di essere interessati a confrontare il valor medio
 dei redditi annui familiari in migliaia di euro. Si supponga che sia lecito assumere che tali redditi siano normalmente distribuiti.
@@ -3061,24 +3013,16 @@ necessarie per effettuare il test della differenza delle medie con la statistica
 abbiano identica varianza. Prima di accettare definitivamente l'ipotesi $H_0 : \mu_X = \mu_Y$ occorre quindi controllare l'ipotesi
 $H_0' : \sigma_X^2 = \sigma_Y^2$.
 
-Utilizziamo per questo il test appena descritto e basato sulla statistica $V_{n, m} = \frac{\hat{S}_{X, n}^2}{\hat{S}_{Y, m}^2}$
-la cui realizzazione nel nostro caso è $V_{10, 15} = \frac{\hat{S}_{X, 10}^2}{\hat{S}_{Y, 15}^2} = 1.54$.
+Utilizziamo per questo il test appena descritto e basato sulla statistica $V_{n, m} = \frac{\hat{S}_{X, n}^2}{\hat{S}_{Y, m}}$
+la cui realizzazione nel nostro caso è $V_{10, 15} = \frac{\hat{S}_{X, 10}^2}{\hat{S}_{Y, 15}} = 1.54$.
 
-<<<<<<< HEAD
-Vediamo se questo nuovo dato ci porta a non rifiutare $H_0'$ contro $H_1' : \sigma_X^2 \neq \sigma_Y^2$ con un livello di significatività $\alpha = 0.1$.
-=======
 Vediamo se questo nuovo dato ci porta a non rifiutare $H_0'$ contro $H_1 : \sigma_X^2 \neq \sigma_Y^2$ con un livello di significatività $\alpha = 0.1$.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 In questo caso, dalle tavole della F si ricava che per 9 e 14 gradi di libertà i quantili sono $f_{\frac{\alpha}{2}} = f_{0.05} = 0.38$ e
 $f_{1 - \frac{\alpha}{2}} = f_{0.95} = 2.65$.
 
 Pertanto la regione di accettazione di $H_0'$ è $(0.38, 2.65)$.
 
-<<<<<<< HEAD
-Il valore della statistica $V_{n, m} = \frac{\hat{S}_{X, n}^2}{\hat{S}_{Y, m}}$ è $v_{10, 15} = 1.54$.
-=======
 Il valore della statistica $V_{n, m} = \frac{\hat{S}_{X, n}^2}{\hat{S}_{Y, m}}$ è $\nu_{10, 15} = 1.54$.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 
 Possiamo allora affermare, con un livello di significatività pari a 0.1, che le ipotesi per la validità del test per la differenza
 delle medie non possono essere rifiutate e di conseguenza che non si può rifiutare l'ipotesi $H_0$ che siano uguali anche le due medie.
@@ -3106,7 +3050,7 @@ dove $\bar{X}$ e $\bar{Y}$ sono le medie campionarie dei due caratteri mentre $S
 Il test di incorrelazione che ora presentiamo serve a verificare che il coefficiente $\rho_{XY}$ assuma valore 0, cioè che sussista incorrelazione tra
 i due caratteri. Il test è basato sul fatto che sotto l'ipotesi $H_0 : \rho_{XY} = 0$, la statistica $\hat{T}_n = R_n \cdot \sqrt{\frac{n-2}{1-R_n^2}}$ risulta
 essere distribuita come una t di Student con $(n-2)$ gradi di libertà. Questa proprietà infatti può essere utilizzata per confrontare $H_0$ con
-l'ipotesi alternativa $H_1 : \rho_{XY} \neq 0$ non rifiutando $H_0$ quando $\hat{T}_n$ assume valori non troppo distanti dallo 0 e rifiutandola in favore
+l'ipotesi alternativa $H_1 : \rho_{XY} \neq 0$ non rifiutando $H_0$ quando $\hat{T}_n$ assume valori non troppo distanti dallo o0 e rifiutandola in favore
 di $H_1$ in caso contrario.
 
 Ragionando al solito modo, si ottiene allora che per un livello di significatività $\alpha$, la regione critica della statistica $\hat{T}_n$ è
@@ -3116,7 +3060,7 @@ di Student con $(n-2)$ gradi di libertà.
 Per esempio, si consideri una popolazione $(X, Y)$ di travi di cemento, in cui:
 - $X$ indica il carico di prima lesione;
 - $Y$ indica il carico a rottura finale.
-Si supponga di avere un'ampia popolazione, ovvero di avere un elevato numero di queste travi, e di voler controllare, con livello di
+Si supponga di avere un'ampia popolazione ovvero di avere un elevato numero di queste travi e di voler controllare, con livello di
 significatività $\alpha = 0.05$, se esiste una correlazione tra il carico di prima lesione ed il carico a rottura finale. A tal scopo si
 supponga di aver effettuato delle prove su 15 travi ottenendo i risultati riportati nella seguente tabella:
 
@@ -3126,15 +3070,11 @@ supponga di aver effettuato delle prove su 15 travi ottenendo i risultati riport
 In base ai consueti calcoli si verifica che una stima del coefficiente di correlazione lineare è
 $$R_n = \frac{\sum_{i=1}^{15} (X_i - \bar{X}) \cdot (Y_i - \bar{Y})}{15 \cdot S_{X, 15} \cdot S_{Y, 15}} = 0.9195$$
 che risulta uguale al coefficiente di correlazione lineare trovato nell'esempio del primo capitolo, nel quale si supponeva che l'intera popolazione
-<<<<<<< HEAD
-fosse costituita solo dalle 15 travi esaminate. La statistica $\hat{T}_n$ assume invece valore $\hat{t}_{15} = 0.9195 \cdot \sqrt{\frac{15 - 2}{1 - 0.9195^2}} = 8.43$.
-=======
 fosse costituita solo dalle 15 travi esaminate. La statistica $\hat{T}_n$ assume invece valore $\hat{t}_{15} = 0.9195 \cdot \sqrt{15 - 2}{1 - 0.9195^2} = 8.43$.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 
 Vediamo ora se il valore ottenuto consente di non rifiutare l'ipotesi $H_0$ che non esiste correlazione tra i due caratteri. Per questo è
 sufficiente notare che la regione critica del test, relativamente alla statistica $\hat{T}_{15}$ è 
-$C = \left(-\infty, -t_{0.975}\right) \cup \left(+t_{0.975}, +\infty\right) = (-\infty, -2.16) \cup (+2.16, +\infty)$,
+$C = \left(-\infty, -t_{0.975}\right) \cup \left(+t_{0.975}\right) = (-\infty, -2.16) \cup (+2.16, +\infty)$,
 dove il quantile $t_{0.975} = 2.16$ è stato ricavato dalla tavola della distribuzione t di Student con 13 gradi di libertà. Poiché il valore da noi
 osservato di $\hat{T}_{15}$ cade nella regione critica del test è lecito supporre che vi sia un legame lineare tra il carico di prima lesione
 e il carico a rottura, ovvero rifiutando l'ipotesi nulla di incorrelazione tra carico di prima lesione e carico di rottura.
@@ -3296,11 +3236,7 @@ Pertanto è necessario o diminuire il numero delle classi o aumentare il campion
 campione, arrivando ad $n=20$ e supponiamo che con l'aggiunta dei nuovi 10 casi, il campione assuma valori
 $(3.0, 4.1, 2.8, 5.5, 1.5, 2.2, 6.0, 1.2, 3.2, 0.9)$ e $(2.9, 1.7, 4.8, 4.3, 2.0, 7.1, 5.4, 0.9, 1.3, 3.4)$.
 
-<<<<<<< HEAD
-Allora avremo $n_1 = 6 \quad p_1 = F(2) - F(0) = 0.50$, $n_2 = 7 \quad p_2 = F(4) - F(2) = 0.25$ ed $n_3 = 7 \quad p_3 = F(+\infty) - F(4) = 0.25$,
-=======
 Allora avremo $n_1 = 6 \quad p_1 = F(2) - F(0) = 0.50$, $n_2 = 7 \quad p_2 = F(4) - F(2) = 0.25$ e $n_3 = p_3 = F(+\infty) - F(4) = 0.25$,
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 utilizzando $F(t) = 1 - e^{-0.35 t}$.
 
 Di conseguenza, la statistica $W$ assume valore
@@ -3310,11 +3246,7 @@ W &= \frac{(n_1 - 20p_1)^2}{20p_1} + \frac{(n_2 - 20p_2)^2}{20p_2} + \frac{(n_3 
 &= 3.2
 \end{align*}
 Poiché il valore del parametro $\lambda$ della distribuzione esponenziale che stiamo controllando quale possibile distribuzione di $X$
-<<<<<<< HEAD
-non è stato ricavato con stime campionarie, ma arbitrariamente, nel nostro caso la statistica $W$ è distribuita coma una Chi-Quadro
-=======
 non è stato ricavato con stime campionarie, ma arbitrariamente nel nostro caso la statistica $W$ è distribuita coma una Chi-Quadro
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 con $K - 1 = 2$ gradi di libertà.
 
 La regione critica si ricava cercando nelle tavole della Chi-Quadro, nella riga relativa ai 2 gradi di libertà, che per $\alpha = 0.05$
@@ -3328,22 +3260,11 @@ e quindi ricavarlo stimando $E[X]$ con la media campionaria $\bar{X}_{20} = 3.07
 Suddividiamo ora il supporto di $F$ negli stessi 3 intervalli in cui era suddiviso in precedenza, ovvero gli intervalli
 $I_1 = [0, 2)$, $I_2 = [2, 4)$ e $I_3 = [4, +\infty)$.
 
-<<<<<<< HEAD
-In questo caso avremo $n_1 = 6 \quad p_1 = F(2) - F(0) = 0.48$, $n_2 = 7 \quad p_2 = F(4) - F(2) = 0.25$ ed $n_3 = 7 \quad p_3 = F(+\infty) - F(4) = 0.27$.
-
-Di conseguenza la statistica $W$ assume valore
-\begin{align*}
-W &= \sum_{i=1}^3 \frac{(n_i - 20 \cdot p_i)^2}{20 \cdot p_i}\\
-&= \frac{(6 - 20 \cdot 0.48)^2}{20 \cdot 0.48} + \frac{(4 - 20 \cdot 0.25)^2}{20 \cdot 0.25} + \frac{(7 - 20 \cdot 0.27)^2}{20 \cdot 0.27}\\
-&= 2.62
-\end{align*}
-=======
 In questo caso avremo $n_1 = 6 \quad p_1 = F(2) - F(0) = 0.48$, $n_2 = 7 \quad p_2 = F(4) - F(2) = 0.25$ e $n_3 = p_3 = F(+\infty) - F(4) = 0.27$.
 
 Di conseguenza la statistica $W$ assume valore
 $$W = \sum_{i=1}^3 \frac{(n_i - 20 \cdot p_i)^2}{20 \cdot p_i} = \frac{(6 - 20 \cdot 0.48)^2}{20 \cdot 0.48} + \frac{(4 - 20 \cdot 0.25)^2}{20 \cdot 0.25} +
 \frac{(7 - 20 \cdot 0.27)^2}{20 \cdot 0.27} = 2.62$$
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 Poiché il valore del parametro $\lambda$ è stato ricavato da stime campionarie, allora questa volta la statistica $W$ è distribuita
 come una Chi-Quadro con $K-r-1 = 3-1-1 = 1$ gradi di libertà.
 
@@ -3385,12 +3306,7 @@ per ogni $k \in \mathbb{N}$.
 
 Pertanto avremo
 \begin{gather*}
-<<<<<<< HEAD
-p_1 = P(X=0 \text{ oppure } X=1) = P(X=0) + P(X=1) =\\
-=\frac{(3.17)^0}{0!}e^{-3.17} + \frac{(3.17)^1}{1!}e^{-3.17} = 0.175\\
-=======
 p_1 = P(X=0 \text{ oppure } X=1) = P(X=0) + P(X=1) = \frac{(3.17)^0}{0!}e^{-3.17} + \frac{(3.17)^1}{1!}e^{-3.17} = 0.175\\
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 p_2 = P(X=2) = \frac{(3.17)^2}{2!}e^{-3.17} = 0.211\\
 p_3 = P(X=3) = \frac{(3.17)^3}{3!}e^{-3.17} = 0.223\\
 p_4 = 1 - P(X=0 \text{ oppure } X=1 \text{ oppure } X=3) = 0.391
@@ -3419,22 +3335,15 @@ coppia $(X_i, Y_i)$ è relativa allo stesso individuo o elemento (es.: il livell
 ricevuto una cura ed il livello di colesterolo $Y_i$ dello stesso paziente dopo aver ricevuto la cura). Contiamo allora quante
 volte si verifica $X_i > Y_i$, $X_i < Y_i$ e $X_i = Y_i$.
 
-Siano:
-- $S^+ = \text{numero di volte che \(X_i > Y_i\)}$;
-- $S^- = \text{numero di volte che \(X_i < Y_i\)}$;
-- $S^= = \text{numero di volte che \(X_i = Y_i\)}$.
+Siano $S^+ =$ numero di volte che $X_i > Y_i$, $S^- =$ $X_i < Y_i$ e $S^=$ numero di volte che $X_i = Y_i$
 
 Se l'ipotesi nulla è vera, allora è logico aspettarsi che le quantità $S^+$ ed $S^-$ non si discostino molto tra loro. Infatti
 se l'ipotesi nulla è vera e se $n-S^=$ è sufficientemente grande ($n - S^= \geq 10$), la quantità $S_n = S^+ - S^-$ risulta essere
 normalmente distribuita con $\mu = 0$ e $\sigma^2 = \frac{n - S^=}{2}$.
 
 Si può quindi costruire una regione critica per $S_n$ ragionando nel solito modo, rifiutando $H_0$ quando $S_n$ si discosta troppo
-dallo 0 per essere una normale $N\left(0, \sqrt{\frac{n-S^=}{2}}\right)$.
-<<<<<<< HEAD
-Specificamente, per un fissato livello di significatività $\alpha$, la regione critica per $S_n$ risulta essere
-=======
+dallo 0 per essere una normale $N\left(\sqrt{\frac{n-S^=}{2}}\right)$.
 Specificamente per un fissato livello di significatività $\alpha$, la regione critica per $S_n$ risulta essere
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 $C = \left(-\infty, -z_{1 - \frac{\alpha}{2}}\right) \cup \left(+z_{1 - \frac{\alpha}{2}}, +\infty\right)$, dove $z_{1-\frac{\alpha}{2}}$ è il quantile di ordine $1 - \frac{\alpha}{2}$
 della normale standardizzata.
 
@@ -3463,11 +3372,7 @@ Per le 10 coppie considerate i segni delle differenze $x_i - y_i$ che sono ripor
 
 Necessario sottolineare che i campioni devono essere appaiati, in altre parole la coppia $(X_i, Y_i)$ deve essere relativa alla
 stessa unità, entità o individuo. Nel nostro caso potremmo ipotizzare che l'indice $i$ sia relativo allo stesso nucleo
-<<<<<<< HEAD
-famigliare che viveva in precedenza nel quartiere della città, associato alla popolazione $X$ e poi andato a vivere in un
-=======
 famigliare che viveva in precedenza nel quartiere della città, associato alla popolazione $X$ e poi è andato a vivere in un
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 quartiere della città associato alla popolazione $Y$.
 
 La quantità $X_i - Y_i$ misura la differenza di reddito tra la famiglia $i$, quando abitava nel quartiere $X$, e adesso che si
@@ -3552,11 +3457,7 @@ ma in compenso può essere utilizzato solo quando ci siano validi motivi per pen
 da confrontare sia continua.
 
 Siano quindi $(X_1, \dots, X_n)$ e $(Y_1, \dots, Y_m)$ due campioni di numerosità $n$ ed $m$ estratti da $X$ ed $Y$ rispettivamente. Siano
-<<<<<<< HEAD
-poi $F_{X, n}$ ed $F_{Y, m}$ le funzioni di ripartizione empiriche di $X$ ed $Y$ ottenute con i campioni e sia
-=======
 poi $F_{X, m}$ ed $F_{Y, m}$ le funzioni di ripartizione empiriche di $X$ ed $Y$ ottenute con i campioni e sia
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 $$D_{n, m} = \text{sup}_{t \in \mathbb{R}}|F_{X, n}(t) - F_{Y, m}(t)|$$
 la statistica che specifica l'estremo superiore delle distanze, in valore assoluto, tra le due funzioni di ripartizione
 empiriche. Anche in questo caso si può dimostrare che quando $H_0$ è vera e quando $F_X$ è una funziona continua, allora $D_{n, m}$
@@ -3577,36 +3478,21 @@ ricorda molto, nella sua formulazione, il test del Chi-Quadro per la bontà dell
 
 Si consideri una popolazione bidimensionale $(X, Y)$ e si supponga di poter estrarre da essa un campione casuale
 $((X_1, Y_1), \dots, (X_n, Y_n))$. Si vuole controllare, con livello di significatività $\alpha$, l'ipotesi :
-<<<<<<< HEAD
-- $H_0 : \text{ i caratteri \(X\) ed \(Y\) sono indipendenti}$,
-considerando quale ipotesi alternativa quella ovvia, ovvero,
-- $H_1 : \text{ i caratteri \(X\) ed \(Y\) non sono indipendenti}$.
-=======
 - $H_0$ : i caratteri $X$ ed $Y$ sono indipendenti,
 considerando quale ipotesi alternativa quella ovvia, ovvero,
 - $H_1$ : i caratteri $X$ ed $Y$ non sono indipendenti.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 
 Per effettuare il test del Chi-Quadro, occorre inizialmente fare una partizione dei due supporti dei caratteri $X$ ed $Y$ in
 un numero finito di intervalli ciascuno. Denotiamo con $I_k^X$, per $k = 1, \dots, M_X$ ed $I_j^Y$, per $j = 1, \dots, M_Y$, gli
 intervalli che formano una partizione del supporto di $X$ ed $Y$.
 
 Per ogni coppia $(k, j)$ consideriamo le seguenti quantità:
-<<<<<<< HEAD
-- $n_k^X = \text{ numero di elementi \(X_i\) del campione che cadono in } I_k^X$;
-- $n_j^Y = \text{ numero di elementi \(Y_i\) del campione che cadono in }I_j^Y$;
-- $n_{k, j} = \text{ numero di elementi \((X_i, Y_i)\) del campione che cadono in } I_k^X \times I_j^Y$;
-- $f_k^X = \frac{n_k^X}{n} = \text{ frequenza relativa di }I_k^X$;
-- $f_j^Y = \frac{n_j^Y}{n} = \text{ frequenza relativa di } I_j^Y$;
-- $f_{k, j} = \frac{n_{k, j}}{n} = \text{ frequenza relativa di } I_k^X \times I_j^Y$.
-=======
 - $n_k^X =$ numero di elementi $X_i$ del campione che cadono in $I_k^X$;
 - $n_j^Y =$ numero di elementi $Y_i$ del campione che cadono in $I_j^Y$;
 - $n_{k, j} =$ numero di elementi $(X_i, Y_i)$ del campione che cadono in $I_k^X \times I_j^Y$;
 - $f_k^X = \frac{n_k^X}{n} =$ frequenza relativa di $I_k^X$;
 - $f_j^Y = \frac{n_j^Y}{n} =$ frequenza relativa di $I_j^Y$;
 - $f_{k, j} = \frac{n_{k, j}}{n} =$ frequenza relativa di $I_k^X \times I_j^Y$.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
   
 Le quantità $f_{k, j}$ sono dette /frequenze relative osservate/ delle regioni $I_k^X \times I_j^Y$.
 
@@ -3623,16 +3509,6 @@ allora $W$ è approssimativamente distribuita come una Chi-Quadro con $(M_X - 1)
 
 La regola di decisione del test segue in base alle considerazioni fatte sopra, saremo portati a rifiutare l'ipotesi nulla
 quando la $W$ assume valori troppo lontani dallo 0 per essere una Chi-Quadro con opportuni gradi di libertà. Specificamente
-<<<<<<< HEAD
-per ogni livello di significatività $\alpha$ la regione critica per $W$ risulta essere $C = (\chi_{1 - \alpha}^2, +\infty)$, dove $\chi_{1-\alpha}^2$ rappresenta
-il quantile di ordine $(1 - \alpha)$ della Chi-Quadro con $(M_X - 1)(M_Y - 1)$ gradi di libertà.
-
-Per esempio, considerata la popolazione costituita dai nuclei familiari residenti in un quartiere di una data città, si
-supponga di voler stabilire se esiste una dipendenza tra i due caratteri:
-- $X = \text{ reddito medio annuo della famiglia (in migliaia)}$;
-- $Y = \text{ età media del nucleo famigliare}$.
-A tale scopo si effettua un'indagine su un totale di 200 nuclei familiari scelti in modo casuale tra quelli del quartiere
-=======
 per ogni livello di significatività $\alpha$ la regione critica per $W$ risulta essere $C = (\chi_{1 - \alpha}, +\infty)$, dove $\chi_{1-\alpha}^2$ rappresenta
 il quantile di ordine $(1 - \alpha)$ della Chi-Quadro con $(M_X - 1)(M_Y - 1)$ gradi di libertà.
 
@@ -3641,7 +3517,6 @@ supponga di voler stabilire se esiste una dipendenza tra i due caratteri:
 - $X =$ reddito medio annuo della famiglia (in migliaia)
 - $Y =$ età media del nucleo famigliare.
 A tale scopo si effettua un'indagine su un totale di 200 nuclei famigliari scelti in modo casuale tra quelli del quartiere
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 andando ad osservare, per ogni nucleo, i valori di questi due caratteri.
 
 Come risultato dell'indagine si ottiene la tabella sotto riportata:
@@ -3651,21 +3526,12 @@ Come risultato dell'indagine si ottiene la tabella sotto riportata:
 
 Viene spontaneo, in questo caso, considerare le cinque classi in cui è stato suddiviso il supporto del carattere $X$ e le quattro
 classi in cui è stato suddiviso il supporto del carattere $Y$, come agli intervalli su cui costruire il test. Avremo
-<<<<<<< HEAD
-$M_X = 5$ ed $M_Y = 4$. Inoltre avremo $I_1^X = [0, 20] \quad I_2^X = (20, 30] \quad I_3^X = (30, 40] \quad I_4^X = (40, 50] \quad I_5^X = (50, \infty]$
-ed $I_1^Y = [0, 20] \quad I_2^Y = (20, 30] \quad I_3^Y = (30, 50] \quad I_4^Y = (50, \infty]$.
-
-Le frequenze assolute $n_{k, j}$ sono quindi quelle che compaiono nella tabella introdotta in precedenza. Notiamo che in tale tabella
-sono riportate anche le frequenze assolute marginali dei due caratteri. Poiché le frequenze assolute
-osservate assumono sempre valore non inferiore
-=======
 $M_X = 5$ e $M_Y = 4$. Inoltre avremo $I_1^X = [0, 20] \quad I_2^X = (20, 30] \quad I_3^X = (30, 40] \quad I_4^X = (40, 50] \quad I_5^X = (50, \infty]$
 e $I_1^Y = [0, 20] \quad I_2^/ = (20, 30] \quad I_3^Y = (30, 50] \quad I_4^Y = (50, \infty]$.
 
 Le frequenze assolute $n_{k, j}$ sono quindi quelle che compaiono nella tabella introdotta in precedenza. Notiamo che in tale tabella
 sono riportate anche le frequenze assolute marginali dei due caratteri. Poiché le frequenze assolute osservate sono riportare
 anche le frequenze assolute marginali dei due caratteri. Poiché le frequenze assolute osservate assumono sempre valore non inferiore
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 a 5, non abbiamo problemi ad applicare il metodo del Chi-Quadro per effettuare il test.
 
 Calcoliamo quindi le frequenze relativa, ottenendo quanto riportato nella tabella seguente:
@@ -3688,19 +3554,11 @@ essere utilizzabile quando si considerano caratteri con distribuzione non contin
 
 Addirittura esso può essere utilizzato considerando caratteri con modalità non numeriche.
 
-<<<<<<< HEAD
-Ora riconsideriamo come popolazione quella costituita dai nuclei familiari residenti nel solito quartiere della solita città.
-Si supponga di voler stabilire se esiste una dipendenza tra i due caratteri:
-- $X = \text{ reddito medio annuo della famiglia (in migliaia)}$;
-- $Y = \text{ titolo di studio del capofamiglia}$.
-A tale scopo si effettua una nuova indagine su un totale di 100 nuclei familiari scelti in modo casuale tra quelli del
-=======
 Ora riconsideriamo come popolazione quella costituita dai nuclei famigliari residenti nel solito quartiere della solita città.
 Si supponga di voler stabilire se esiste una dipendenza tra i due caratteri:
 - $X =$ reddito medio annuo della famiglia (in migliaia);
 - $Y =$ titolo di studio del capofamiglia.
 A tale scopo si effettua una nuova indagine su un totale di 100 nuclei famigliari scelti in modo casuale tra quelli del
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 quartiere andando ad osservare per ogni nucleo i valori di questi due caratteri.
 
 Come risultato dell'indagine si ottiene la tabella sotto riportata:
@@ -3712,22 +3570,14 @@ Viene spontaneo in questo caso considerare le 5 classi in cui è stato suddiviso
 è stato suddiviso il supporto del carattere $Y$, come agli intervalli su cui costruire il test. Avremo $M_X = 5$ e $M_Y = 4$.
 
 In questo caso però vi sono diverse frequenze assolute osservate che hanno valore minore di 5. Occorre pertanto raggruppare
-<<<<<<< HEAD
-ulteriormente le osservazioni in modo da avere tutte frequenze osservare maggiori o uguali a 5.
-=======
 ulteriormente le osservazioni in modo da avere tutte frequenze osservare maggiori 0 uguali a 5.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 
 Nella tabella seguente è proposto un nuovo raggruppamento che soddisfa la condizione richiesta:
 
 #+DOWNLOADED: /tmp/screenshot.png @ 2018-06-08 17:58:00
 [[file:Lezioni/screenshot_2018-06-08_17-58-00.png]]
 
-<<<<<<< HEAD
-Utilizzando questo raggruppamento per effettuare il test, avremo allora $M_X = 3$ ed $M_Y = 4$.
-=======
 Utilizzando questo raggruppamento per effettuare il test, avremo allora $M_X = 3$ e $M_Y = 4$.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 
 Inoltre, avremo $I_1^X = [0, 30] \quad I_2^X = (30, 50] \quad I_3^X = (50, \infty)$ e
 $I_1^Y = \text{media inferiore} \quad I_2^Y = \text{media superiore} \quad I_3^Y = \text{maturità} \quad I_4^Y = \text{laurea}$.
@@ -3746,52 +3596,38 @@ Si ottiene allora il seguente valore: $W = 100 \cdot \sum_{k=1}^3 \sum_{j=1}^4 \
 
 Supponiamo di aver fissato un livello di significatività $\alpha = 0.05$ per il test, allora per determinare l'estremo $\chi_{1-\alpha}^2$ della
 regione critica, occorre cercare il quantile di ordine 0.95 relativo alla Chi-Quadro con $(3-1)(4-1) = 6$ gradi di libertà.
-<<<<<<< HEAD
-Essendo in questo caso $\chi_{0.95}^2 = 12.6$, la regione critica per $W$ risulta essere $C = (12.6, +\infty)$ ($w = 3.15$) che non consente
-=======
 Essendo in questo caso $\chi_{0.95} = 12.6$, la regione critica per $W$ risulta essere $C = (12.6, +\infty)$ ($w = 3.15$) che non consente
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 di rifiutare l'ipotesi nulla che sussista indipendenza tra i redditi medi annui familiari ed i titoli di studio.
 *** Test di incorrelazione
 Il test di incorrelazione che presentiamo ora non è basato sul coefficiente di correlazione lineare di Pearson, ma su una
-statistica campionaria che porta il nome di /coefficiente di correlazione dei ranghi $R_S$ di Spearman/. Esso viene incluso
+statistica campionaria che porta il nome di /coeddiciente di correlazione dei ranghi $R_S$ di Spearman/. Esso viene incluso
 nei test di tipo non-parametrico in quanto la determinazione di $R_S$ non coinvolge direttamente i valori numerici assunti
 dai dati campionari, ma solo i loro ranghi di cui viene fornita la definizione.
 
 Consideriamo un campione $((X_1, Y_1), \dots, (X_n, Y_n))$ di numerosità $n$ estratto in modo casuale dalla popolazione bidimensionale
-$(x, y)$. Ordiniamo in senso crescente prima l'insieme dei dati di tipo $x_i$ e successivamente quelli di tipo $y_i$.
+$(x, y)$. ordiniamo in senso crescente prima l'insieme dei dati di tipo $x_i$ e successivamente quelli di tipo $y_i$.
 
-È detto rango di ciascun dato la posizione che esso assume nella sequenza così ottenuta di dati dello stesso tipo.
+è detto rango di ciascun dato la posizione che esso assume nella sequenza così ottenuta di dati dello stesso tipo.
 
-Ad ogni coppia $(x_i, y_i)$ associamo ora la corrispondente coppia di ranghi $(r_i^x, r_i^y)$ e denotiamo con $d_i$ le loro
+ad ogni coppia $(x_i, y_i)$ associamo ora la corrispondente coppia di ranghi $(r_i^x, r_i^y)$ e denotiamo con $d_i$ le loro
 differenze $d_i = r_i^x - r_i^y$.
 
 è detto /coefficiente di correlazione dei ranghi di Spearman/ la statistica
 $$R_s = 1 - \frac{6 \cdot \sum_{i=1}^n d_i^2}{n^3 - n}$$
 Il coefficiente $R_S$ soddisfa proprietà simili a quelle di cui gode il coefficiente di correlazione lineare di Pearson e
-consente di definire un nuovo tipo di incorrelazione (che chiameremo incorrelazione nel senso di Spearman) che si ha quando
+consente di definire un nuovo tipo di incorrelazione (che chiameremo incorrelazione nel senso di Spearman) che si ha auando
 $R_S$ assume valore zero.
 
-<<<<<<< HEAD
-La possibilità di utilizzare $R_S$ in un test di ipotesi deriva dal fatto che indipendentemente dalla forma delle distribuzione
-=======
 La possibilità di utilizzare $R_S$ in un test di ipotesi deriva dal fatto che indipendentemente dalla forma della distribuzione
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 congiunte $(X, Y)$, quando i caratteri $X$ ed $Y$ sono incorrelati, nel senso di Spearman, e la numerosità del campione è maggiore
 di 10, allora la statistica
 $$\tilde{T}_n = R_S \cdot \sqrt{\frac{n-2}{1 - R_S^2}}$$
-risulta essere approssimativamente distribuita come una t di Student con $(n-2)$ gradi di libertà.
+risulta essere approssimativamente distribuita come una t di Student con $(n-1)$ gradi di libertà.
 
 Dovendo controllare l'ipotesi
-<<<<<<< HEAD
-- $H_0 : \text{ i caratteri \(X\) ed \(Y\) sono incorrelati secondo Spearman}$;
-contro
-- $H_1 : \text{ i caratteri \(X\) ed \(Y\) sono correlati secondo Spearman}$.
-=======
 - $H_0$ : i caratteri $X$ ed $Y$ sono incorrelati secondo Spearman;
 contro
 - $H_1$ : i caratteri $X$ ed $Y$ sono correlati secondo Spearman.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 Possiamo pensare di non rifiutare $H_0$ quando $\tilde{T}_n$ assume valori non troppo distanti dallo 0 e di rifiutarla in favore di
 $H_1$ in caso contrario.
 
@@ -3887,7 +3723,7 @@ vale per la determinazione di una stima di $f$.
 In questo capitolo ci limiteremo a considerare un caso particolare di equazione di regressione lineare a cui è dedicata vasta
 letteratura statistica. È questo il caso in cui si suppone che la $f$ sia una funzione lineare nelle variabili esplicative
 $X_k$ e in un addendo aleatorio $E$, ovvero il caso in cui la relazione cercata è del tipo
-$$Y = \alpha_0 + \alpha_1 \cdot X_1 + \dots + \alpha_m \cdot X_m + E$$
+$$Y = \alpha_0 + \alpha_1 \cdot X_1 + \dots è \alpha_m \cdot X_m + E$$
 dove $\alpha_k, k = 0, \dots, m \in \mathbb{R}$ ed $E \sim N(0, \sigma^2)$.
 
 In questo caso si parla di /regressione lineare/ riferendosi in particolare alla /regressione lineare semplice/ se nella relazione
@@ -3905,13 +3741,8 @@ distribuzione per ogni singolo valore.
 L'equazione $Y = \alpha_0 + \alpha_1 \cdot X_1 + \dots + \alpha_m \cdot X_m + E$ descrive infatti la distribuzione del carattere $Y$ come distribuzione della somma
 di $m+1$ variabili, tra cui una che esprime gli scostamenti aleatori.
 
-<<<<<<< HEAD
-Per ovviare al rischio di incomprensioni preferiamo quindi riscrivere la precedente relazione esplicitando il fatto che tanto
-il residuo quanto i valori assunti dalle variabili esplicative variano per ogni individuo della popolazione, considerando
-=======
 Per ovviare al rischio di incomprensioni, preferiamo quindi riscrivere la precedente relazione esplicitando il fatto che, tanto
 il residuo quanto i valori assunti dalle variabili esplicative, variano per ogni individuo della popolazione, considerando
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 d'ora in poi l'equazione:
 $$Y_i = \alpha_0 + \alpha_1 \cdot X_{1, i} + \dots + \alpha_m \cdot X_{m, i} + E_i$$
 dove l'indice $i$ varia da 1 ad $N$, totale degli individui della popolazione.
@@ -3935,8 +3766,8 @@ Si procede in realtà al contrario per due motivi fondamentali:
    statistiche, la cui realizzazione può essere determinata solo dopo aver effettuato le stime delle costanti (varianza dei
    residui e costanti $\alpha_k$).
 *** Stima delle costanti del modello
-Consideriamo una popolazione bidimensionale $(X, Y)$ ed assumiamo che tra i due caratteri esista un /legame di dipendenza
-esprimibile tramite un'equazione di regressione lineare (semplice)/. Per ogni individuo $i = 1, \dots, N$, sia quindi
+Consideriamo una popolazione bidimensionale $(X, Y)$ ed assumiamo che tra i due caratteri esiste un /legami di dipendenza
+esprimibile tramite/ un'equazione di regressione lineare (semplice)/. Per ogni individuo $i = 1, \dots, N$, sia quindi
 $Y_i = \alpha_0 + \alpha_1 \cdot X_i + E_i$. In primo luogo potremmo essere interessati a determinare il /valore delle costanti/ $\alpha_0$ e $\alpha_1$.
 Ovviamente, a meno di non disporre dei dati relativi a tutti gli $N$ individui della popolazione, di tali costanti non
 potremo fare altro che /determinarne delle stime numeriche/ che denoteremo con $a_0$ e $a_1$.
@@ -3961,7 +3792,7 @@ Dove $\bar{X} = \frac{\sum_{i=1}^n X_i}{n}$ e $\bar{Y} = \frac{\sum_{i=1}^n Y_i}
 È possibile osservare che tali stimatori sono definiti analogamente alle costanti $q$ ed $m$ della /retta dei minimi quadrati/
 $Y = m \cdot X + q$ per /descrivere al meglio un legame lineare tra due caratteri/ di una serie di dati.
 
-In effetti, gli /stimatori $A_0$ ed $A_1$/ vengono determinati allo stesso modo, come /valori per cui risulta minima la quantità/
+In effetti, gli /stimatori $A_0$ ed $A_1$ vengono determinati allo stesso modo, come /valori per cui risulta minima la quantità/
 $\sum_{i=1}^n [A_1 \cdot X_i + A_0 - Y_i]^2$.
 
 Supposto quindi che $\{(x_1, y_1), \dots, (x_n, y_n)\}$ sia una realizzazione del campione $\{(X_1, Y_1), \dots, (X_n, Y_n)\}$, due stime puntuali
@@ -3972,11 +3803,7 @@ Dove $\bar{x} = \frac{\sum_{i=1}^n x_i}{n}$ e $\bar{y} = \frac{\sum_{i=1}^n y_i}
 
 I due /stimatori $A_0$ e $A_1$/ proposti, sono tali che, /sotto le tre ipotesi specificate/ precedentemente, essi /soddisfano le
 seguenti proprietà/:
-<<<<<<< HEAD
-- $E[A_0] = \alpha_0 \quad V[A_0] = \sigma^2 \cdot \left[\frac{1}{n} + \frac{\bar{x}^2}{\sum_{i=1}^n (x_i - \bar{x})^2}\right]$;
-=======
 - $E[A_0] = \alpha_0 \quad V[A_0] = \sigma^2 \cdot \left[\frac{1}{n} + \frac{x^{-2}}{\sum_{i=1}^n (x_i - \bar{x})^2}\right]$;
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 - $E[A_1] = \alpha_1 \quad V[A_1] = \sigma^2 \cdot \left[\frac{1}{\sum_{i=1}^n (x_i - \bar{x})^2}\right]$;
 Da cui si deduce che $A_0$ e $A_1$ sono due /stimatori corretti/ e pertanto adatti a fare inferenze sui coefficienti $\alpha_0$ e $\alpha_1$.
 
@@ -3984,11 +3811,7 @@ In particolare, se valgono le ipotesi
 - $E[E_i] = 0 \quad \forall i = 1, \dots, N$;
 - $V[E_i] = \sigma^2 \quad \forall i = 1, \dots, N$;
 - Le variabili $E_i$ sono incorrelate tra loro.
-<<<<<<< HEAD
-Si può dire qualcosa di ancora più forte, infatti in questo caso, /$A_0$ ed \(A_1\)/ sono, tra gli /stimatori/ corretti per
-=======
 si può dire qualcosa di ancora più forte, infatti in questo caso, /$A_0$ ed \(A_1\)/ sono, tra gli /stimatori/ corretti per
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 $\alpha_0$ e $\alpha_1$, i /più efficienti/, ovvero quelli cui corrisponde varianza minima.
 
 Questa proprietà è solitamente riferita in letterature con il termine di /Teorema di Gauss-Markov/.
@@ -4019,11 +3842,7 @@ Si può mostrare che condizionalmente alle 4 ipotesi:
 - Le variabili $E_i$ sono incorrelate tra loro;
 - Le variabili $E_i$ sono normalmente distribuite.
 Anche gli /stimatori $A_0$ ed $A_1$ sono normalmente distribuiti/, con:
-<<<<<<< HEAD
-- $A_0 \cong N\left(\alpha_0, \sigma^2 \cdot \left[\frac{1}{n} + \frac{\bar{x}^2}{\sum_{i=1}^n (x_i - \bar{x})^2}\right]\right)$;
-=======
 - $A_0 \cong N\left(\alpha_0, \sigma^2 \cdot \left[\frac{1}{n} + \frac{x^{-2}}{\sum_{i=1}^n (x_i - \bar{x})^2}\right]\right)$;
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 - $A_1 \cong N\left(\alpha_1, \sigma^2 \cdot \left[\frac{1}{\sum_{i=1}^n (x_i - \bar{x})^2}\right]\right)$;
 La conoscenza della distribuzione dei due stimatori potrebbe essere utilizzata per determinare degli intervalli, come visto nel
 Capitolo 5.
@@ -4042,15 +3861,9 @@ La presenza del termine $\frac{1}{n-2}$ è giustificata dal fatto che così defi
 corretto, ovvero vale $E[S_{\text{RES}}] = \sigma^2$.
 
 Andiamo quindi a sostituire nelle
-<<<<<<< HEAD
-- $A_0 \cong N\left(\alpha_0, \sigma^2 \cdot \left[\frac{1}{n} + \frac{\bar{x}^2}{\sum_{i=1}^n (x_i - \bar{x})^2}\right]\right)$;
-- $A_1 \cong N\left(\alpha_1, \sigma^2 \cdot \left[\frac{1}{\sum_{i=1}^n (x_i - \bar{x})^2}\right]\right)$;
-la quantità $\sigma^2$ con il suo stimatore $S_{\text{RES}}^2$ e consideriamo le variabili:
-=======
 - $A_0 \cong N\left(\alpha_0, \sigma^2 \cdot \left[\frac{1}{n} + \frac{x^{-2}}{\sum_{i=1}^n (x_i - \bar{x})^2}\right]\right)$;
 - $A_1 \cong N\left(\alpha_1, \sigma^2 \cdot \left[\frac{1}{\sum_{i=1}^n (x_i - \bar{x})^2}\right]\right)$;
-a quantità $\sigma^2$ con il suo stimatore $S_{\text{RES}}^2$ e consideriamo le variabili:
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
+  la quantità $\sigma^2$ con il suo stimatore $S_{\text{RES}}^2$ e consideriamo le variabili:
 - $T_0 = \frac{A_0 - \alpha_0}{\sqrt{S_{\text{RES}}^2 \cdot \left[\frac{1}{n} + \frac{\bar{X}^2}{\sum_{i=1}^n (X_i - \bar{X})^2}\right]}}$;
 - $T_1 = \frac{A_1 - \alpha_1}{\sqrt{S_{\text{RES}}^2 \cdot \left[\frac{1}{\sum_{i=1}^n (X_i - \bar{X})^2}\right]}}$.
 Condizionatamente alle consuete ipotesi:
@@ -4058,29 +3871,17 @@ Condizionatamente alle consuete ipotesi:
 - $V[E_i] = \sigma^2 \quad \forall i = 1, \dots, N$;
 - Le variabili $E_i$ sono incorrelate tra loro;
 - Le variabili $E_i$ sono normalmente distribuite.
-<<<<<<< HEAD
-Le variabili $T_0$ e $T_1$ risultano essere distribuite come delle t di Student con $n-2$ gradi di libertà.
-=======
 le variabili $T_0$ e $T_1$ risultano essere distribuite come delle t di Student con $n-2$ gradi di libertà.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 
 Considerate allora le realizzazioni:
 - $s_{\text{RES}}^2$;
 - $a_0$;
 - $a_1$;
-<<<<<<< HEAD
-- $x_i \quad \forall i = 1, \dots, n$;
-- $\bar{x}$.
-Si ottengono gli intervalli di confidenza per $\alpha_0$ e $\alpha_1$ che per un fissato livello di confidenza $\alpha$ risultano essere:
-- $\left[a_0 - t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \left[\frac{1}{n} + \frac{\bar{x}^2}{s_x^2}\right]},
-  a_0 + t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \left[\frac{1}{n} + \frac{\bar{x}^2}{s_x^2}\right]}\right]$;
-=======
-- $x_i \quad i = 1, \dots, n$;
+- $x_i i = 1, \dots, n$;
 - $\bar{x}$.
 Si ottengono gli intervalli di confidenza per $\alpha_0$ e $\alpha_1$ che per un fissato livello di confidenza $\alpha$ risultano essere:
 - $\left[a_0 - t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \left[\frac{1}{n} + \frac{x^{-2}}{s_x^2}\right]},
   a_0 + t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \left[\frac{1}{n} + \frac{x^{-2}}{s_x^2}\right]}\right]$;
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 - $\left[a_1 - t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \frac{1}{s_x^2}},
   a_0 + t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \frac{1}{s_x^2}}\right]$.
 Dove $s_x^2 = \sum_{i=1}^n (x_i - \bar{x})^2$, mentre $t_{1 - \frac{\alpha}{2}}$ è il quantile di ordine $1 - \frac{\alpha}{2}$ della t di Student con
@@ -4110,11 +3911,7 @@ Capitoli 6 e 7, relativi alla /incorrelazione lineare tra due caratteri di una p
 Se con l'uso di questi test si /dovesse rifiutare l'ipotesi di incorrelazione/, allora ha senso provare ad /effettuare test
 più approfonditi sulla validità del modello lineare/, /altrimenti/ si dovrebbe passare a /considerare qualche altro modello/.
 
-<<<<<<< HEAD
-È preferibile utilizzare il test basato sulla statistica $\hat{T}_n = R_n \cdot \sqrt{\frac{n-2}{1 - R_n^2}}$ descritto nel paragrafo 6.7 se si
-=======
 È preferibile utilizzate il test basato sulla statistica $\hat{T}_n = R_n \cdot \sqrt{\frac{n-2}{1 - R_n^2}}$ descritto nel paragrafo 6.7 se si
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 posseggono dei dati accurati.
 
 Useremo invece il test basato sulla statistica $\tilde{T}_n = R_S \cdot \sqrt{\frac{n-2}{1 - R_S^2}}$ descritto nel paragrafo 7.4 se non si posseggono
@@ -4151,7 +3948,7 @@ osservazioni e la loro media.
 È logico pensare che il modello è adatto a descrivere variazioni del carattere $Y$ se queste sono causate principalmente dalla
 regressione, ovvero se il rapporto $R^2 = \frac{D_{\text{SP}}}{D_{\text{TOT}}} = 1 - \frac{D_{\text{RES}}}{D_{\text{TOT}}}$ è prossimo a 1.
 
-In effetti si può verificare che $R^2$ sia il quadrato del coefficiente di correlazione lineare $r_{XY}$ introdotto nei capitolo
+In effetti si può verificare che $R^2$ sia in quadrato del coefficiente di correlazione lineare $r_{XY}$ introdotto nei capitolo
 precedenti, cioè vale $\sqrt{R^2} = |r_{XY}|$.
 
 Mentre però il coefficiente di correlazione lineare ha senso solo se si considera una regressione lineare semplice, il coefficiente
@@ -4163,13 +3960,9 @@ Similmente a quanto sopra, possiamo pensare che il modello lineare è adatto a d
 quantità $D_{\text{RES}}$ risulta essere molto inferiore alla $D_{\text{SP}}$, ovvero se il rapporto $\frac{D_{\text{SP}}}{D_{\text{RES}}}$ è molto
 grande.
 
-<<<<<<< HEAD
-Un test sull'attendibilità del modello lineare molto itilizzato si basa proprio su questo rapporto, e specificamente sul fatto
-=======
 Un test sull'attendibilità del modello lineare molto utilizzato si basa proprio su questo rapporto, e specificamente sul fatto
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 che la /statistica/ $\tilde{F} = (n-2) \cdot \frac{D_{\text{SP}}}{D_{\text{RES}}} = \frac{D_{\text{SP}}}{S_{\text{RES}}^2}$, con
-$S_{\text{RES}}^2 = \frac{1}{n-2} \cdot \sum_{i=1}^n (Y_i - \hat{Y}_i)^2$ è distribuita come una F con $(1, n-2)$ gradi di libertà, quando siano
+$S_{\text{RES}}^2 = \frac{1}{n-2} \cdot \sum_{i=1}^n (Y_i - \hat{Y}_i)^2$ è distribuita come una F con $(2, n-2)$ gradi di libertà, quando siano
 soddisfatte le ipotesi:
 - $E[E_i] = 0 \quad \forall i = 1, \dots, N$;
 - $V[E_i] = \sigma^2 \quad \forall i = 1, \dots, N$;
@@ -4206,21 +3999,13 @@ In tal caso si utilizza il fatto che quando siano soddisfatte le seguenti ipotes
 La variabile $T_1$, definita come $T_1 = \frac{A_1 - \alpha_1}{\sqrt{S_{\text{RES}}^2 \cdot \left[\frac{1}{\sum_{i=1}^n (X_i - \bar{X})^2}\right]}}$
 è distribuita come una t di Student con $n-2$ gradi di libertà.
 
-<<<<<<< HEAD
-/Rifiuteremo l'ipotesi nulla/ quando la sua realizzazione $\tilde{t}$ /assume valori troppo distanti dallo zero/ per poter pensare
-che essa sia distribuita secondo una t di Student con $n-2$ gradi di libertà.
-
-Ad esempio, per un /test di ampiezza $\alpha$, rifiutiamo $H_0$ quando/ $|\tilde{t}| > t_{1-\frac{\alpha}{2}}$, dove $t_{1-\frac{\alpha}{2}}$ è il quantile di
-ordine $1 - \frac{\alpha}{2}$ di una t di Student con $n-2$ gradi di libertà.
-=======
 /Rifiuteremo l'ipotesi nulla/ quando la sua realizzazione $\tilde{t}$ assume valori troppo distanti dallo zero/ per poter pensare
 che essa sia distribuita secondo una t di Student con $n-2$ gradi di libertà.
 
 Ad esempio, per un /test di ampiezza $\alpha$, rifiutiamo $H_0$ quando/ $|\tilde{t}| > t_{1-\frac{\alpha}{2}}$, dove $t_{1-\frac{\alpha}{2}}$ è il quantile di
-ordine $1 - \frac{\alpha}{2}$ di una t di Student con $n-2$ gradi di libertà/.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
+ordine $1 - \frac{\alpha}{2}$ di una t di Student con $n-2$ gradi di libertà.
 
-Ricordiamo che anche con questo test la nostra speranza è di rifiutare l'ipotesi nulla, ovvero la non dipendenza di $Y$ da $X$.
+Ricordiamo che anche con questo test la nostra speranza è di rifiutare l'ipotesi nulla, ovvero la nono dipendenza di $Y$ da $X$.
 
 Relativamente ai due test di ipotesi appena presentati, occorre fare una breve considerazione. Dalla definizione delle
 distribuzioni t di Student ed F si può notare che se una variabile aleatoria $Z$ ha distribuzione $t_{n-2}$, allora il suo
@@ -4237,7 +4022,7 @@ Se ne deduce facilmente che i due test appena proposti sono equivalenti.
 Li abbiamo comunque presentati separatamente perché tale equivalenza non sussiste più nel caso di regressione lineare multipla
 e nel caso di regressione non-lineare.
 *** Analisi dei residui
-Nei paragrafi precedenti abbiamo definito i /residui/ $E_i = \hat{Y}_i - Y_i$ ed $\hat{Y}_i = A_0 + A_1 \cdot X_i$ come differenze,
+Nei paragrafi precedenti abbiamo definito i /residui/ $E_i = \hat{Y}_i - Y-i$ ed $\hat{Y}_i = A_0 + A_1 \cdot X_i$ come differenze,
 per ogni individuo, tra i valori assunti dal carattere $Y$ e le sue stime secondo la regressione.
 
 Abbiamo inoltre fatto diverse /ipotesi su tali residui/, che essi:
@@ -4248,7 +4033,7 @@ Abbiamo inoltre fatto diverse /ipotesi su tali residui/, che essi:
 In un'analisi di regressione è opportuno pertanto /controllare la validità di tali ipotesi/.
 
 Nei test si fa uso del livello di significatività, il quale implicitamente definisce la regione critica: se il valore della
-statistica calcolato dai dati campionari cade nella regione critica, si rifiuta l'ipotesi.
+statistica calcolare dai dati campionari cade nella regione critica, si rifiuta l'ipotesi.
 
 Non si sa però, se si modificasse la significatività, se l'ipotesi continuerebbe ad esser rifiutata o no, salvo ricalcolare la
 regione: non si sa cioè se il valore ottenuto sia significativamente o solo marginalmente interno alla regione critica predefinita.
@@ -4260,10 +4045,10 @@ alternativa:
 - Test bidirezionale: $H_1' : \mu \neq \mu_0$;
 - Test unidirezionale con coda a sinistra: $H_1'' : \mu < \mu_0$;
 - Test unidirezionale con coda a destra: $H_1''' : \mu > \mu_0$
-- $C' = \left(-\infty, -t_{1-\frac{\alpha}{2}}^* \right) \cup \left(\mu_0 +t_{1-\frac{\alpha}{2}}^*, +\infty\right)$
+- $C' = \left(-\infty, \mu_0 -t_{1-\frac{\alpha}{2}}\frac{\hat{s}_n}{\sqrt{n}}\right) \cup \left(\mu_0 +t_{1-\frac{\alpha}{2}}\frac{\hat{s}_n}{\sqrt{n}}, +\infty\right)$
   se $H_1'$ è l'ipotesi alternativa;
-- $C'' = \left(-\infty, -t_{1-\alpha}^*\right)$ se $H_1''$ è l'ipotesi alternativa;
-- $C''' = \left(t_{1-\alpha}^*, +\infty\right)$ se $H_1'''$ è l'ipotesi alternativa.
+- $C'' = \left(-\infty, \mu_0 -t_{1-\alpha} \frac{\hat{s}_n}{\sqrt{n}}\right)$ se $H_1''$ è l'ipotesi alternativa;
+- $C''' = \left(\mu_0 +t_{1-\alpha} \frac{\hat{s}_n}{\sqrt{n}}, +\infty\right)$ se $H_1'''$ è l'ipotesi alternativa.
 Il $p-\text{value}$ è definito come la /probabilità che la statistica valida sotto l'ipotesi nulla assuma valore nella regione critica
 così definita/.
 
@@ -4281,34 +4066,17 @@ l'ipotesi nulla.
 Come esempio, consideriamo un /test t sulla media nell'ipotesi di popolazione normale/:
 - $H_0 : \mu = 0$;
 - $H_1' : \mu \neq 0$;
-<<<<<<< HEAD
-- $\alpha = 0.05$;
-- Un risultato del test t* che porta a $p-\text{value} = 0.4 \implies P(t > |t^*|) = 0.4$ dice che c'è una buona probabilità che sotto l'ipotesi nulla
-  possa verificarsi una realizzazione della statistica di test con un valore assoluto maggiore di quello che si è realizzato nel nostro
-  campione, per cui non vi è evidenza che l'ipotesi nulla sia falsa;
-- Un risultato del test t* che porta a $p-\text{value} = 0.0001 \implies P(t > |t^*|) = 0.0001$ dice che c'è una probabilità molto piccola che sotto l'ipotesi nulla
-  possa verificarsi una realizzazione della statistica di test con un valore assoluto maggiore di quello che si è realizzato nel nostro
-  campione, per cui vi è evidenza che l'ipotesi nulla è falsa, e pertanto si accetta l'ipotesi alternativa.
-
-Se invece $H_1'' : \mu < \mu_0$, con ragionamenti analoghi si ha che ($\alpha = 0.05$):
-- $p-\text{value} = 0.4 \implies P(t < t^*) = 0.4 \implies \text{non rifiuto } H_0$;
-- $p-\text{value} = 0.0001 \implies P(t < t^*) = 0.0001 \implies \text{rifiuto } H_0$;
-Analogamente, se invece $H_1'' : \mu > \mu_0$, con ragionamenti analoghi si ha che ($\alpha = 0.05$):
-- $p-\text{value} = 0.4 \implies P(t > t^*) = 0.4 \implies \text{non rifiuto } H_0$;
-- $p-\text{value} = 0.0001 \implies P(t > t^*) = 0.0001 \implies \text{rifiuto } H_0$;
-=======
 - $\alpha = 0.05$.
 Un risultato del test t* che porta a $p-\text{value} = 0.0001 \implies P(t < |t^*|) = 0.0001$ dice che c'è una probabilità molto piccola che sotto l'ipotesi nulla
 possa verificarsi una realizzazione della statistica di test con un valore assoluto maggiore di quello che si è realizzato nel nostro
 campione, per cui vi è evidenza che l'ipotesi nulla è falsa, e pertanto si accetta l'ipotesi alternativa.
 
 Se invece $H_1'' : \mu < \mu_0$, con ragionamenti analoghi si ha che ($\alpha = 0.05$):
-- $p-\text{value} = 0.4 \implies P(t < |t^*|) = 0.4 \implies \text{non rifiuto } H_0$;
-- $p-\text{value} = 0.0001 \implies P(t < |t^*|) = 0.0001 \implies \text{rifiuto } H_0$;
+- $p-\text{value} = 0.4 \implies P(t < t*) = 0.4 \implies \text{non rifiuto } H_0$;
+- $p-\text{value} = 0.0001 \implies P(t < t^*) = 0.0001 \implies \text{rifiuto } H_0$;
 Analogamente, se invece $H_1'' : \mu > \mu_0$, con ragionamenti analoghi si ha che ($\alpha = 0.05$):
-- $p-\text{value} = 0.4 \implies P(t < |t^*|) = 0.4 \implies \text{non rifiuto } H_0$;
-- $p-\text{value} = 0.0001 \implies P(t < |t^*|) = 0.0001 \implies \text{rifiuto } H_0$;
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
+- $p-\text{value} = 0.4 \implies P(t < t^*) = 0.4 \implies \text{non rifiuto } H_0$;
+- $p-\text{value} = 0.0001 \implies P(t < t^*) = 0.0001 \implies \text{rifiuto } H_0$;
 Relativamente all'/ipotesi di incorrelazione/ tra i residui, il metodo più utilizzato è il /Test di Durbin-Watson/. In esso viene
 considerata la statistica
 $$D = \frac{\sum_{i=2}^n (E_i - E_{i-1})^2}{\sum_{i=1}^n E_i^2}$$
@@ -4331,16 +4099,16 @@ valide. A nostro giudizio la tecnica numerica più valida è quella che fa ricor
 denominati test:
 - Di /Kolmogorov-Smirnov/:
   - È basato sulla differenza tra ripartizione empirica e ripartizione della normale: $K_n = \text{sup}_x |F_e(x) - F_n(x)|\sqrt{n}$.
-  - Si rifiuta l'ipotesi di normalità se $K_n$ è grande;
-  - Richiede campioni di elevata numerosità.
+  - Si rifiuta l'ipotesi di normalità se $K_n$ è grande.
+  - Richiede campioni di elevata numerosità
 - Del /Chi-Quadro/;
 - Di /Shapiro Wilk/:
   - Serve per campioni di bassa numerosità;
   - La statistica $W$ misura la rettilineità del normal plot: $W = \frac{\left[\sum_1^n w_i e_i'\right]^2}{\sum_i^n (e_i - \bar{e})^2}$, dove
     i $w_i$ sono quantità tabulate, $e_i$ i valori campionari ed $e_i'$ i valori ordinati;
-  - Si rifiuta se $W$ è piccolo.
+  - Si rifiuta se $W$ è piccolo
 In tutti i casi si controlla l'ipotesi che i /residui campionari/ $e_1, \dots, e_n$ ottenuti dalle osservazioni del campione
-$\{(X_1, Y_1), \dots, (X_n, Y_n)\}$ siano /distribuiti normalmente con media nulla e varianza/ $s_{\text{RES}}^2$, ricordando:
+$\{(X_1, Y_1), \dots, (X_n, Y_n)\}$ siano /distribuiti normalmente con media nulla e varianza/ $s_{\text{RES}^2}$, ricordando:
 $S_{\text{res}}^2 = \frac{1}{n-2} \cdot \sum_{i=1}^n (Y_i - \hat{Y}_i)^2$.
 
 Un'alternativa è il /Normal Quantile plot/. In ascissa la cumulata di una normale. In ordinata la cumulata dei dati. I punti
@@ -4361,7 +4129,7 @@ veramente significativi per tale ipotesi possono essere realizzati se il numero 
 nelle applicazioni e si è costretti a ricorrere a metodi grafici.
 
 Tra questi, comunque non sempre disprezzabili, segnaliamo quello basato sulla rappresentazione dei residui in funzione dei valori
-assunti dalla variabile $X$ o $Y$. Per ogni elemento del campione si individui il corrispondente punto su un piano cartesiano
+assunti dalla variabile $X$ o $Y$. Per ogni elemento del campione si individui il corrispondente punto su un piano cartesiasno
 avente i valori del carattere $X$ (o $Y$) su un asse, ed i valori del residuo sull'altro.
 
 /Accettiamo l'ipotesi di omoschedasticità/ se i punti così individuati si presentano a forma di una nuvola, come riportato sotto:
@@ -4388,11 +4156,7 @@ dei /parametri stimati vengono distorti per tenere conto anche di questi valori 
 Per riconoscere i possibili outliers ed eliminarli dal calcolo, un modo è quello di calcolare i /Residui Studentizzati/:
 $$r_i = \frac{e_i}{\sqrt{\text{MSE} \left(1 - \frac{1}{n} + \frac{(x_i - \bar{x})^2}{\sum (x_i - \bar{x})^2}\right)}}$$
 con $e_i$ l'\(i\)-esimo residuo, $\text{SSE}$ somma quadratica dei residui e $\text{MSE}$ scarto quadratico medio dei residui
-<<<<<<< HEAD
-$\text{MSE} =\frac{\sum e_i^2}{n-2}$.
-=======
-$text{MSE} =\frac{\sum e_i^2}{n-2}$.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
+$=\frac{\sum e_i^2}{n-2}$.
 
 Si dimostra che essi sono distribuiti secondo una t di Student. Se il residuo studentizzato di un'osservazione supera un valore di
 4-5, allora l'osservazione è un candidato outlier.
@@ -4405,7 +4169,7 @@ influenzano effettivamente, si usa una misura detta /D-Cook/, che indica il camb
 
 Un sospetto outlier è influente se $D > 1$.
 
-Concludiamo osservando che in questo paragrafo e nel paragrafo precedente abbiamo visto come controllare le ipotesi sui residui e
+Concludiamo osservando che in questo paragrafo e nel paragrafo 8.3 abbiamo visto come controllare le ipotesi sui residui e
 l'attendibilità del modello di regressione lineare.
 
 Ma cosa possiamo fare se le ipotesi vengono rifiutate o se il modello risulta inadeguato?
@@ -4449,7 +4213,7 @@ Siano poi $Y = (Y_1, \dots, Y_n)^T$ il vettore con i caratteri $Y$ degli individ
 contenente gli stimatori di $\alpha_0, \dots, \alpha_m$.
 
 Denotiamo infine con $M^T$ la trasposta di una matrice o un vettore $M$ e con $M^{-1}$ la matrice inversa di una matrice $M$
-/quadrata e non singolare/.
+/quadrata e non singolar/.
 
 Il /modello regressivo/ può allora essere riscritto in forma vettoriale come $Y = XA + E$.
 
@@ -4464,7 +4228,7 @@ $S_{\text{RES}}^2 = \frac{q}{n-m-1}\cdot \sum_{i=1}^n E_i^2 = \frac{1}{n-2} \cdo
 
 In conclusione possiamo dire che se $(x_{1, 1}, \dots, x_{m, 1}, y_1), \dots, (x_{1, n}, \dots, x_{m, n}, y_n)$ è una realizzazione del campione
 $(X_{1, 1}, \dots, X_{m, 1}, Y_1), \dots, (X_{1, n}, \dots, X_{m, n}, Y_n)$, allora una stima del vettore dei coefficienti $(\alpha_0, \dots, \alpha_m)^T$ è data dal vettore
-$a = (a_0, \dots, a_m)^T$ ottenuto come $a = (x^T \cdot x)^{-1} \cdot x^T \cdot y$.
+$a = (a_0, \dots, a_m)$ ottenuto come $a = (x^T \cdot x)^{-1} \cdot x^T \cdot y$.
 
 Una /stima della varianza/ è invece data da: $s_{\text{RES}}^2 = \frac{1}{n-m-1} \cdot \sum_{i=1}^n e_i^2$, dove gli $e_i$ sono le realizzazioni
 dei residui $E_i$, ovvero: $e_i = y_i - \hat{y}_i = y_i - (a_0 + a_1 \cdot x_{1, i} + \dots, a_m \cdot x_{m, i})$
@@ -5833,7 +5597,8 @@ Esempio 1.1
 # Caricare il file "esempio1.1.csv"
 #f <- file.choose()
 #ese11 <- scan(f, sep=";")
-ese11 <- scan("./Files/esempio1.1.csv", sep=";")
+ese11 <- scan("./Files/esempio1.1.csv",
+sep=";")
 
 # Frequenze assolute
 table(ese11)
@@ -6399,7 +6164,8 @@ barplot(tc, legend=T, col=c("lightblue", "mistyrose", "lightcyan",
 
 Esempio 1.16
 #+BEGIN_SRC R :results output :exports both :session es116
-ese116 <- read.csv("./Files/esempio1.16.csv", sep=";", header=TRUE)
+ese116 <- read.csv("./Files/esempio1.16.csv",
+                   sep=";", header=TRUE)
 ese116
 #+END_SRC
 
@@ -9781,11 +9547,7 @@ Libreria utilizzata:
   : Carico il pacchetto richiesto: TeachingDemos
 
 Intervalli di confidenza per la media:
-<<<<<<< HEAD
-- Popolazione non normalmente distribuita e varianza sconosciuta:
-=======
 - Popolazione non normalmente distribuita e varianza sconosiuta:
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
   #+BEGIN_SRC R
   z.test(x, mu=0, stdev, alternative=c("two.sided", "less", "greater"), sd=stdev, n=length(x), conf.level=0.95, ...)
   #+END_SRC
@@ -9794,21 +9556,12 @@ Intervalli di confidenza per la media:
   z.test()
   #+END_SRC
 - Popolazione normalmente distribuita e varianza nota:
-<<<<<<< HEAD
-  #+BEGIN_SRC R
-  z.test()  
-  #+END_SRC
-- Popolazione normalmente distribuita e varianza sconosciuta:
-  #+BEGIN_SRC R
-  t.test(x, y=NULL, alternative=c("two.sided", "less", "greater"), mu=0, paired=FALSE, var.equal=FALSE, conf.level=0.95, ...)
-=======
   #+BEGIN_SRC 
   z.test()  
   #+END_SRC
 - Popolazione normalmente distribuita e varianza sconosiuta:
   #+BEGIN_SRC R
   z.test(x, y=NULL, alternative=c("two.sided", "less", "greater"), mu=0, paired=FALSE, var.equal=FALSE, conf.level=0.95, ...)
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
   #+END_SRC
 
 Esercizio 08:
@@ -9822,10 +9575,10 @@ Esercizio 08:
 2:
 \begin{align*}
 P(|\bar{X}_n - \mu| < 3) &= P(-3 < \bar{X}_n < 3)\\
-&= P\left(-\frac{3}{\frac{\sigma}{\sqrt{n}}} < \frac{\bar{X}_n - \mu}{\frac{\sigma}{\sqrt{n}}} < \frac{3}{\frac{\sigma}{\sqrt{n}}}\right)\\
+&= P\left(-\frac{3}{\frac{\sigma}{\sqrt{n}}} < \frac{\bar{X}_n - \mu}{\frac{\sigma}{\sqrt{n}}} < \frac{3}{\frac{\sigma}{\sqrt{n}}})\\
 &= P(-6 < Z < 6)\\
 &= P(Z < 6) - P(Z < -6)\\
-&= P(Z < 6) - (1 - P(Z < 6))
+&= P(Z < 6) - (1 - P(Z < 6))\\
 \end{align*}
 #+BEGIN_SRC R :results output :exports both :session stime_intervallari
 #1
@@ -9897,11 +9650,7 @@ interval
 : [1] 2.413901 2.945599
 
 Esercizio 06:
-<<<<<<< HEAD
-- Popolazione normalmente distribuita e varianza nota;
-=======
 - Popolazione normalmente distribuita e varianza nota:
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 - Un segnale radio viene emesso con frequenza distribuita normalmente e con valore atteso $\mu$ e deviazione standard 30 kHz.
   Supponendo di osservare la seguente serie di frequenze in kHz:
   $(610, 601, 578, 615, 640, 630, 618, 602, 613, 610, 625, 585, 622, 608, 597)$.
@@ -9964,11 +9713,7 @@ Stime intervallari:
 - Intervalli di confidenza per la varianza:
   - Popolazione normalmente distribuita:
     #+BEGIN_SRC R
-<<<<<<< HEAD
-    sigma.test(x, sigma=1, sigmasq=sigma^2, alternative=c("two.sided", "less", "greater"), conf.level=0.95, ...)
-=======
     sigma.test(x, sigma=1, sigmasq=sigma^2, alternative=c("two.sisded", "less", "greater"), conf.level=0.95, ...)
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
     #+END_SRC
     
 Esempio 11:
@@ -9993,11 +9738,7 @@ out$conf.int
 
 Esercizio 1:
 - Popolazione normalmente distribuita e varianza nota;
-<<<<<<< HEAD
-- Si desidera stimare il tempo medio di CPU utilizzato dagli utenti di un server, in modo da affermare con il 95% di confidenza
-=======
 - Si desidera stimare il tempo medio di CUP utilizzato dagli utenti di un server, in modo da affermare con il 95% di confidenza
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
   che il valore stimato non disti più di mezzo secondo dal valore vero. Dall'esperienza passata, possiamo ipotizzare che il tempo
   di CPU utilizzato sia distribuito secondo una normale, con $\sigma^2 = 2.25$. Quale deve essere la dimensione $n$ del campione?
 $$2 \cdot z_{1-\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}} = \frac{1}{2} \implies n = 2 \cdot z_{1-\frac{\alpha}{2}} \frac{\sigma}{\frac{1}{2}}$$
@@ -10018,13 +9759,9 @@ Esempio 5.5:
   per la media del costo al metro quadro degli appartamenti di un dato quartiere di una città italiana. Si voglia determinare
   quanto deve essere grande il campione affinché l'intervallo di confidenza simmetrico abbia ampiezza non superiore a 0.3,
   mantenendo sempre un livello di confidenza $\alpha = 0.05$.
-<<<<<<< HEAD
-#+BEGIN_SRC R :results output :exports both :session stime_intervallari # Caricare il file "esempio1.2.csv"
-=======
 
 #+BEGIN_SRC R :results output :exports both :session stime_intervallari
 # Caricare il file "esempio1.2.csv"
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
 ese12 <- scan("./Files/esempio1.2.csv", sep=";", dec=",")
 
 alpha = 0.05
@@ -10037,1256 +9774,3 @@ n
 #+RESULTS:
 : Read 80 items
 : [1] 252
-*** Verifica di ipotesi: Test Parametrici
-/Errori di I specie/
-
-Esercizio 01:
-- Per provare l'ipotesi che una moneta è buona viene adottata la seguente regola di decisione. Si accetta l'ipotesi se il numero di teste
-  in un campione di 100 lanci è compreso tra 40 e 60 inclusi. In caso contrario si rifiuta l'ipotesi. Si determini la probabilità di rifiutare
-  l'ipotesi quando essa è vera. Sia $X = \text{numero di teste}$. Sotto ipotesi nulla, $X$ è distribuita secondo una $\text{Bin}(n=100, p=0.5)$.
-  Poiché $n > 30$, allora approssimiamo la distribuzione di $X$ con una $N(\mu = 50, \sigma^2 = 25)$. La regione critica è $(X<40) \cup (X>60)$.
-
-  È necessario calcolare $P((X < 40) \cup (X > 60)) = P(X < 40) + P(X > 60)$
-#+BEGIN_SRC R :results output :exports both
-mu = 100*0.5
-sd = sqrt(100*(1-0.5)*0.5)
-
-Pmin <- pnorm(40, mean=mu, sd)
-Pmax <- pnorm(60, mean=mu, sd, lower.tail=F)
-Pmax + Pmin
-#+END_SRC
-
-#+RESULTS:
-: [1] 0.04550026
-
-Esercizio 03:
-- Una fabbrica produce corde le cui resistenze alla rottura hanno una media di 300 N e uno scarto quadratico medio di 24N. Si crede che per mezzo di un
-  recente processo produttivo, la resistenza media alla rottura possa essere aumentata.
-  1. Si determini una regola di decisione per il rifiuto del vecchio processo produttivo al livello di significatività dello 0.01 se si vogliono provare
-     64 corde.
-
-  Considerazioni:
-  - Ipotesi nulla: $H_0 : \mu = 300N$;
-  - Ipotesi alternativa: $H_1 : \mu > 300N$.
-  $$Z = \frac{\bar{X} - \mu}{\frac{\sigma}{\sqrt{n}}} = \frac{\bar{X} - 300}{\frac{24}{\sqrt{64}}} = \frac{\bar{X} - 300}{3} \implies Z*3 + 300 = \bar{X}$$
-#+BEGIN_SRC R :results output :exports both
-z <- qnorm(1-0.01)
-lower <- ceiling(z*(24/sqrt(64))+300) # limite inferiore della regione critica
-<<<<<<< HEAD
-cat("Si rifiuta l'ipotesi H_0 se X_n cade in: [", lower,", inf]")                 
-=======
-cat("Si rifiuta l'ipotesi H_0 se Xn cade in: [", lower,", inf]")                 
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
-#+END_SRC
-
-#+RESULTS:
-: Si rifiuta l'ipotesi H_0 se Xn cade in: [ 307 , inf]
-
-/Errore di II specie/
-
-Esercizio 04:
-- Una fabbrica produce corde le cui resistenze alla rottura hanno una media di 300 N e uno scarto quadratico medio di 24 N. Si
-  crede che per mezzo di un recente processo produttivo la resistenza media alla rottura possa essere aumentata.
-  1. Qual'è la probabilità di accettare il vecchio processo produttivo con la regola di decisione stabilita quando in realtà il
-     nuovo processo ha aumentato la resistenza media alla rottura a 310 N?
-  Considerazioni:
-  - Ipotesi nulla: $H_0 : \mu = 300 N$;
-  - Ipotesi alternativa: $H_1 : \mu = 310 N$
-  $$P(\bar{X} \in (-\infty, 307] \mid \mu = 310)$$
-  Dobbiamo calcolare la probabilità che $\bar{X} \in (-\infty, 307]$ sapendo che $\bar{X}$ è distribuita come indicato da $H_1$, cioè
-  $\bar{X} \sim N(310, 24)$.
-
-#+BEGIN_SRC R :results output :exports both
-out <- pnorm(307, mean=310, sd=24/sqrt(64))
-out
-#+END_SRC
-
-#+RESULTS:
-: [1] 0.1586553
-
-Libreria utilizzata:
-  #+BEGIN_SRC R :results output :exports both :session test_parametrici
-  #install.packages("TeachingDemos")
-  require("TeachingDemos")
-  #+END_SRC
-
-  #+RESULTS:
-  : Loading required package: TeachingDemos
-
-Test sulla media di una popolazione:
-1. Popolazione normalmente distribuita e varianza nota:
-   #+BEGIN_SRC R
-   z.test(x, mu=0, stdev, alternative=c("two.sided", "less", "greater"), sd=stdev, n=length(x), conf.level=0.95, ...)
-   #+END_SRC
-2. Popolazione normalmente distribuita e varianza sconosciuta:
-   #+BEGIN_SRC R
-   t.test(x, y=NULL, alternative=c("two.sided", "less", "greater"), paired=FALSE, var.equal=FALSE, conf.level=0.95, ...)
-   #+END_SRC
-3. Popolazione non normalmente distribuita e varianza nota:
-   #+BEGIN_SRC R
-   z.test()
-   #+END_SRC
-4. Popolazione non normalmente distribuita e varianza sconosciuta:
-   #+BEGIN_SRC R
-   z.test()
-   #+END_SRC
-   
-/Test sulla media di una popolazione/
-
-\(p\)-value:
-- Probabilità che una variabile avente la stessa distribuzione della statistica test, sotto ipotesi $H_0$, assuma un valore maggiore di
-  quello da essa effettivamente ottenuto sulla base della realizzazione del campione.
-Regola di decisione:
-- $p-\text{value} < \alpha \implies \text{si rifiuta } H_0$;
-- $p-\text{value} > \alpha \implies \text{non si rifiuta } H_0$.
-
-Esercizio 15:
-- Popolazione normalmente distribuita e varianza nota;
-- Dato il campione $(0.5, 1.2, -0.5, 0.9, 2.0, -1.2, -0.3)$ estratto da una popolazione con distribuzione normale, testare l'ipotesi $\mu=0$
-  contro $\mu \neq 0$.
-  1. Con livello di significatività 0.05, supponendo varianza nota e uguale a 2.
-  Considerazioni:
-  - Ipotesi nulla: $H_0 : \mu=0$;
-  - Ipotesi alternativa: $H_1 : \mu \neq 0$.
-#+BEGIN_SRC R :results output :exports both :session test_parametrici
-x <- c(0.5, 1.2, -0.5, 0.9, 2.0, -1.2, -0.3)
-z.test(x, mu=0, stdev=sqrt(2))
-#+END_SRC
-
-#+RESULTS:
-#+begin_example
-
-	One Sample z-test
-
-data:  x
-z = 0.69488, n = 7.00000, Std. Dev. = 1.41420, Std. Dev. of the sample
-mean = 0.53452, p-value = 0.4871
-alternative hypothesis: true mean is not equal to 0
-95 percent confidence interval:
- -0.6762162  1.4190734
-sample estimates:
-mean of x 
-0.3714286
-#+end_example
-Non si rifiuta $H_0 : p-\text{value} > \alpha$
-
-Soluzione alternativa:
-$$Z_n = \frac{\bar{X}_n - \mu_0}{\frac{\sigma}{\sqrt{n}}}$$
-#+BEGIN_SRC R :results output :exports both :session test_parametrici
-z1 <- qnorm((1-(0.05/2))) # calcolo del quantile
-Zn <- (mean(x) - 0)/(sqrt(2)/sqrt(7)) # calcolo della statistica
-Zn
-
-if (Zn <= -z1 | Zn >= z1) {
-    out <- 'Rigettiamo H_0 in favore di H_1'
-} else {
-    out <- 'Non rigettiamo H_0 in favore di H_1'
-}
-out
-#+END_SRC
-
-#+RESULTS:
-: [1] 0.6948792
-: [1] "Non rigettiamo H_0 in favore di H_1"
-
-Esercizio 15 (modificato):
-- Popolazione normalmente distribuita e varianza nota;
-- Dato il campione $(0.5, 1.2, -0.5, 0.9, 2.0, -1.2, -0.3)$ estratto da una popolazione con distribuzione normale, testare l'ipotesi
-  $\mu=0$ contro $\mu > 0$.
-  1. Con livello di significatività 0.05, supponendo varianza nota ed uguale a 2.
-  Considerazioni:
-  - Ipotesi nulla: $H_0 : \mu = 0$;
-  - Ipotesi alternativa: $H_1 : \mu > 0$.
-  Nota:
-  - Test unidirezionale con coda a destra poiché $\mu > 0$;
-  - Se l'esercizio avesse richiesto $\mu < 0$: test unidirezionale con coda a sinistra.
-#+BEGIN_SRC R :results output :exports both :session test_parametrici
-x <- c(0.5, 1.2, -0.5, 0.9, 2.0, -1.2, -0.3)
-z.test(x, mu=0, stdev=sqrt(2), alternative="greater")
-#+END_SRC
-
-#+RESULTS:
-#+begin_example
-
-	One Sample z-test
-
-data:  x
-z = 0.69488, n = 7.00000, Std. Dev. = 1.41420, Std. Dev. of the sample
-mean = 0.53452, p-value = 0.2436
-alternative hypothesis: true mean is greater than 0
-95 percent confidence interval:
- -0.5077827        Inf
-sample estimates:
-mean of x 
-0.3714286
-#+end_example
-Non si rifiuta $H_0 : p-\text{value} > \alpha$
-<<<<<<< HEAD
-
-=======
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
-Esercizio 15:
-- Popolazione normalmente distribuita e varianza sconosciuta:
-- Dato il campione $(0.5, 1.2, -0.5, 0.9, 2.0, -1.2, -0.3)$ estratto da una popolazione con distribuzione normale, testare
-  l'ipotesi $\mu=0$ contro $\mu \neq 0$.
-  1. Con livello di significatività 0.1, supponendo varianza sconosciuta.
-  Considerazioni:
-  - Ipotesi nulla: $H_0 : \mu = 0$;
-  - Ipotesi alternativa: $H_0 : \mu \neq 0$.
-#+BEGIN_SRC R :results output :exports both :session test_parametrici
-t.test(x, conf.level=0.9)
-#+END_SRC
-
-#+RESULTS:
-#+begin_example
-
-	One Sample t-test
-
-data:  x
-t = 0.89005, df = 6, p-value = 0.4077
-alternative hypothesis: true mean is not equal to 0
-90 percent confidence interval:
- -0.4394847  1.1823418
-sample estimates:
-mean of x 
-0.3714286
-#+end_example
-Non si rifiuta $H_0 : p-\text{value} > \alpha$.
-
-Soluzione alternativa (statistica test: media campionaria):
-#+BEGIN_SRC R :results output :exports both :session test_parametrici
-m <- mean(x) # statistica test
-
-n <- length(x) # calcolo lunghezza campione
-q1 <- qt(1-(1-0.9)/2, n) # calcolo quantile
-sdcc <- sd(x) # calcolo deviazione standard campionaria corretta
-
-T1 <- 0 - q1*sdcc/sqrt(n) # limiti della regione critica
-T2 <- 0 + q1*sdcc/sqrt(n)
-
-if (m <= T1 | m >= T2) {
-    out2 <- 'Rigettiamo H_0 in favore di H_1'
-} else {
-    out2 <- 'Non rigettiamo H_0 in favore di H_1'
-}
-out2
-#+END_SRC
-
-#+RESULTS:
-: [1] "Non rigettiamo H_0 in favore di H_1"
-
-Esercizio 21:
-- Popolazione non normalmente distribuita e varianza nota;
-- Il signor Rossi desidera capire quale sia la media della spesa mensile per generi alimentari del proprio nucleo familiare. Per questo
-  registra tali spese per 36 mesi, ottenendo una media campionaria uguale a 305 e una varianza campionaria corretta uguale a 225.
-  1. Fornire una stima intervallare, con significatività $\alpha = 0.05$, per la media della spesa mensile in generi alimentari della famiglia Rossi.
-  2. Controllare, con un livello $\alpha = 0.1$, l'ipotesi che la media della spesa mensile della Famiglia Rossi in generi alimentari sia in realtà
-     di 280 euro.
-  Considerazioni:
-  - Ipotesi nulla: $H_0 : \mu = 280$;
-  - Ipotesi alternativa: $H_1 : \mu \neq 280$.
-#+BEGIN_SRC R :results output :exports both :session test_parametrici
-z.test(305, mu=280, stdev=sqrt(225), conf.level=0.9, n=36)
-#+END_SRC
-
-#+RESULTS:
-#+begin_example
-
-	One Sample z-test
-
-data:  305
-z = 10, n = 36.0, Std. Dev. = 15.0, Std. Dev. of the sample mean = 2.5,
-p-value < 2.2e-16
-alternative hypothesis: true mean is not equal to 280
-90 percent confidence interval:
- 300.8879 309.1121
-sample estimates:
-mean of 305 
-        305
-#+end_example
-Si rifiuta $H_0 : p-\text{value} < \alpha$.
-
-Test sulla varianza di una popolazione:
-- Popolazione normalmente distribuita:
-  #+BEGIN_SRC R
-  sigma.test(x, sigma=1, sigmasq=sigma^2, alternative=c("two.sided", "less", "greater"), conf.level=0.95)
-  #+END_SRC
-
-Esercizio 28:
-- Popolazione normalmente distribuita;
-- Un campione di 10 individui estratto da una popolazione con distribuzione normale ha assunto i seguenti valori:
-  $(1.4, 0.6, 2.2, 0.8, 2.3, -1.6, -0.1, -0.3, 1, 2)$
-  1. Controllare con $\alpha = 0.01$, l'ipotesi che la deviazione standard della popolazione sia uguale a 1.2.
-  Considerazioni:
-  - Ipotesi nulla: $H_0 : \sigma = 1.2$;
-  - Ipotesi alternativa: $H_1 : \sigma \neq 1.2$.
-#+BEGIN_SRC R :results output :exports both :session test_parametrici
-x <- c(1.4, 0.6, 2.2, 0.8, 2.3, -1.6, -0.1, -0.3, 1, 2)
-sigma.test(x, sigma=1.2, conf.level=0.9)
-#+END_SRC
-
-#+RESULTS:
-#+begin_example
-
-	One sample Chi-squared test for variance
-
-data:  x
-X-squared = 9.6257, df = 9, p-value = 0.7633
-alternative hypothesis: true variance is not equal to 1.44
-90 percent confidence interval:
- 0.8192575 4.1685803
-sample estimates:
-var of x 
-1.540111
-#+end_example
-Non si rifiuta $H_0 : p-\text{value} > \alpha$.
-
-Libreria:
-#+BEGIN_SRC R
-#install.packages('BSDA')
-require('BSDA')
-#+END_SRC
-
-#+RESULTS:
-: TRUE
-
-Test sulla differenza delle medie di due popolazioni:
-1. Popolazioni $X$ e $Y$ normalmente distribuite con varianze uguali e sconosciute:
-   #+BEGIN_SRC R
-   t.test(x, y=NULL, alternative=c("two.sided", "leww", "greater"), mu=0, paired=FALSE, var.equal=TRUE, conf.level=0.95, ...)
-   #+END_SRC
-2. Popolazioni $X$ e $Y$ normalmente distribuite con varianze diverse e note:
-   #+BEGIN_SRC R
-   z.test(x, y=NULL, alternative="two.sided", mu=0, sigma.x=NULL, sigma.y=NULL, conf.level=0.95)
-   #+END_SRC
-3. Popolazioni $X$ e $Y$ non normalmente distribuite con varianze diverse e note (campioni grandi con numerosità maggiore o uguale a 30):
-   #+BEGIN_SRC R
-   z.test()
-   #+END_SRC
-   
-Esercizio 13:
-- Popolazioni $X$ e $Y$ normalmente distribuite con varianze uguali e sconosciute;
-- Un insieme di pazienti viene sottoposto all'uso di un nuovo farmaco per una data patologia. La patologia viene misurata quotidianamente
-  da un esame, portando alla seguente tabella:
-  - Campione $X: (110, 102, 104, 96, 92,  97, 85, 115)$;
-  - Campione $Y: (125, 133, 128, 119, 134, 126, 132, 135)$.
-  Si sa che la misura è normalmente distribuita e si vuole verificare che il farmaco influisce o meno sulla patologia con confidenza
-  al 95%.
-  Considerazioni:
-  - Ipotesi nulla: $H_0 : \mu_X = \mu_Y$;
-  - Ipotesi alternativa: $H_1 : \mu_X \neq \mu_Y$.
-#+BEGIN_SRC R :results output :exports both :session test_parametrici
-x <- c(110, 102, 104, 96, 92, 97, 85, 115)
-y <- c(125, 133, 128, 119, 134, 126, 132, 135)
-
-t.test(x, y, var.equal=T)
-#+END_SRC
-
-#+RESULTS:
-#+begin_example
-
-	Two Sample t-test
-
-data:  x and y
-t = -7.3221, df = 14, p-value = 3.778e-06
-alternative hypothesis: true difference in means is not equal to 0
-95 percent confidence interval:
- -37.33301 -20.41699
-sample estimates:
-mean of x mean of y 
-  100.125   129.000
-#+end_example
-Rifiutando $H_0$ in favore di $H_1$: il farmaco non influisce.
-
-Esempio:
-- Popolazione $X$ e $Y$ normalmente distribuite con varianze diverse e note;
-- Si supponga di avere:
-  - Campione $X: (154, 109, 137, 115, 140)$;
-  - Campione $Y: (108, 115, 126, 92, 146)$.
-  Estratti da popolazioni normalmente distribuite. Le deviazioni standard delle due popolazioni sono note e rispettivamente pari a
-  15.5 e 13.5. Si vuole verificare che la differenza delle medie è pari a 0 con confidenza del 95%.
-  Considerazioni:
-  - Ipotesi nulla: $H_0: \mu_X = \mu_Y$;
-  - Ipotesi alternativa: $H_1: \mu_X \neq \mu_Y$
-#+BEGIN_SRC R :results output :exports both :session test_parametrici
-x <- c(154, 109, 137, 115, 140)
-y <- c(108, 115, 126, 92, 146)
-
-z.test(x, y, mu=0, sigma.x=15.5, sigma.y=13.5)
-#+END_SRC
-
-#+RESULTS:
-#+begin_example
-
-	One Sample z-test
-
-data:  x
-z1 = 2.7123, z2 = 2.5472, z3 = 2.3248, z4 = 3.1840, z5 = 2.0063, n =
-5.000, Std. Dev.1 = 108.000, Std. Dev.2 = 115.000, Std. Dev.3 =
-126.000, Std. Dev.4 = 92.000, Std. Dev.5 = 146.000, Std. Dev. of the
-sample mean1 = 48.299, Std. Dev. of the sample mean2 = 51.430, Std.
-Dev. of the sample mean3 = 56.349, Std. Dev. of the sample mean4 =
-41.144, Std. Dev. of the sample mean5 = 65.293, p-value = 0.006682,
-p-value = 0.010860, p-value = 0.020083, p-value = 0.001453, p-value =
-0.044821
-alternative hypothesis: true mean is not equal to 0
-95 percent confidence interval:
-  36.33557 231.80009
-sample estimates:
-mean of x 
-      131 
-
-Warning messages:
-1: In c(-1, 1) * qnorm(1 - (1 - conf.level)/2) * sd :
-  longer object length is not a multiple of shorter object length
-2: In if (substr(fp, 1L, 1L) == "<") fp else paste("=", fp) :
-  the condition has length > 1 and only the first element will be used
-#+end_example
-Non rifiutiamo $H_0$ in favore di $H_1$.
-
-Test sull'uguaglianza della varianza di due popolazioni:
-- Popolazioni $X$ e $Y$ normalmente distribuite:
-  - $\tilde{V} = \frac{\sigma_Y^2 \cdot \hat{S}_{X, n}^2}{\sigma_X^2 \cdot \hat{S}_{Y, m}^2}$;
-  - $H_0 : \sigma_X^2 = \sigma_Y^2$;
-  - $V_{n, m} = \frac{\hat{S}_{X, n}^2}{\hat{S}_{Y, m}^2}$
-  Risulta essere distribuita come una F con $(n-1)$ e $(m-1)$ gradi di libertà.
-
-Esempio 6.6:
-- Popolazioni $X$ e $Y$ normalmente distribuite con varianze uguali e sconosciute;
-- Consideriamo due diversi quartieri della stessa città e supponiamo di essere interessati a confrontare il valor medio dei redditi annui
-  familiari in migliaia di euro. Si supponga che sia lecito assumere che tali redditi siano normalmente distribuiti. Si supponga di estrarre
-  un campione casuale per ogni quartiere di numerosità pari a 10 e 15. Supponiamo che le realizzazioni dei campioni relativi ad $X$ ed $Y$ siano
-  $(22, 48, 51, 20, 28, 35, 38, 26, 50, 36)$ e $(40, 42, 50, 26, 30, 34, 37, 28, 25, 30, 32, 38, 22, 55, 40)$.
-
-  Verificare l'uguaglianza delle due varianze.
-  Considerazioni:
-  - Ipotesi nulla: $H_0 : \sigma^2_X = \sigma^2_Y$;
-  - Ipotesi alternativa: $H_1 : \sigma^2_X \neq \sigma^2_Y$.
-#+BEGIN_SRC R :results output :exports both :session test_parametrici
-x <- c(22, 48, 51, 20, 28, 35, 38, 26, 50, 36)
-y <- c(40, 42, 50, 26, 30, 34, 37, 28, 25, 30, 32, 38, 22, 55, 40)
-stat <- var(x)/var(y)
-stat
-
-F1 <- qf((0.1/2), 9, 14)
-F2 <- qf(1-(0.1/2), 9, 14)
-F1
-F2
-
-if (stat >= F1 & stat <= F2) {
-    out <- 'Non rigettiamo H_0 in favore di H_1'
-} else{
-    out <- 'Rigettiamo H_0 in favore di H_1'
-}
-out
-#+END_SRC
-
-#+RESULTS:
-: [1] 1.53924
-: [1] 0.3305269
-: [1] 2.645791
-: [1] "Non rigettiamo H_0 in favore di H_1"
-
-Soluzione alternativa:
-<<<<<<< HEAD
-#+BEGIN_SRC R
-var.test(x, y, ratio=1, alternative=c("two.sided", "less", "greater"), conf.level=0.95)
-#+END_SRC
-#+BEGIN_SRC R :results output :exports both :session test_parametrici
-=======
-#+BEGIN_SRC R :results output :exports both :session test_parametrici
-var.test(x, y, ratio=1, alternativa=c("two.sided", "less", "greater"), conf.level=0.95)
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
-var.test(x, y)
-#+END_SRC
-
-#+RESULTS:
-#+begin_example
-
-	F test to compare two variances
-
-data:  x and y
-F = 1.5392, num df = 9, denom df = 14, p-value = 0.4528
-alternative hypothesis: true ratio of variances is not equal to 1
-95 percent confidence interval:
- 0.4796185 5.8459594
-sample estimates:
-ratio of variances 
-           1.53924
-<<<<<<< HEAD
-=======
-
-	F test to compare two variances
-
-data:  x and y
-F = 1.5392, num df = 9, denom df = 14, p-value = 0.4528
-alternative hypothesis: true ratio of variances is not equal to 1
-95 percent confidence interval:
- 0.4796185 5.8459594
-sample estimates:
-ratio of variances 
-           1.53924
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
-#+end_example
-
-Test di incorrelazione:
-- $\rho_{XY} = \frac{\sigma_{XY}}{\sigma_X \cdot \sigma_Y}$;
-- $R_n = \frac{\sum_{i=1}^n (X_i - \bar{X}) \cdot (Y_i - \bar{Y})}{n \cdot S_{X, n} \cdot S_{Y, n}}$;
-- $H_0 : \rho_{XY} = 0$;
-- $\hat{T}_n = R_n \cdot \sqrt{\frac{n-2}{1-R_n^2}}$.
-Risulta essere distribuita come una t di Studente con $(n-2)$ gradi di libertà.
-#+BEGIN_SRC R
-cor.test(x, y, alternative=c("two.sided", "less", "greater"),
-         method=c("pearson", "kendal", "spearman"), exact=NULL, conf.level=0.95, continuiti=FALSE, ...)
-#+END_SRC
-
-Esempio 6.7:
-- Si consideri una popolazione $(X, Y)$ di travi di cemento, in cui $X$ indica il carico di prima lesione e $Y$ il carico a rottura finale.
-  Si supponga di avere un'ampia popolazione, ovvero di avere un elevato numero di queste travi e di voler controllare, con un livello di
-  significatività $\alpha = 0.05$, se esiste una correlazione tra il carico di prima lesione ed il carico a rottura finale. A tale scopo
-  si supponga di aver effettuato delle prove su 15 travi, ottenendo i risultati riportati nel file Esempio 1.16.
-
-  Considerazioni:
-  - Ipotesi nulla: $H_0 : \rho_{XY} = 0$;
-  - Ipotesi alternativa: $H_1 : \rho_{XY} \neq 0$.
-#+BEGIN_SRC R :results output :exports both :session test_parametrici
-ese116 <- read.csv("./Files/esempio1.16.csv", sep=";", header=TRUE)
-
-cor.test(ese116$CaricoPrimaLesione.x., ese116$CaricoRottura.y., method="pearson")
-#+END_SRC
-
-#+RESULTS:
-#+begin_example
-
-	Pearson's product-moment correlation
-
-data:  ese116$CaricoPrimaLesione.x. and ese116$CaricoRottura.y.
-t = 8.4357, df = 13, p-value = 1.245e-06
-alternative hypothesis: true correlation is not equal to 0
-95 percent confidence interval:
- 0.7699373 0.9733190
-sample estimates:
-      cor 
-0.9195286
-#+end_example
-*** Verifica di ipotesi: Test non Parametrici
-Test per la bontà dell'adattamento:
-- Ipotesi:
-  - Nulla $H_0 : F_X (t) = F(t) \text{ per ogni } t \in \mathbb{R}$;
-  - Alternativa: $H_1 : F_X(t) \neq F(t) text{ per almeno un} t \in \mathbb{R}$
-- Test di Kolmogorov-Smirnov: $D_n = \text{sup}_{t} \in \mathbb{R}|F(t) - \hat{F}_{X, n}(t)|$.
-  #+BEGIN_SRC R
-  ks.test(x, y, ..., alternative = c("two.sided", "less", "greater"), exact=NULL)
-  #+END_SRC
-  
-Esercizio 02:
-- Un campione di numerosità 5 estratto da una popolazione $X$ ha fornito i seguenti valori: $(6.2, 8.8, 9.4, 13.6, 10)$.
-  Controllare con Kolmogorov-Smirnov e livello di significatività 0.1 l'ipotesi che $X$ sia distribuita:
-  1. Secondo una uniforme $[0, 20]$;
-  2. Secondo un'esponenziale di parametro $\lambda = 0.1$.
-  Considerazioni:
-  1. Ipotesi:
-     - Nulla: $H_0 : X \sim U[0, 20]$
-<<<<<<< HEAD
-     - Alternativa: $H_1 : X \text{ non } U[0, 20]$.
-=======
-     - Alternativa: $H_1 : X text{ non } U[0, 20]$.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
-  2. Ipotesi:
-     - Nulla: $H_0 : X \sim \text{Exp}[0.1]$;
-     - Alternativa: $H_1 : X \text{ non } \sim \text{Exp}[0.1]$.
-#+BEGIN_SRC R :results output :exports both :session test_non_parametrici
-x <- c(6.2, 8.8, 9.4, 13.6, 10)
-
-#1
-ks.test(x, "punif", 0, 20)
-
-#2
-ks.test(x, "pexp", 0.1)
-#+END_SRC
-
-#+RESULTS:
-#+begin_example
-
-	One-sample Kolmogorov-Smirnov test
-
-data:  x
-D = 0.32, p-value = 0.585
-alternative hypothesis: two-sided
-
-	One-sample Kolmogorov-Smirnov test
-
-data:  x
-D = 0.46206, p-value = 0.1713
-alternative hypothesis: two-sided
-#+end_example
-
-1. Non si rifiuta l'ipotesi $H_0$ che la popolazione segue una distribuzione Uniforme $p-\text{value} > \alpha = 0.1$
-2. Non si rifiuta l'ipotesi $H_0$ che la popolazione segue una distribuzione Esponenziale $p-\text{value} > \alpha = 0.1$.
-
-Test per la bontà dell'adattamento:
-- Ipotesi:
-  - Nulla $H_0 : F_X (t) = F(t) \text{ per ogni } t \in \mathbb{R}$;
-<<<<<<< HEAD
-  - Alternativa: $H_1 : F_X(t) \neq F(t) \text{ per almeno un} t \in \mathbb{R}$
-- Test del Chi-quadro: $W = \sum_{k=1}^K \frac{(n_k - np_k)^2}{np_k}$, con $K$ numero di intervalli.
-=======
-  - Alternativa: $H_1 : F_X(t) \neq F(t) text{ per almeno un} t \in \mathbb{R}$
-- Test del Chi-quadro: $$W = \sum_{k=1}^K \frac{(n_k - np_k)^2}{np_k}$$, con $K$ numero di intervalli.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
-  - Quando $H_0$ è vera e quando $n_k$ sono sufficientemente grandi ($\geq 5$), la $W$ è distribuita come una Chi-Quadro con:
-    - $K-1$ gradi di libertà se la funzione di ripartizione $F$ è stata decisa arbitrariamente senza fare uso preventivo
-      dei dati campionari;
-    - $K-r-1$ gradi di libertà se nella funzione di ripartizione $F$ compaiono $r$ parametri che sono stati stimati facendo
-      uso dei dati campionari.
-  #+BEGIN_SRC R
-  chisq.test(x, y=NULL, correct=TRUE, p=rep(1/length(x), length(x)), rescale.p=FALSE, simulate.p.value=FALSE, B=2000)
-  #+END_SRC
-  
-Esercizio 03:
-- Un campione di dimensione 30, estratto da una popolazione $X$, ha fornito i seguenti valori:
-  
-  #+DOWNLOADED: /tmp/screenshot.png @ 2018-06-14 13:26:11
-  
-  [[file:Laboratorio/screenshot_2018-06-14_13-26-11.png]]
-
-  Controllare con il metodo del Chi-Quadro, con significatività 0.01, l'ipotesi che $X$ sia distribuito secondo un'uniforme con
-  parametri $[0, 20]$. Dividere l'intervallo in 4.
-
-  Considerazioni:
-  - Ipotesi:
-    - Nulla: $H_0 : X \sim U[0, 20]$;
-    - Alternativa: $H_1 : X \text{ non } \sim U[0, 20]$.
-#+BEGIN_SRC R :results output :exports both :session test_non_parametrici
-x <- c(2.03 , 9.82 , 2.50 , 6.14 , 4.44 , 4.62 , 10.10 , 7.34 , 8.31 , 8.32 , 16.46 , 3.61,16.55 , 
-15.49 , 17.87 , 6.93 , 10.96 , 4.53, 17.72 , 7.52 , 4.69 , 6.70 , 16.24 , 6.19, 13.14 , 16.73 , 10.64 , 
-11.53, 2.78, 15.36)
-
-limiti <- c(0, 5, 10, 15, 20) # si indicano i limiti degli intervalli
-interval <- cut(x, breaks=limiti) # si divide in intervalli
-f <- table(interval) # si calcolano le frequenze assolute
-chisq.test(f, p=diff(punif(limiti, 0, 20)))
-#+END_SRC
-
-#+RESULTS:
-: 
-: 	Chi-squared test for given probabilities
-: 
-: data:  f
-: X-squared = 1.2, df = 3, p-value = 0.753
-
-Non si rifiuta l'ipotesi $H_0$ che la popolazione segue una distribuzione Uniforme $p-\text{value} > \alpha = 0.01$
-
-Test per il confronto delle distribuzioni di due popolazioni:
-- Ipotesi:
-  - Nulla: $H_0 : X \sim U[0, 20]$;
-  - Alternativa: $H_1 : X \text{ non } \sim U[0, 20]$.
-- Test:
-  1. Dei segni;
-  2. Dei ranghi di Wilcoxon;
-  3. Di Kolmogorov-Smirnov al caso di due campioni.
-
-Test dei segni:
-- Se l'ipotesi nulla è vera e se $n - S^= \geq 10$, la quantità $S_n = S^+ - S^-$ risulta essere distribuita:
-  $N\left(0, \frac{n-S^=}{2}\right)$, con:
-  - $S^+ = \text{numero di volte che \(X_i > Y_i\)}$;
-  - $S^- = \text{numero di volte che \(X_i < Y_i\)}$;
-  - $S^= = \text{numero di volte che \(X_i = Y_i\)}$.
-  Fissato il livello di significatività $\alpha$, la regione critica per $S_n$ è
-  $C = \left(-\infty, -z_{1-\frac{\alpha}{2}} \frac{n-S^=}{2}\right) \cup \left(+z_{1-\frac{\alpha}{2}} \frac{n-S^=}{2}, +\infty\right)$
-  
-Esercizio 09:
-- Un'azienda afferma che un integratore di sua ideazione è in grado di influire sul livello di colesterolo nel sangue, per tale
-  ragione viene prodotto uno studio dell'azienda medesima dove a 10 individui è stato misurato il livello del colesterolo prima
-  di assumere l'integratore in questione e dopo 2 settimane di assunzione del medesimo. Si è ottenuto quanto segue:
-  
-  #+DOWNLOADED: /tmp/screenshot.png @ 2018-06-14 14:24:33
-  [[file:Laboratorio/screenshot_2018-06-14_14-24-33.png]]
-  
-  Cosa possiamo concludere circa l'affermazione dell'azienda?
-- Ipotesi:
-  - Nulla: $H_0 : F_X(t) = F_Y(t)$;
-  - Alternativa: $H_1 : F_X(t) \neq F_Y(t)$;
-  - $X$ indica il livello di colesterolo "prima" e $Y$ il livello "dopo" la cura con l'integratore.
-#+BEGIN_SRC R :results output :exports both :session test_non_parametrici
-prima <- c( 225, 310, 287, 249, 345, 288, 247, 268, 213, 332) 
-dopo <- c(210, 301, 291, 212, 307, 290, 216, 245, 195, 301) 
-
-s <- sign(prima-dopo)
-p <- length(which(s>0))
-n <- length(which(s<0))
-u <- length(which(s==0))
-
-stat <- p-n
-stat
-
-# Calcolo dei limiti della regione critica
-- qnorm(0.975)*sqrt((length(x)-u)/2)
-qnorm(0.975)*sqrt((length(x)-u)/2)
-#+END_SRC
-
-#+RESULTS:
-: [1] 6
-: [1] -7.590908
-: [1] 7.590908
-
-La statistica, che ha valore 6, cade nella Regione Critica. Rigettiamo l'ipotesi nulla che le due distribuzioni ($X$ ed $Y$)
-siano identiche: il che porta a concludere che l'affermazione fatta dall'azienda non è falsa, ossia che l'integrazione
-influisce sul livello di colesterolo nel sangue.
-
-Test dei ranghi di Wilcoxon:
-#+BEGIN_SRC R
-wilcoxon.test(x, y=NULL, alternative=c("two.sided", "less", "greater"), mu=0, paired=FALSE, exact=NULL, correct=TRUE, conf.int=FALSE, conf.lecvel=0.95, ...)
-#+END_SRC
-
-Esercizio 10:
-- Un'azienda afferma che un integratore di sua ideazione è in grado di influire sul livello di colesterolo nel sangue, per tale
-  ragione viene prodotto uno studio dell'azienda medesima dove a 10 individui è stato misurato il livello del colesterolo prima
-  di assumere l'integratore in questione e dopo 2 settimane di assunzione del medesimo. Si è ottenuto quanto segue:
-
-  #+DOWNLOADED: /tmp/screenshot.png @ 2018-06-14 14:34:21
-  [[file:Laboratorio/screenshot_2018-06-14_14-34-21.png]]
-
-  Cosa possiamo concludere circa l'affermazione dell'azienda (considerare un livello di significatività pari a 0.05)?
-- Ipotesi:
-  - Nulla: $H_0 : F_X(t) = F_Y(t)$;
-  - Alternativa: $H_1 : F_X(t) \neq F_Y(t)$;
-  - $X$ indica il livello di colesterolo "prima" e $Y$ il livello "dopo" la cura con l'integratore.
-#+BEGIN_SRC R :results output :exports both :session test_non_parametrici
-X <- c( 225, 310, 287, 249, 345, 288, 247, 277, 267, 194)
-Y <- c( 210, 301, 291, 212, 307, 290, 216, 312, 206, 185, 199, 204, 245, 195, 301)
-
-wilcox.test(X, Y, exact=FALSE)
-#+END_SRC
-
-#+RESULTS:
-: 
-: 	Wilcoxon rank sum test with continuity correction
-: 
-: data:  X and Y
-: W = 92, p-value = 0.36
-: alternative hypothesis: true location shift is not equal to 0
-
-Non si rifiuta l'ipotesi $H_0$ che le due distribuzioni siano uguali. $p-\text{value} > \alpha = 0.05$. Quindi l'affermazione
-dell'azienda circa l'efficacia dell'integratore viene rigettata.
-
-<<<<<<< HEAD
-Test di Kolmogorov-Smirnov nel caso di due campioni:
-=======
-TEst di Kolmogorov-Smirnov nel caso di due campioni:
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
-#+BEGIN_SRC R
-ks.test(x, y, ..., alternative=c("two.sided", "less", "greater"), exact=NULL)
-#+END_SRC
-
-
-Esercizio 12:
-- Pazienti leucemici vengono sottoposti a due trattamenti $A$ e $B$. Il conteggio delle piastrine $(10^3)$ viene riportato
-  nella tabella.
-
-  #+DOWNLOADED: /tmp/screenshot.png @ 2018-06-14 14:39:46
-  [[file:Laboratorio/screenshot_2018-06-14_14-39-46.png]]
-
-  Possiamo affermare che tali conteggi provengano dalla stessa distribuzione?
-- Ipotesi:
-  - Nulla: $H_0 : F_X(t) = F_Y(t)$;
-  - Alternativa: $H_1 : F_X(t) \neq F_Y(t)$;
-  - $X$ indica il trattamento $A$ e $Y$ indica il trattamento $B$.
-#+BEGIN_SRC R :results output :exports both :session test_non_parametrici
-A <- c( 20.30, 22.53, 25.70, 13.23, 29.67, 24.46, 26.07, 19.35, 17.81,16.00, 13.50, 32.90)
-B <- c( 10.56, 28.13, 19.94, 11.03, 8.09, 12.95, 21.14, 32.50, 10.90 )
-
-ks.test(A, B)
-#+END_SRC
-
-#+RESULTS:
-: 
-: 	Two-sample Kolmogorov-Smirnov test
-: 
-: data:  A and B
-: D = 0.55556, p-value = 0.06063
-: alternative hypothesis: two-sided
-
-Non si rifiuta l'ipotesi $H_0$ che le due distribuzioni $A$ e $B$ siano identiche. Ossia che il numero di piastrine sotto il
-trattamento $A$ sia distribuito in modo identico dal numero di piastrine sotto il trattamento $B$ $p-\text{value} > \alpha = 0.05$.
-
-Test di indipendenza:
-- Test del Chi-quadro per l'indipendenza:
-  - Consideriamo una popolazione bidimensionale $(X, Y)$ ed estraiamo un campione casuale $((X_1, Y_1), \dots, (X_n, Y_n))$;
-  - Ipotesi:
-<<<<<<< HEAD
-    - Nulla: $H_0 : \text{ i caratteri \(X\) ed \(Y\) sono indipendenti}$;
-    - Alternativa: $H_1 : \text{ i caratteri \(X\) ed \(Y\) non sono indipendenti}$;
-    - Per ogni coppia $(k, j)$ consideriamo le seguenti quantità:
-      - $n_k^X = \text{ numero di elementi \(X_i\) del campione che cadono in } I_k^X$;
-      - $n_j^Y = \text{ numero di elementi \(Y_i\) del campione che cadono in }I_j^Y$;
-      - $n_{k, j} = \text{ numero di elementi \((X_i, Y_i)\) del campione che cadono in } I_k^X \times I_j^Y$;
-      - $f_k^X = \frac{n_k^X}{n} = \text{ frequenza relativa di }I_k^X$;
-      - $f_j^Y = \frac{n_j^Y}{n} = \text{ frequenza relativa di } I_j^Y$;
-      - $f_{k, j} = \frac{n_{k, j}}{n} = \text{ frequenza relativa di } I_k^X \times I_j^Y$.
-=======
-    - Nulla: $H_0 : \text{i caratteri \(X\) ed \(Y\) sono indipendenti}$;
-    - Alternativa: $H_1 : \text{i caratteri \(X\) ed \(Y\) non sono indipendenti}$;
-    - Per ogni coppia $(k, j)$ consideriamo le seguenti quantità:
-      - $n_k^X =$ numero di elementi $X_i$ del campione che cadono in $I_k^X$;
-      - $n_j^Y =$ numero di elementi $Y_i$ del campione che cadono in $I_j^Y$;
-      - $n_{k, j} =$ numero di elementi $(X_i, Y_i)$ del campione che cadono in $I_k^X \times I_j^Y$;
-      - $f_k^X = \frac{n_k^X}{n} =$ frequenza relativa di $I_k^X$;
-      - $f_j^Y = \frac{n_j^Y}{n} =$ frequenza relativa di $I_j^Y$;
-      - $f_{k, j} = \frac{n_{k, j}}{n} =$ frequenza relativa di $I_k^X \times I_j^Y$.
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
-    - $W = n \cdot \sum_{k=1}^{M_X}\sum_{j=1}^{M_Y} \frac{(f_{k, j} - f_k^X \cdot f_j^Y)^2}{f_k^X \cdot f_j^Y}$;
-    - Si può dimostrare che quando l'ipotesi nulla è vera e quando le $n_{k, j}$ sono sufficientemente grandi $(\geq 5)$, allora $W$
-      è approssimativamente distribuita come una Chi-Quadro con $(M_X - 1) \cdot (M_Y - 1)$ gradi di libertà.
-#+BEGIN_SRC R
-chisq.test(x, y=NULL, correct=TRUE, p=rep(1/length(1/length(x), length(x)), rescale.p=FALSE, simulate.p.value=FALSE, B=2000))
-#+END_SRC
-
-Esercizio 06:
-- Si desidera controllare l'ipotesi di indipendenza tra due caratteri discreti $X$ ed $Y$ di una popolazione. Il campione, di
-  numerosità 150, ha fornito i conteggi riportati in tabella.
-
-  #+DOWNLOADED: /tmp/screenshot.png @ 2018-06-14 14:53:44
-  [[file:Laboratorio/screenshot_2018-06-14_14-53-44.png]]
-
-  Controllare l'ipotesi di indipendenza di $X$ ed $Y$ con un livello di significatività 0.05.
-- Ipotesi:
-  - Nulla: $H_0 : \text{i caratteri \(X\) ed \(Y\) sono indipendenti}$;
-  - Alternativa: $H_1 : \text{i caratteri \(X\) ed \(Y\) non sono indipendenti}$;
-#+BEGIN_SRC R :results output :exports both :session test_non_parametrici
-arr <- c(25, 20, 5, 15, 30, 15, 10, 25, 5)
-m <- matrix(arr, nrow=3, ncol=3)
-
-chisq.test(m)
-#+END_SRC
-
-#+RESULTS:
-: 
-: 	Pearson's Chi-squared test
-: 
-: data:  m
-: X-squared = 12.75, df = 4, p-value = 0.01256
-
-Si rifiuta l'ipotesi $H_0$ che i due caratteri $X$ e $Y$ sono indipendenti. In conclusione i due caratteri $X$ ed $Y$ non sono
-tra loro indipendenti $p-\text{value} < \alpha = 0.05$.
-
-Test di incorrelazione:
-- Coefficiente di correlazione dei ranghi di Spearman:
-  Consideriamo una popolazione bidimensionale $(X, Y)$ ed estraiamo un campione casuale $((X_1, Y_1,), \dots, (X_n, Y_n))$
-- Ipotesi:
-  - Nulla: $H_0 : \text{i caratteri \(X\) ed \(Y\) sono indipendenti}$;
-  - Alternativa: $H_1 : \text{i caratteri \(X\) ed \(Y\) non sono indipendenti}$;
-- Ad ogni coppia $(x_i, y_i)$ associamo ora la corrispondente coppia di ranghi $(r_i^x, r_i^y)$ e denotiamo con $d_i$ le loro
-  differenze $d_i = r_i^x - r_i^y$.
-
-  Consideriamo la statistica $R_s = 1 - \frac{6 \cdot \sum_{i=1}^n d_i^2}{n^3 - n}$
-  indipendentemente dalla forma della distribuzione
-  congiunte $(X, Y)$. Quando i caratteri $X$ ed $Y$ sono incorrelati, nel senso di Spearman, e la numerosità del campione è maggiore
-  di 10, allora la statistica $\tilde{T}_n = R_S \cdot \sqrt{\frac{n-2}{1 - R_S^2}}$
-  risulta essere approssimativamente distribuita come una t di Student con $(n-2)$ gradi di libertà.
-#+BEGIN_SRC R
-cor(x, y=NULL, use="everything", method=c("pearson", "kendall", "spearman"))
-#+END_SRC
-
-Esercizio 11:
-- La tabella sottostante riporta il rango dello HumanDevelopmentIndex (HDI) e dell'Income per 10 paesi:
-
-  #+DOWNLOADED: /tmp/screenshot.png @ 2018-06-14 15:09:58
-  [[file:Laboratorio/screenshot_2018-06-14_15-09-58.png]]
-
-  Cosa possiamo concludere circa la correlazione tra Income e HDI?
-- Ipotesi:
-  - Nulla: $H_0 : \text{i caratteri \(X\) ed \(Y\) sono incorrelati secondo Spearman}$;
-  - Alternativa: $H_1 : \text{i caratteri \(X\) ed \(Y\) non sono incorrelati secondo Spearman}$;
-#+BEGIN_SRC R :results output :exports both :session test_non_parametrici
-Income <- c(3, 2, 10, 8, 5, 7, 1, 6, 9, 4)
-HDI <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-
-rho <- cor(Income, HDI, method="spearman") # calcolo coeff. di correlazione di Spearman
-Tn <- rho*sqrt((10-2)/(1-rho^2))
-Tn
-
-# Calcolo dei limiti della regione critica
-qt(0.95, 8) # quantile di ordine (1 - alpha/2) con alpha=0.1
--qt(0.95, 8)
-#+END_SRC
-
-#+RESULTS:
-: [1] 0.3278787
-: [1] 1.859548
-: [1] -1.859548
-
-Non si rifiuta l'ipotesi $H_0$ che i due caratteri non sono correlati secondo Spearman poiché la statistica $T_n = 0.33$ non cade
-nella regione critica $C = (-\infty, -1.86,) \cup (1.86, +\infty)$.
-*** Regressione Lineare
-Regressione lineare semplice - stima dei parametri del modello:
-#+BEGIN_SRC R
-lm(formula, data, subset, weights, na.action, method="qr", model=TRUE, x=FALSE, y=FALSE, qr=TRUE, singular.ok=TRUE, contrasts=NULL, offset, ...)
-#+END_SRC
-
-Regressione lineare semplice - stima puntuale della variabile risposta:
-#+BEGIN_SRC R
-predict(object, ...)
-#+END_SRC
-
-Esercizio 02:
-- Si considerino i seguenti dati:
-
-#+DOWNLOADED: /tmp/screenshot.png @ 2018-06-14 18:16:20
-[[file:Laboratorio/screenshot_2018-06-14_18-16-20.png]]
-
-1. Stimare il coefficiente di correlazione lineare tra $X$ e $Y$ e si discuta la correlazione tra i due caratteri;
-2. Si determini la retta di regressione lineare $Y = \alpha_0 + \alpha_1 X$;
-3. Stimare il valore atteso della variabile di risposta $Y$ quando il regressore $X$ vale 5.
-
-#+BEGIN_SRC R :results output :exports both :session regressione
-#1
-X <- c(-3, 4, 5, 8, 6)
-Y <- c(2, 6, 7, 10, 5)
-Rxy <- cor(X, Y, method="p")
-Rxy
-
-#+END_SRC
-
-#+RESULTS:
-: [1] 0.8814141
-
-Forte correlazione (positiva) che lega i due caratteri $X$ e $Y$ poiché il coefficiente di correlazione lineare (=0.88) è prossimo
-a 1.
-
-#+BEGIN_SRC R :results output :exports both :session regressione
-#2
-rr <- lm(Y ~ X)
-rr
-
-# Coefficienti
-coef <- rr$coefficients
-#+END_SRC
-
-#+RESULTS:
-: 
-: Call:
-: lm(formula = Y ~ X)
-: 
-: Coefficients:
-: (Intercept)            X  
-:      3.5429       0.6143
-
-#+BEGIN_SRC R :results graphics :file lm.png :exports both :session regressione
-# Creare il grafico
-plot(Y ~ X)
-abline(coef(rr), col='red', lwd=3)
-#+END_SRC
-
-#+RESULTS:
-[[file:lm.png]]
-
-#+BEGIN_SRC R :results output :exports both :session regressione
-#3
-new <- data.frame(X=5)
-predict(rr, new)
-
-# Stima puntuale della variabile risposta
-predict(rr)
-#+END_SRC
-
-#+RESULTS:
-:        1 
-: 6.614286
-:        1        2        3        4        5 
-: 1.700000 6.000000 6.614286 8.457143 7.228571
-
-Regressione lineare semplice - residui di un modello:
-#+BEGIN_SRC R
-residuals(object, ...)
-#+END_SRC
-
-Regressione lineare semplice - intervalli di confidenza per i coefficienti di regressione:
-#+BEGIN_SRC R
-confint(object, parm, level=0.95)
-#+END_SRC
-
-Esempi:
-#+BEGIN_SRC R :results output :exports both :session regressione
-residuals(rr)
-#+END_SRC
-
-#+RESULTS:
-:             1             2             3             4             5 
-:  3.000000e-01  6.522560e-16  3.857143e-01  1.542857e+00 -2.228571e+00
-
-#+BEGIN_SRC R :results output :exports both :session regressione
-confint(rr, level=0.9) # livello di fiducia 0.1
-#+END_SRC
-
-#+RESULTS:
-:                   5 %     95 %
-: (Intercept) 1.0930143 5.992700
-: X           0.1670077 1.061564
-
-Regressione lineare semplice - intervalli di confidenza per valori stimati della variabile risposta e intervalli di predizione:
-#+BEGIN_SRC R
-predict(object, newdata, se.fit=FALSE, scale=NULL, df=Inf, interval=c("none", "confidence", "prediction"), level=0.95, type=c("response", "terms"), terms=NULL, na.action=na.pass, pred.var=res.var/weights, weights=1, ...)
-
-# Intervalli di confidenza
-predict(object, newdata, ..., interval="confidence", level=0.95)
-
-# Intervalli di predizione
-predict(object, newdata, ..., interval="prediction", level=0.95)
-#+END_SRC
-
-Esempi:
-<<<<<<< HEAD
-- $\left[a_0 - t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \left[\frac{1}{n} + \frac{\bar{x}^2}{s_x^2}\right]},
-  a_0 + t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \left[\frac{1}{n} + \frac{\bar{x}^2}{s_x^2}\right]}\right]$;
-=======
-- $\left[a_0 - t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \left[\frac{1}{n} + \frac{x^{-2}}{s_x^2}\right]},
-  a_0 + t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \left[\frac{1}{n} + \frac{x^{-2}}{s_x^2}\right]}\right]$;
->>>>>>> 226e3ba57ab5896e7a13c0c3138e30d42caf162a
-- $\left[a_1 - t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \frac{1}{s_x^2}},
-  a_0 + t_{1-\frac{\alpha}{2}} \cdot \sqrt{s_{\text{RES}}^2 \cdot \frac{1}{s_x^2}}\right]$.
-#+BEGIN_SRC R :results output :exports both :session regressione
-# Intervalli di confidenza
-predict(rr, level=0.9, interval="confidence")
-
-# Intervalli di predizione
-new <- data.frame(X=5)
-predict(rr, newdata=new, level=0.9, interval="prediction")
-#+END_SRC
-
-#+RESULTS:
-:        fit       lwr       upr
-: 1 1.700000 -1.850160  5.250160
-: 2 6.000000  4.326439  7.673561
-: 3 6.614286  4.881985  8.346586
-: 4 8.457143  6.007300 10.906986
-: 5 7.228571  5.330931  9.126212
-:        fit      lwr      upr
-: 1 6.614286 2.490586 10.73799
-
-#+BEGIN_SRC R :results graphics :file regressione.png :exports both :session regressione
-# Rappresentazione grafica degli intervalli di confidenza e degli intervalli di predizione
-library(HH)
-ci.plot(rr, conf.level=0.9)
-#+END_SRC
-
-#+RESULTS:
-[[file:regressione.png]]
-
-Regressione lineare semplice - attendibilità del modello:
-#+BEGIN_SRC R
-summary(object, ...)
-#+END_SRC
-
-Esercizio 01:
-- Si considerino i seguenti dati:
-
-#+DOWNLOADED: /tmp/screenshot.png @ 2018-06-14 20:00:07
-[[file:Laboratorio/screenshot_2018-06-14_20-00-07.png]]
-
-1. Stimare i coefficienti di regressione di $Y$ su $X$;
-2. Verificare se l'intercetta è significativamente diversa da 0 con confidenza 0.95;
-3. Stimare il valore atteso della variabile di risposta $Y$ quando il regressore $X$ vale 13.
-#+BEGIN_SRC R :results output :exports both :session regressione
-#1
-X <- c(12, 8, 11, 15, 18)
-Y <- c(30, 23, 27, 36, 42)
-
-fm <- lm(Y ~ X)
-fm
-
-#2
-summary(fm)
-
-#3
-new <- data.frame(X=13)
-predict(fm, new, level="prediction")
-#+END_SRC
-
-#+RESULTS:
-#+begin_example
-
-Call:
-lm(formula = Y ~ X)
-
-Coefficients:
-(Intercept)            X  
-      6.653        1.949
-
-Call:
-lm(formula = Y ~ X)
-
-Residuals:
-       1        2        3        4        5 
--0.04082  0.75510 -1.09184  0.11224  0.26531 
-
-Coefficients:
-            Estimate Std. Error t value Pr(>|t|)    
-(Intercept)   6.6531     1.3559   4.907 0.016207 *  
-X             1.9490     0.1023  19.047 0.000316 ***
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-
-Residual standard error: 0.7846 on 3 degrees of freedom
-Multiple R-squared:  0.9918,	Adjusted R-squared:  0.9891 
-F-statistic: 362.8 on 1 and 3 DF,  p-value: 0.000316
-      1 
-31.9898
-#+end_example
-
-Regressione lineare semplice - analisi dei residui:
-1. Test di normalità: Test di Shapiro Wilk;
-2. Test di incorrelazione: Test di Durbin e Watson;
-3. Test di omoschedasticità: Metodi grafici;
-4. Outliers: Distanza di Cook.
-   
-Test di normalità - Test di Shapiro Wilk:
-
-Ipotesi:
-- Nulla: $H_0: \text{i residui seguono una distribuzione normale}$;
-- Alternativa: $H_1: \text{i residui non seguono una distribuzione normale}$.
-#+BEGIN_SRC R :results output :exports both :session regressione
-X <- c(-3, 4, 5, 8, 6)
-Y <- c(2, 6, 7, 10 ,5)
-rr <- lm(Y ~ X)
-residui <- residuals(rr)
-shapiro.test(residui)
-#+END_SRC
-
-#+RESULTS:
-: 
-: 	Shapiro-Wilk normality test
-: 
-: data:  residui
-: W = 0.89097, p-value = 0.362
-
-Non si rifiuta l'ipotesi $H_0$ ossia che i residui seguono una distribuzione normale poiché il $p-\text{value} > 0.05$.
-
-Test di incorrelazione - Test di Durbin e Watson:
-#+BEGIN_SRC R :results output :exports both :session regressione
-library(lmtest)
-residui <- residuals(rr)
-dwtest(rr, alternative="two.sided")
-#+END_SRC
-
-#+RESULTS:
-: 
-: 	Durbin-Watson test
-: 
-: data:  rr
-: DW = 2.0831, p-value = 0.6294
-: alternative hypothesis: true autocorrelation is not 0
-
-Non si rifiuta l'ipotesi $H_0$, quindi i residui sono incorrelati poiché il $p-\text{value} > 0.05$.
-
-Test di omoschedasticità - Metodi grafici:
-#+BEGIN_SRC R :results graphics :file omoschedasticità.png :exports both :session regressione
-plot(X, rr$residuals, xlab="X", ylab="RESIDUALS", main="Verifica Omoschedasticità")
-abline(h=0)
-#+END_SRC
-
-#+RESULTS:
-[[file:omoschedasticità.png]]
-
-#+BEGIN_SRC R :results graphics :file omoschedasticità2.png :exports both :session regressione
-plot(fitted(rr), abs(residui), ylab="RESIDUAL", xlab="Fitted", main="Residui in valore assoluto vs Fitted Value")
-#+END_SRC
-#+RESULTS:
-[[file:omoschedasticità2.png]]
-
-Outliers - Distanza di Cook:
-#+BEGIN_SRC R :results output :exports both :session regressione
-cook <- cooks.distance(rr)
-cook
-#+END_SRC
-
-#+RESULTS:
-:            1            2            3            4            5 
-: 1.601695e+00 2.628942e-32 1.021151e-02 6.177966e-01 4.576271e-01
-
-Un sospetto outliers è influente sui parametri della regressione se la Distanza di Cook, $D > 1$:
-$$D_i = \frac{\sum_j \left(y_{(i)_j}^* - \hat{y_j} \right)^2}{\text{SSE}}$$
-
-Regressione lineare multipla:
-#+BEGIN_SRC R :results output :exports both :session regressione
-lm(formula, data, subset, weights, na.action, method="qr", model=TRUE, x=FALSE, y=FALSE, qr=TRUE, singular.ok=TRUE, contrasts=NULL, offset, ...)
-#+END_SRC
-
-Esempio:
-- Il dataset "trees" (fornito da R) contiene delle misurazioni sulla circonferenza, altezza e volume di 31 alberi di ciliegio abbattuti.
-Dati:
-1. Girth: diametro in pollici ($X_1$);
-2. Height: altezza in piedi ($X_2$);
-3. Volume: volume in piedi alla terza ($Y$).
-
-Vogliamo determinare quanto segue:
-1. Coefficienti della retta di regressione: $Y = \alpha_0 + \alpha_1 x_1 + \alpha_2 x_2 + \epsilon$;
-2. Intervalli di confidenza per i coefficienti di regressione;
-3. Stima puntuale, intervalli di confidenza e intervalli di predizione della variabile risposta su nuovi dati con Girth
-   $(9.1, 11.6, 12.5)$ e Height $(46, 74, 87)$.
-#+BEGIN_SRC R :results output :exports both :session regressione
-#1
-trees.lm <- lm(Volume ~ Girth + Height, data=trees)
-trees.lm
-
-#2
-confint(trees.lm)
-
-#3
-# Stima puntuale
-new <- data.frame(Girth=c(9.1, 11.6, 12.5), Height=c(49, 74, 87))
-predict(trees.lm, newdata=new)
-
-# Intervalli di confidenza del valore mu_0 = E[Y_0]
-predict(trees.lm, newdata=new, interval="confidence")
-
-# Intervalli di predizione del valore y_0 = Y_0
-predict(trees.lm, newdata=new, interval="prediction")
-
-# Attendibilità del modello
-summary(trees.lm)
-#+END_SRC
-
-#+RESULTS:
-#+begin_example
-
-Call:
-lm(formula = Volume ~ Girth + Height, data = trees)
-
-Coefficients:
-(Intercept)        Girth       Height  
-   -57.9877       4.7082       0.3393
-                   2.5 %      97.5 %
-(Intercept) -75.68226247 -40.2930554
-Girth         4.16683899   5.2494820
-Height        0.07264863   0.6058538
-        1         2         3 
- 1.479912 21.731594 30.379205
-        fit       lwr       upr
-1  1.479912 -5.009282  7.969106
-2 21.731594 20.111104 23.352084
-3 30.379205 26.909637 33.848773
-        fit       lwr      upr
-1  1.479912 -8.783476 11.74330
-2 21.731594 13.616578 29.84661
-3 30.379205 21.703641 39.05477
-
-Call:
-lm(formula = Volume ~ Girth + Height, data = trees)
-
-Residuals:
-    Min      1Q  Median      3Q     Max 
--6.4065 -2.6493 -0.2876  2.2003  8.4847 
-
-Coefficients:
-            Estimate Std. Error t value Pr(>|t|)    
-(Intercept) -57.9877     8.6382  -6.713 2.75e-07 ***
-Girth         4.7082     0.2643  17.816  < 2e-16 ***
-Height        0.3393     0.1302   2.607   0.0145 *  
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-
-Residual standard error: 3.882 on 28 degrees of freedom
-Multiple R-squared:  0.948,	Adjusted R-squared:  0.9442 
-F-statistic:   255 on 2 and 28 DF,  p-value: < 2.2e-16
-#+end_example
