@@ -3821,8 +3821,8 @@ Da cui si deduce che $A_0$ e $A_1$ sono due /stimatori corretti/ e pertanto adat
 In particolare, se valgono le ipotesi
 - $E[E_i] = 0 \quad \forall i = 1, \dots, N$;
 - $V[E_i] = \sigma^2 \quad \forall i = 1, \dots, N$;
-- Le variabili $E_i$ sono incorrelate tra loro.
-Si può dire qualcosa di ancora più forte, infatti in questo caso, /$A_0$ ed \(A_1\)/ sono, tra gli /stimatori/ corretti per
+- Le variabili $E_i$ sono incorrelate tra loro;
+si può dire qualcosa di ancora più forte, infatti in questo caso, /$A_0$ ed \(A_1\)/ sono, tra gli /stimatori/ corretti per
 $\alpha_0$ e $\alpha_1$, i /più efficienti/, ovvero quelli cui corrisponde varianza minima.
 
 Questa proprietà è solitamente riferita in letterature con il termine di /Teorema di Gauss-Markov/.
@@ -3851,8 +3851,8 @@ Si può mostrare che condizionalmente alle 4 ipotesi:
 - $E[E_i] = 0 \quad \forall i = 1, \dots, N$;
 - $V[E_i] = \sigma^2 \quad \forall i = 1, \dots, N$;
 - Le variabili $E_i$ sono incorrelate tra loro;
-- Le variabili $E_i$ sono normalmente distribuite.
-Anche gli /stimatori $A_0$ ed $A_1$ sono normalmente distribuiti/, con:
+- Le variabili $E_i$ sono normalmente distribuite;
+anche gli /stimatori $A_0$ ed $A_1$ sono normalmente distribuiti/, con:
 - $A_0 \cong N\left(\alpha_0, \sigma^2 \cdot \left[\frac{1}{n} + \frac{\bar{x}^2}{\sum_{i=1}^n (x_i - \bar{x})^2}\right]\right)$;
 - $A_1 \cong N\left(\alpha_1, \sigma^2 \cdot \left[\frac{1}{\sum_{i=1}^n (x_i - \bar{x})^2}\right]\right)$;
 La conoscenza della distribuzione dei due stimatori potrebbe essere utilizzata per determinare degli intervalli, come visto nel
@@ -3881,8 +3881,8 @@ Condizionatamente alle consuete ipotesi:
 - $E[E_i] = 0 \quad \forall i = 1, \dots, N$;
 - $V[E_i] = \sigma^2 \quad \forall i = 1, \dots, N$;
 - Le variabili $E_i$ sono incorrelate tra loro;
-- Le variabili $E_i$ sono normalmente distribuite.
-Le variabili $T_0$ e $T_1$ risultano essere distribuite come delle t di Student con $n-2$ gradi di libertà.
+- Le variabili $E_i$ sono normalmente distribuite;
+le variabili $T_0$ e $T_1$ risultano essere distribuite come delle t di Student con $n-2$ gradi di libertà.
 
 Considerate allora le realizzazioni:
 - $s_{\text{RES}}^2$;
@@ -3971,15 +3971,15 @@ Similmente a quanto sopra, possiamo pensare che il modello lineare è adatto a d
 quantità $D_{\text{RES}}$ risulta essere molto inferiore alla $D_{\text{SP}}$, ovvero se il rapporto $\frac{D_{\text{SP}}}{D_{\text{RES}}}$ è molto
 grande.
 
-Un test sull'attendibilità del modello lineare molto itilizzato si basa proprio su questo rapporto, e specificamente sul fatto
+Un test sull'attendibilità del modello lineare molto utilizzato si basa proprio su questo rapporto, e specificamente sul fatto
 che la /statistica/ $\tilde{F} = (n-2) \cdot \frac{D_{\text{SP}}}{D_{\text{RES}}} = \frac{D_{\text{SP}}}{S_{\text{RES}}^2}$, con
 $S_{\text{RES}}^2 = \frac{1}{n-2} \cdot \sum_{i=1}^n (Y_i - \hat{Y}_i)^2$ è distribuita come una F con $(1, n-2)$ gradi di libertà, quando siano
 soddisfatte le ipotesi:
 - $E[E_i] = 0 \quad \forall i = 1, \dots, N$;
 - $V[E_i] = \sigma^2 \quad \forall i = 1, \dots, N$;
 - Le variabili $E_i$ sono incorrelate tra loro;
-- Le variabili $E_i$ sono normalmente distribuite.
-E quando valga $\alpha_1 = 0$, ovvero non esiste dipendenza tra i valori assunti dal carattere $X$ e quelli assunti dal carattere $Y$.
+- Le variabili $E_i$ sono normalmente distribuite;
+e quando valga $\alpha_1 = 0$, ovvero non esiste dipendenza tra i valori assunti dal carattere $X$ e quelli assunti dal carattere $Y$.
 
 È possibile pertanto effettuare un /test per l'ipotesi nulla/ $H_0 : \alpha_1 = 0$ (regressione non significativa) /rifiutando/
 quando la realizzazione della statistica $\tilde{F} = (n-2) \cdot \frac{D_{\text{SP}}}{D_{\text{RES}}} = \frac{D_{\text{SP}}}{S_{\text{RES}}^2}$
@@ -3990,8 +3990,8 @@ Ci si ricordi però che prima di effettuare questo test, occorre verificare la s
 - $E[E_i] = 0 \quad \forall i = 1, \dots, N$;
 - $V[E_i] = \sigma^2 \quad \forall i = 1, \dots, N$;
 - Le variabili $E_i$ sono incorrelate tra loro;
-- Le variabili $E_i$ sono normalmente distribuite.
-Sui residui, con i metodi presentati nel prossimo paragrafo.
+- Le variabili $E_i$ sono normalmente distribuite;
+sui residui, con i metodi presentati nel prossimo paragrafo.
 
 Ricordiamo inoltre che, in generale, il nostro obiettivo è rifiutare l'ipotesi nulla, vale a dire l'inconsistenza del modello di
 regressione lineare.
@@ -4006,8 +4006,8 @@ In tal caso si utilizza il fatto che quando siano soddisfatte le seguenti ipotes
 - $E[E_i] = 0 \quad \forall i = 1, \dots, N$;
 - $V[E_i] = \sigma^2 \quad \forall i = 1, \dots, N$;
 - Le variabili $E_i$ sono incorrelate tra loro;
-- Le variabili $E_i$ sono normalmente distribuite.
-La variabile $T_1$, definita come $T_1 = \frac{A_1 - \alpha_1}{\sqrt{S_{\text{RES}}^2 \cdot \left[\frac{1}{\sum_{i=1}^n (X_i - \bar{X})^2}\right]}}$
+- Le variabili $E_i$ sono normalmente distribuite;
+la variabile $T_1$, definita come $T_1 = \frac{A_1 - \alpha_1}{\sqrt{S_{\text{RES}}^2 \cdot \left[\frac{1}{\sum_{i=1}^n (X_i - \bar{X})^2}\right]}}$
 è distribuita come una t di Student con $n-2$ gradi di libertà.
 
 /Rifiuteremo l'ipotesi nulla/ quando la sua realizzazione $\tilde{t}$ /assume valori troppo distanti dallo zero/ per poter pensare
@@ -4234,8 +4234,8 @@ Il /modello regressivo/ può allora essere riscritto in forma vettoriale come $Y
 Si dimostra che se sono valide le ipotesi:
 - $E[E_i] = 0 \quad \forall i = 1, \dots, N$;
 - $V[E_i] = \sigma^2 \quad \forall i = 1, \dots, N$;
-- Le variabili $E_i$ sono incorrelate tra loro.
-Relative ai residui, allora gli /stimatori corretti di varianza minima di/ $\alpha_0, \dots, \alpha_m$ /sono/ dati da $A = (X^T \cdot X)^{-1} \cdot X^T \cdot Y$.
+- Le variabili $E_i$ sono incorrelate tra loro;
+relative ai residui, allora gli /stimatori corretti di varianza minima di/ $\alpha_0, \dots, \alpha_m$ /sono/ dati da $A = (X^T \cdot X)^{-1} \cdot X^T \cdot Y$.
 
 Si dimostra poi che uno /stimatore corretto della varianza dei residui è/
 $S_{\text{RES}}^2 = \frac{q}{n-m-1}\cdot \sum_{i=1}^n E_i^2 = \frac{1}{n-2} \cdot \sum_{i=1}^n (Y_i - \hat{Y}_i)^2$  
@@ -5604,7 +5604,7 @@ xold <- edit(xold)
 xnew <- edit(data.frame())
 #+END_SRC
 
-** Slides
+** Pratica
 *** Statistica Descrittiva
 Esempio 1.1
 #+BEGIN_SRC R :file barplot.png :results graphics :exports both
