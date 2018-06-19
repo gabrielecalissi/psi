@@ -3638,8 +3638,8 @@ risulta essere approssimativamente distribuita come una t di Student con $(n-2)$
 Dovendo controllare l'ipotesi
 - $H_0 : \text{ i caratteri \(X\) ed \(Y\) sono incorrelati secondo Spearman}$;
 contro
-- $H_1 : \text{ i caratteri \(X\) ed \(Y\) sono correlati secondo Spearman}$.
-Possiamo pensare di non rifiutare $H_0$ quando $\tilde{T}_n$ assume valori non troppo distanti dallo 0 e di rifiutarla in favore di
+- $H_1 : \text{ i caratteri \(X\) ed \(Y\) sono correlati secondo Spearman}$;
+possiamo pensare di non rifiutare $H_0$ quando $\tilde{T}_n$ assume valori non troppo distanti dallo 0 e di rifiutarla in favore di
 $H_1$ in caso contrario.
 
 Ragionando nel solito modo, si ottiene che per un livello di significatività $\alpha$, la regione critica per la statistica $\tilde{T}_n$
